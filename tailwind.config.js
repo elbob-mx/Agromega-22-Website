@@ -14,6 +14,11 @@ module.exports = {
       fontFamily: {
         'rubik': 'Rubik, sans-serif',
         },
+        colors: {
+          azulAgro: '#1755A1',
+          azulAgroClaro: '#00ABEA',
+          offWhite: '#F2F2F2',
+        },
     },
   },
   plugins: [
