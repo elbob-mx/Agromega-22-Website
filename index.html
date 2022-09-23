@@ -13,20 +13,24 @@
     <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
   </head>
 
-  <body class="w-full h-full font-rubik">
+  <body class="flex flex-col w-full h-full font-rubik">
 
     <!-- NAVBAR -->
-    <nav class="fixed z-50 flex flex-col justify-center justify-around h-full text-lg leading-loose text-gray-600 bg-offWhite">
+    <nav class="fixed z-50 flex flex-col flex-wrap justify-around h-full text-lg leading-loose text-gray-600 bg-offWhite">
 
-        </div>      
-        <ul>
+        <ul class="w-full">
         <img src="./img/logos/logo__agro--22.svg" class="px-4 mb-16">
 
         <li><a class="px-4 hover:border-b-4 border-azulAgro hover:text-azulAgro text-rubik hover:text-xl" href="#">inicio</a></li>
+
         <li><a class="px-4 hover:border-b-4 border-azulAgro hover:text-azulAgro text-rubik hover:text-xl" href="#">nosotros</a></li>
+
         <li><a class="px-4 hover:border-b-4 border-azulAgro hover:text-azulAgro text-rubik hover:text-xl" href="#">productos</a></li>
+
         <li><a class="px-4 hover:border-b-4 border-azulAgro hover:text-azulAgro text-rubik hover:text-xl" href="#">servicios</a></li>
+
         <li><a class="px-4 hover:border-b-4 border-azulAgro hover:text-azulAgro text-rubik hover:text-xl" href="#">trabajo</a></li>
+
         <li><a class="px-4 hover:border-b-4 border-azulAgro hover:text-azulAgro text-rubik hover:text-xl" href="#">contacto</a></li>
 
       </ul>
@@ -34,7 +38,7 @@
         <!-- ADDRESS -->
         <div>
         <p class="w-full px-4 text-sm text-azulAgro">Av. Pedro Parra Centeno 110<br>Tlajomulco de Zúñiga, Jalisco</p>
-        <p class="w-full px-4 text-sm font-medium text-azulAgro">T1: (33) 3798 1526<br>T2: (33) 3798 0637</p>
+        <p class="w-full px-4 mt-5 text-sm font-medium text-azulAgro">T1: (33) 3798 1526<br>T2: (33) 3798 0637</p>
         </div>
 
         <!-- FACEBOOK LINK -->
@@ -48,8 +52,8 @@
     </nav>
   
 
-    <!-- MAIN BANNER  -->
-      <main class="flex flex-col">
+    <!-- MAIN CONTENT  -->
+      <main class="flex flex-col self-end justify-end">
 
         <img class="z-0" src="./img/banner__main__01--agro22.jpg" alt="agricultor agromega 2022"/>
 
@@ -185,25 +189,30 @@
           </p>
         </div>
       
-        <button class="px-2 py-1 bg-teal-400 rounded-full">
+        <button class="bg-teal-400 rounded-full">
           VER MÁS SERVICIOS
         </button>
+        
+        
       </main>
-  </div>
+      
+      <!-- FOOTER -->
+      <footer class="flex flex-col items-start justify-center w-full text-base text-black px-7 font-rubik bg-slate-600">
 
-    <!-- FOOTER -->
-    <footer
-      class="h-auto text-base text-black px-7 font-rubik bg-slate-600"
-    >
-      <form action="submit">
-        <span class="pr-2">Nombre:</span><input type='text' class="font-mono text-pink-500 rounded"/><br>
-        <span class="pr-2">Apellidos:</span><input type='text' class="px-2 py-1 font-mono rounded-full"/><br>
-        <span class="pr-2">Correo:</span><input type='email' class="font-mono text-pink-500 rounded" /><br>
-      </form>
+        <div>
+          <span class="mt-5">RECIBE INFORMACIÓN DE NUESTROS PRODUCTOS</span><br>
+          <span class="m-0 text-xs">Regístrate con tu dirección de correo electrónico para recibir noticias y actualizaciones.</span>
+            <form action="submit" class="flex flex-row p-8">
+            <span class="p-2">Nombre:</span><input type='text' class="font-mono rounded-md"/><br>
+            <span class="p-2">Apellidos:</span><input type='text' class="font-mono rounded-md"/><br>
+            <span class="p-2">Correo:</span><input type='email' class="font-mono rounded-md" />
+            <button class="px-4 py-2 border-2 rounded-md bg-slate-300 hover:bg-azulAgroClaro border-azulAgroClaro">enviar</button>
+            </form>
+          </div>
 
-      </ul>
-
-    </footer>
+          <div class="text-offWhite">Agromega</div>
+        
+      </footer>
 
   </body>
 </html>
