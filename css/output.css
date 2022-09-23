@@ -788,9 +788,28 @@ select {
   margin: 0px;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mt-28 {
@@ -807,6 +826,26 @@ select {
 
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.-mb-16 {
+  margin-bottom: -4rem;
 }
 
 .flex {
@@ -835,6 +874,10 @@ select {
 
 .h-3 {
   height: 0.75rem;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .w-full {
@@ -877,12 +920,36 @@ select {
   width: 83.333333%;
 }
 
+.w-auto {
+  width: auto;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
 
+.flex-initial {
+  flex: 0 1 auto;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
+}
+
+.list-outside {
+  list-style-position: outside;
+}
+
+.list-none {
+  list-style-type: none;
 }
 
 .grid-cols-3 {
@@ -909,6 +976,26 @@ select {
   flex-direction: column;
 }
 
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+.place-content-around {
+  place-content: space-around;
+}
+
+.place-content-evenly {
+  place-content: space-evenly;
+}
+
+.place-content-stretch {
+  place-content: stretch;
+}
+
+.content-around {
+  align-content: space-around;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -921,8 +1008,20 @@ select {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-4 {
@@ -937,6 +1036,10 @@ select {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .overflow-y-auto {
@@ -1009,6 +1112,11 @@ select {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1057,6 +1165,10 @@ select {
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-rubik {
@@ -1204,6 +1316,11 @@ select {
 .hover\:text-2xl:hover {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.hover\:text-xl:hover {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .hover\:text-azulAgro:hover {
