@@ -6,213 +6,207 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <title>Agromega</title>
     <link rel="stylesheet" href="./css/output.css" />
-    <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9846627988.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
-  <body class="flex flex-col w-full h-full font-rubik">
-
+  <body class="box-border grid gap-0 tablet:grid-cols-6 small:grid-cols-1 font-rubik">
     <!-- NAVBAR -->
-    <nav class="fixed z-50 flex flex-col flex-wrap justify-around h-full text-lg leading-loose text-gray-600 bg-offWhite">
+    <nav class="justify-around col-start-auto col-end-2 bg-offWhite">
+      <ul class="tablet:leading-loose small:leading-normal">
+        <img class="px-4 py-4 tablet:mb-20 small:mb-6" src="./img/logos/logo__agro--22.svg" />
 
-        <ul class="w-full">
-        <img src="./img/logos/logo__agro--22.svg" class="px-4 mb-16">
-
-        <li><a class="px-4 hover:border-b-4 border-azulAgro hover:text-azulAgro text-rubik hover:text-xl" href="#">inicio</a></li>
-
-        <li><a class="px-4 hover:border-b-4 border-azulAgro hover:text-azulAgro text-rubik hover:text-xl" href="#">nosotros</a></li>
-
-        <li><a class="px-4 hover:border-b-4 border-azulAgro hover:text-azulAgro text-rubik hover:text-xl" href="#">productos</a></li>
-
-        <li><a class="px-4 hover:border-b-4 border-azulAgro hover:text-azulAgro text-rubik hover:text-xl" href="#">servicios</a></li>
-
-        <li><a class="px-4 hover:border-b-4 border-azulAgro hover:text-azulAgro text-rubik hover:text-xl" href="#">trabajo</a></li>
-
-        <li><a class="px-4 hover:border-b-4 border-azulAgro hover:text-azulAgro text-rubik hover:text-xl" href="#">contacto</a></li>
-
+        <li class="hover:border-b-2 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">inicio</a></li>
+        <li class="hover:border-b-2 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">nosotros</a></li>
+        <li class="hover:border-b-2 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">productos</a></li>
+        <li class="hover:border-b-2 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">servicios</a></li>
+        <li class="hover:border-b-2 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">trabajo</a></li>
+        <li class="hover:border-b-2 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">contacto</a></li>
       </ul>
 
-        <!-- ADDRESS -->
-        <div>
-        <p class="w-full px-4 text-sm text-azulAgro">Av. Pedro Parra Centeno 110<br>Tlajomulco de Zúñiga, Jalisco</p>
-        <p class="w-full px-4 mt-5 text-sm font-medium text-azulAgro">T1: (33) 3798 1526<br>T2: (33) 3798 0637</p>
-        </div>
+      <!-- ADDRESS -->
+      <div>
+        <p class="px-4 mt-20 text-xs text-slate-600">Av. Pedro Parra Centeno 110<br />Tlajomulco de Zúñiga, Jalisco</p>
+        <p class="px-4 mt-5 text-xs text-slate-600">T1: (33) 3798 1526<br />T2: (33) 3798 0637</p>
+      </div>
 
-        <!-- FACEBOOK LINK -->
-        <div class="px-4 text-sm font-medium transition-colors duration-500 hover:text-azulAgroClaro text-azulAgro">
-        <a target="_blank" href="https://www.facebook.com/profile.php?id=100063775232938">
-        <i class="fa-xl fa-brands fa-square-facebook"></i>
-        <span class="pl-2">facebook
-        </span></a>
-        </div>
-
+      <!-- FACEBOOK LINK -->
+      <div class="px-4 mt-8 text-xs font-bold duration-300 text-azulAgro hover:text-azulAgroClaro">
+        <a
+          target="_blank"
+          href="https://www.facebook.com/profile.php?id=100063775232938"
+        >
+          <i class="fa-xl fa-brands fa-square-facebook"></i>
+          <span>facebook</span></a>
+      </div>
     </nav>
-  
 
     <!-- MAIN CONTENT  -->
-      <main class="flex flex-col self-end justify-end">
+    <main class="relative tablet:col-start-2 tablet:col-end-7 small:grid-cols-1 bg-slate-200">
+      <img class="z-0 grid-flow-col grid-start-2 grid-end-4"
+        src="./img/banner__main__01--agro22.jpg"
+        alt="agricultor agromega 2022"
+      />
 
-        <img class="z-0" src="./img/banner__main__01--agro22.jpg" alt="agricultor agromega 2022"/>
+      <h2 class="z-10 text-6xl">INNOVANDO EN EL COMERCIO AGRÍCOLA</h2>
 
-        <h2 class="text-3xl">INNOVANDO EN EL COMERCIO AGRÍCOLA</h2>
+      <aside class="text-2xl">
+        ¿BUSCAS UNA SOLUCIÓN INTEGRAL A LAS NECESIDADES DE NUTRICIÓN Y
+        PROTECCIÓN DE CULTIVO? ¿BUSCAS MAYOR RENTABILIDAD PARA TU NEGOCIO?
+      </aside>
 
-        <p class="bg-slate-300">
-          ¿BUSCAS UNA SOLUCIÓN INTEGRAL A LAS NECESIDADES DE NUTRICIÓN Y PROTECCIÓN
-          DE CULTIVO? ¿BUSCAS MAYOR RENTABILIDAD PARA TU NEGOCIO?
-        </p>
+      <button class="px-8 py-1 rounded hover:bg-azulAgroClaro bg-azulAgro focus:outline-8 text-offWhite">LLÁMANOS</button>
 
-        <button class="px-2 py-1 bg-blue-400 rounded">LLÁMANOS</button>
-      
-        <!-- COPY MID 1 -->
-        <h3 class="text-2xl bg-blue-200 font-rubik">RELACIONES DE CONFIANZA</h3>
-      
+      <!-- COPY MID 1 -->
+      <h3>RELACIONES DE CONFIANZA</h3>
+
+      <p>
+        Creemos que podemos hacer una gran diferencia en todo lo que hacemos,
+        desafiando el statu quo y añadiendo valor real a nuestros clientes. Todo
+        mediante una cultura orientada a la honestidad, la integridad, el
+        compromiso y la armonía entre los colaboradores que se convergen en la
+        satisfacción del cliente
+      </p>
+
+      <!-- BANNER SECUNDARIO -->
+      <img
+        src="./img/banner__sec__01--agro22.jpg"
+        alt="agricultor agromega 2022"
+      />
+
+      <!-- PRODUCTOS Y SERVICIOS / productos-->
+      <h1>PRODUCTOS Y SERVICIOS</h1>
+      <h4>PRODUCTOS</h4>
+
+      <div>
+        <p>NUTRICIÓN VEGETAL:</p>
+        <span class="material-symbols-outlined"> cancel </span>
         <p>
-          Creemos que podemos hacer una gran diferencia en todo lo que hacemos,
-          desafiando el statu quo y añadiendo valor real a nuestros clientes. Todo
-          mediante una cultura orientada a la honestidad, la integridad, el
-          compromiso y la armonía entre los colaboradores que se convergen en la
-          satisfacción del cliente
+          Tenemos una gran oferta de macronutrientes y micronutrientes
+          esenciales para el correcto desarrollo; clasificados en granulados,
+          solubles y especialidades. Hacemos mezclas físicas.
         </p>
-      
-        <!-- BANNER SECUNDARIO -->
-        <img
-          class="w-full m-0"
-          src="./img/banner__sec__01--agro22.jpg"
-          alt="agricultor agromega 2022"
-        />
-      
-        <!-- PRODUCTOS Y SERVICIOS / productos-->
-        <h1 class="text-4xl">PRODUCTOS Y SERVICIOS</h1>
-        <h4 class="text-xl font-bold bg-slate-300">PRODUCTOS</h4>
-      
-        <div>
-          <p class="text-lg font-bold bg-slate-200">NUTRICIÓN VEGETAL:</p>
-          <span class="material-symbols-outlined"> cancel </span>
-          <p>
-            Tenemos una gran oferta de macronutrientes y micronutrientes esenciales
-            para el correcto desarrollo; clasificados en granulados, solubles y
-            especialidades. Hacemos mezclas físicas.
-          </p>
-        </div>
-      
-        <div>
-          <p class="text-lg font-bold bg-slate-200">PROTECCIÓN DE CULTIVO:</p>
-          <span class="material-symbols-outlined"> cancel </span>
-          <p>
-            Promovemos agroquímicos innovadores para la protección de cultivo;
-            marcas reconocidas y amigables con el medio ambiente.
-          </p>
-        </div>
-      
-        <div>
-          <p class="text-lg font-bold bg-slate-200">
-            EQUIPO DE RIEGO + CONSUMIBLES:
-          </p>
-          <span class="material-symbols-outlined"> cancel </span>
-          <p>
-            Desarrollamos proyectos a la medida y de llave en mano. Tenemos todos
-            los consumibles y refacciones disponibles.
-          </p>
-        </div>
-      
-        <div>
-          <p class="text-lg font-bold bg-slate-200">EQUIPOS DE APLICACIÓN:</p>
-          <span class="material-symbols-outlined"> cancel </span>
-          <p>
-            Importadores y distribuidores de una de las líneas de alta gama, más
-            completas, GUARANY.
-          </p>
-        </div>
-      
-        <div>
-          <p class="text-lg font-bold bg-slate-200">SEMILLAS PARA SIEMBRA:</p>
-          <span class="material-symbols-outlined"> cancel </span>
-          <p>
-            Manejamos una oferta de calidad certificada, principalmente alfalfas,
-            sorgos forrajeros y hortalizas.
-          </p>
-        </div>
-      
-        <button class="px-2 py-1 bg-teal-400 rounded-full">
-          VER MÁS PRODUCTOS
-        </button>
-      
-        <!-- PRODUCTOS Y SERVICIOS / servicios -->
-        <h4 class="text-xl font-bold bg-slate-300">SERVICIOS</h4>
-      
-        <div>
-          <p class="text-lg font-bold bg-slate-200">ASESORÍA EN NUTRICIÓN</p>
-          <span class="material-symbols-outlined"> cancel </span>
-          <p>
-            Examinamos tu cultivo para detectar deficiencias nutricionales. Te
-            otorgamos la correcta recomendación de producto y su método de
-            aplicación.
-          </p>
-        </div>
-      
-        <div>
-          <p class="text-lg font-bold bg-slate-200">ASESORIA EN PROTECCIÓN</p>
-          <span class="material-symbols-outlined"> cancel </span>
-          <p>
-            Examinamos tu cultivo para detectar plagas y enfermedades. Te otorgamos
-            la correcta recomendación de producto y su método de aplicación.
-          </p>
-        </div>
-      
-        <div>
-          <p class="text-lg font-bold bg-slate-200">PROGRAMAS DE NUTRICIÓN</p>
-          <span class="material-symbols-outlined"> cancel </span>
-          <p>
-            Generamos un programa completo y detallado de las mezclas de producto
-            necesarias para el correcto desarrollo nutricional de tus cultivos.
-          </p>
-        </div>
-      
-        <div>
-          <p class="text-lg font-bold bg-slate-200">MANTENIMIENTO DE EQUIPOS</p>
-          <span class="material-symbols-outlined"> cancel </span>
-          <p>
-            Reparamos y renovamos tus equipos de aplicación GUARANY. Te proveemos de
-            las refacciones necesarias para su óptimo desempeño.
-          </p>
-        </div>
-      
-        <div>
-          <p class="text-lg font-bold bg-slate-200">CAPACITACIONES</p>
-          <span class="material-symbols-outlined"> cancel </span>
-          <p>
-            Te capacitamos para el correcto uso y calibración de equipos Guarany. Te
-            capacitamos para la correcta aplicación de fertilizantes y agroquímicos.
-          </p>
-        </div>
-      
-        <button class="bg-teal-400 rounded-full">
-          VER MÁS SERVICIOS
-        </button>
-        
-        
-      </main>
-      
-      <!-- FOOTER -->
-      <footer class="flex flex-col items-start justify-center w-full text-base text-black px-7 font-rubik bg-slate-600">
+      </div>
 
+      <div>
+        <p>PROTECCIÓN DE CULTIVO:</p>
+        <span class="material-symbols-outlined"> cancel </span>
+        <p>
+          Promovemos agroquímicos innovadores para la protección de cultivo;
+          marcas reconocidas y amigables con el medio ambiente.
+        </p>
+      </div>
+
+      <div>
+        <p>EQUIPO DE RIEGO + CONSUMIBLES:</p>
+        <span class="material-symbols-outlined"> cancel </span>
+        <p>
+          Desarrollamos proyectos a la medida y de llave en mano. Tenemos todos
+          los consumibles y refacciones disponibles.
+        </p>
+      </div>
+
+      <div>
+        <p>EQUIPOS DE APLICACIÓN:</p>
+        <span class="material-symbols-outlined"> cancel </span>
+        <p>
+          Importadores y distribuidores de una de las líneas de alta gama, más
+          completas, GUARANY.
+        </p>
+      </div>
+
+      <div>
+        <p>SEMILLAS PARA SIEMBRA:</p>
+        <span class="material-symbols-outlined"> cancel </span>
+        <p>
+          Manejamos una oferta de calidad certificada, principalmente alfalfas,
+          sorgos forrajeros y hortalizas.
+        </p>
+      </div>
+
+      <button>VER MÁS PRODUCTOS</button>
+
+      <!-- PRODUCTOS Y SERVICIOS / servicios -->
+      <h4>SERVICIOS</h4>
+
+      <div>
+        <p>ASESORÍA EN NUTRICIÓN</p>
+        <span class="material-symbols-outlined"> cancel </span>
+        <p>
+          Examinamos tu cultivo para detectar deficiencias nutricionales. Te
+          otorgamos la correcta recomendación de producto y su método de
+          aplicación.
+        </p>
+      </div>
+
+      <div>
+        <p>ASESORIA EN PROTECCIÓN</p>
+        <span class="material-symbols-outlined"> cancel </span>
+        <p>
+          Examinamos tu cultivo para detectar plagas y enfermedades. Te
+          otorgamos la correcta recomendación de producto y su método de
+          aplicación.
+        </p>
+      </div>
+
+      <div>
+        <p>PROGRAMAS DE NUTRICIÓN</p>
+        <span class="material-symbols-outlined"> cancel </span>
+        <p>
+          Generamos un programa completo y detallado de las mezclas de producto
+          necesarias para el correcto desarrollo nutricional de tus cultivos.
+        </p>
+      </div>
+
+      <div>
+        <p>MANTENIMIENTO DE EQUIPOS</p>
+        <span class="material-symbols-outlined"> cancel </span>
+        <p>
+          Reparamos y renovamos tus equipos de aplicación GUARANY. Te proveemos
+          de las refacciones necesarias para su óptimo desempeño.
+        </p>
+      </div>
+
+      <div>
+        <p>CAPACITACIONES</p>
+        <span class="material-symbols-outlined"> cancel </span>
+        <p>
+          Te capacitamos para el correcto uso y calibración de equipos Guarany.
+          Te capacitamos para la correcta aplicación de fertilizantes y
+          agroquímicos.
+        </p>
+      </div>
+
+      <button>VER MÁS SERVICIOS</button>
+
+      <section class="bg-slate-300">
         <div>
-          <span class="mt-5">RECIBE INFORMACIÓN DE NUESTROS PRODUCTOS</span><br>
-          <span class="m-0 text-xs">Regístrate con tu dirección de correo electrónico para recibir noticias y actualizaciones.</span>
-            <form action="submit" class="flex flex-row p-8">
-            <span class="p-2">Nombre:</span><input type='text' class="font-mono rounded-md"/><br>
-            <span class="p-2">Apellidos:</span><input type='text' class="font-mono rounded-md"/><br>
-            <span class="p-2">Correo:</span><input type='email' class="font-mono rounded-md" />
-            <button class="px-4 py-2 border-2 rounded-md bg-slate-300 hover:bg-azulAgroClaro border-azulAgroClaro">enviar</button>
-            </form>
-          </div>
+          <span>RECIBE INFORMACIÓN DE NUESTROS PRODUCTOS</span><br />
+          <span>Regístrate con tu dirección de correo electrónico para recibir noticias y actualizaciones.</span>
 
-          <div class="text-offWhite">Agromega</div>
-        
-      </footer>
+          <form action="submit">
+            <span>Nombre:</span><input class="col-start-auto col-end-auto p-1" placeholder="Escribe tu nombre" type="text" />
+            <span>Apellidos:</span><input class="p-1" placeholder="Escribe tu Apellido" type="text" />
+            <span>Correo:</span><input class="p-1" placeholder="ejemplo@ejemplo.com" type="email" />
+            <button class="px-8 py-1 rounded hover:bg-azulAgroClaro bg-azulAgro text-offWhite">enviar</button>
+          </form>
+    </main>
 
+    <!-- FOOTER -->
+      </div>
+    </footer>
+    
   </body>
 </html>
