@@ -22,24 +22,25 @@
     ></script>
   </head>
 
-  <body class="box-border grid gap-0 tablet:grid-cols-6 small:grid-cols-1 font-rubik">
+  <body class="flex mx-auto font-rubik">
+  <div class="flex flex-row flex-wrap p-0">
     <!-- NAVBAR -->
-    <nav class="justify-around col-start-auto col-end-2 bg-offWhite">
-      <ul class="tablet:leading-loose small:leading-normal">
+    <nav class="flex tablet:w-1/6 tablet:h-screen tablet:flex-wrap tablet:flex-row tablet:top-0 tablet:sticky sm:flex-col place-items-start place-content-start content-evenly bg-offWhite">
+      <ul class="w-full tablet:leading-loose small:leading-normal">
         <img class="px-4 py-4 tablet:mb-20 small:mb-6" src="./img/logos/logo__agro--22.svg" />
 
-        <li class="hover:border-b-2 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">inicio</a></li>
-        <li class="hover:border-b-2 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">nosotros</a></li>
-        <li class="hover:border-b-2 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">productos</a></li>
-        <li class="hover:border-b-2 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">servicios</a></li>
-        <li class="hover:border-b-2 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">trabajo</a></li>
-        <li class="hover:border-b-2 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">contacto</a></li>
+        <li class="duration-200 hover:border-b-2 hover:font-bold border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">inicio</a></li>
+        <li class="duration-200 hover:border-b-2 hover:font-bold hover:pt-3 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">nosotros</a></li>
+        <li class="duration-200 hover:border-b-2 hover:font-bold hover:pt-3 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">productos</a></li>
+        <li class="duration-200 hover:border-b-2 hover:font-bold hover:pt-3 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">servicios</a></li>
+        <li class="duration-200 hover:border-b-2 hover:font-bold hover:pt-3 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">trabajo</a></li>
+        <li class="duration-200 hover:border-b-2 hover:font-bold hover:pt-3 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">contacto</a></li>
       </ul>
 
       <!-- ADDRESS -->
       <div>
         <p class="px-4 mt-20 text-xs text-slate-600">Av. Pedro Parra Centeno 110<br />Tlajomulco de Zúñiga, Jalisco</p>
-        <p class="px-4 mt-5 text-xs text-slate-600">T1: (33) 3798 1526<br />T2: (33) 3798 0637</p>
+        <p class="px-4 mt-5 text-xs text-slate-600">T1: (33) 3798-1526<br />T2: (33) 3798-0637</p>
       </div>
 
       <!-- FACEBOOK LINK -->
@@ -48,24 +49,24 @@
           target="_blank"
           href="https://www.facebook.com/profile.php?id=100063775232938"
         >
-          <i class="fa-xl fa-brands fa-square-facebook"></i>
-          <span>facebook</span></a>
+          <i class="fa-2xl fa-brands fa-square-facebook"></i>
+          <span></span></a>
+          
       </div>
     </nav>
 
     <!-- MAIN CONTENT  -->
-    <main class="relative tablet:col-start-2 tablet:col-end-7 small:grid-cols-1 bg-slate-200">
-      <img class="z-0 grid-flow-col grid-start-2 grid-end-4"
-        src="./img/banner__main__01--agro22.jpg"
+    <main role="main" class="w-5/6">
+      <img src="./img/banner__main__01--agro22.jpg"
         alt="agricultor agromega 2022"
       />
 
-      <h2 class="z-10 text-6xl">INNOVANDO EN EL COMERCIO AGRÍCOLA</h2>
+      <h2 class="text-6xl">INNOVANDO EN EL COMERCIO AGRÍCOLA</h2>
 
-      <aside class="text-2xl">
+      <div class="text-2xl">
         ¿BUSCAS UNA SOLUCIÓN INTEGRAL A LAS NECESIDADES DE NUTRICIÓN Y
         PROTECCIÓN DE CULTIVO? ¿BUSCAS MAYOR RENTABILIDAD PARA TU NEGOCIO?
-      </aside>
+      </div>
 
       <button class="px-8 py-1 rounded hover:bg-azulAgroClaro bg-azulAgro focus:outline-8 text-offWhite">LLÁMANOS</button>
 
@@ -191,10 +192,12 @@
 
       <button>VER MÁS SERVICIOS</button>
 
-      <section class="bg-slate-300">
+      <section class="bg-slate-500">
+
         <div>
           <span>RECIBE INFORMACIÓN DE NUESTROS PRODUCTOS</span><br />
           <span>Regístrate con tu dirección de correo electrónico para recibir noticias y actualizaciones.</span>
+        </div>
 
           <form action="submit">
             <span>Nombre:</span><input class="col-start-auto col-end-auto p-1" placeholder="Escribe tu nombre" type="text" />
@@ -202,11 +205,12 @@
             <span>Correo:</span><input class="p-1" placeholder="ejemplo@ejemplo.com" type="email" />
             <button class="px-8 py-1 rounded hover:bg-azulAgroClaro bg-azulAgro text-offWhite">enviar</button>
           </form>
-    </main>
 
-    <!-- FOOTER -->
-      </div>
-    </footer>
-    
-  </body>
+      </section>
+        
+    </main>
+    <!-- FOOTER -->    
+  </div>
+
+</body>
 </html>
