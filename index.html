@@ -22,12 +22,14 @@
     ></script>
   </head>
 
-  <body class="flex mx-auto font-rubik">
+  <body class="flex mx-0 font-rubik">
+    
   <div class="flex flex-row flex-wrap p-0">
-    <!-- NAVBAR -->
-    <nav class="flex tablet:w-1/6 tablet:h-screen tablet:flex-wrap tablet:flex-row tablet:top-0 tablet:sticky sm:flex-col place-items-start place-content-start content-evenly bg-offWhite">
-      <ul class="w-full tablet:leading-loose small:leading-normal">
-        <img class="px-4 py-4 tablet:mb-20 small:mb-6" src="./img/logos/logo__agro--22.svg" />
+    
+    <!-- NAVBAR TABLET UP -->
+    <nav class="sticky top-0 flex-col flex-wrap w-1/6 h-screen tablet:flex small:hidden place-items-start place-content-evenly bg-offWhite">
+      <ul class="w-full leading-loose">
+        <img class="px-4 py-4 mb-20" src="./img/logos/logo__agro--22.svg" />
 
         <li class="duration-200 hover:border-b-2 hover:font-bold border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">inicio</a></li>
         <li class="duration-200 hover:border-b-2 hover:font-bold hover:pt-3 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#">nosotros</a></li>
@@ -45,18 +47,34 @@
 
       <!-- FACEBOOK LINK -->
       <div class="px-4 mt-8 text-xs font-bold duration-300 text-azulAgro hover:text-azulAgroClaro">
-        <a
-          target="_blank"
-          href="https://www.facebook.com/profile.php?id=100063775232938"
-        >
-          <i class="fa-2xl fa-brands fa-square-facebook"></i>
-          <span></span></a>
-          
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100063775232938">
+        <i class="fa-2xl fa-brands fa-square-facebook"></i>
+        <span></span></a>
+        
       </div>
+    </nav>
+    
+    <!-- NAVBAR MOBILEHOR DOWN -->
+    <nav class="flex flex-row flex-wrap w-full tablet:hidden bg-offWhite">
+
+      <img class="flex w-3/4 mt-8 ml-4 place-items-start" src="./img/logos/logo__agro--22.svg" />
+      <i class="flex flex-row fa-2xl fa-brands fa-square-facebook"></i>
+
+      <ul class="flex flex-row justify-between w-3/4 mt-6 ml-4 place-items-start">
+        <li class="duration-200 hover:border-b-2 hover:font-bold border-azulAgro hover:text-azulAgro text-slate-600">
+          <a href="#">inicio</a>
+        </li>
+        <li class="duration-200 hover:border-b-2 hover:font-bold border-azulAgro hover:text-azulAgro text-slate-600">
+          <a href="#">productos</a>
+        </li>
+        <li class="duration-200 hover:border-b-2 hover:font-bold border-azulAgro hover:text-azulAgro text-slate-600">
+          <a href="#">nosotros</a>
+        </li>
+      </ul>
     </nav>
 
     <!-- MAIN CONTENT  -->
-    <main role="main" class="w-5/6">
+    <main role="main" class="tablet:w-5/6 small:w-full">
       <img src="./img/banner__main__01--agro22.jpg"
         alt="agricultor agromega 2022"
       />
