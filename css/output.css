@@ -737,6 +737,14 @@ select {
   grid-column-end: auto;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
+.m-6 {
+  margin: 1.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -812,6 +820,10 @@ select {
   height: 100vh;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .w-full {
   width: 100%;
 }
@@ -826,6 +838,10 @@ select {
 
 .w-3\/4 {
   width: 75%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .flex-row {
@@ -918,12 +934,25 @@ select {
   background-color: rgb(0 171 234 / var(--tw-bg-opacity));
 }
 
+.bg-neutral-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 212 / var(--tw-bg-opacity));
+}
+
 .p-0 {
   padding: 0px;
 }
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-4 {
@@ -951,6 +980,21 @@ select {
   padding-right: 0.5rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -972,6 +1016,11 @@ select {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold {
@@ -1055,6 +1104,11 @@ select {
 
   .small\:w-full {
     width: 100%;
+  }
+
+  .small\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .small\:leading-normal {
