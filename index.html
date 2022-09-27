@@ -6,27 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <title>Agromega</title>
     <link rel="stylesheet" href="./css/output.css" />
-    <script
-      src="https://kit.fontawesome.com/9846627988.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
   </head>
 
-  <body class="flex mx-0 font-rubik">
+  <body class="flex m-0 font-rubik">
     
   <div class="flex flex-row flex-wrap p-0">
     
-    <!-- NAVBAR TABLET UP -->
+    <!-- 768px and on NAVBAR -->
     <nav class="sticky top-0 flex-col flex-wrap w-1/6 h-screen tablet:flex small:hidden place-items-start place-content-evenly bg-offWhite">
       <ul class="w-full leading-loose">
         <img class="px-4 py-4 mb-20" src="./img/logos/logo__agro--22.svg" />
@@ -41,20 +32,27 @@
 
       <!-- ADDRESS -->
       <div>
-        <p class="px-4 mt-20 text-xs text-slate-600">Av. Pedro Parra Centeno 110<br />Tlajomulco de Zúñiga, Jalisco</p>
-        <p class="px-4 mt-5 text-xs text-slate-600">T1: (33) 3798-1526<br />T2: (33) 3798-0637</p>
+        <div class="mt-8 leading-snug">
+        <p class="px-4 py-0 text-xs text-slate-600"><i class="pr-1 fa-solid fa-location-dot"></i>Av. Pedro Parra Centeno 110</p>
+        <p class="px-4 py-0 text-xs text-slate-600">Tlajomulco de Zúñiga, Jalisco</p>
+        </div>
+        <div class="mt-8 leading-snug">
+        <p class="px-4 py-0 mt-2 text-sm font-bold text-slate-600"><i class="pr-1 fa-solid fa-phone"></i> (33) 3798-1526</p>
+        <p class="px-4 py-0 mt-2 text-sm font-bold text-slate-600"><i class="pr-1 fa-solid fa-phone"></i> (33) 3798-0637</p>
+        </div>
       </div>
 
       <!-- FACEBOOK LINK -->
-      <div class="px-4 mt-8 text-xs font-bold duration-300 text-azulAgro hover:text-azulAgroClaro">
+      <div class="px-4 text-xs font-bold duration-300 text-azulAgro hover:text-azulAgroClaro">
         <a target="_blank" href="https://www.facebook.com/profile.php?id=100063775232938">
         <i class="fa-2xl fa-brands fa-square-facebook"></i>
         <span></span></a>
         
       </div>
     </nav>
+    <!-- 768px and on NAVBAR -->
     
-    <!-- NAVBAR MOBILEHOR DOWN -->
+    <!-- 0px to 767 px NAVBAR -->
     <nav class="flex flex-row flex-wrap w-full tablet:hidden bg-offWhite">
 
       <img class="flex w-3/4 mt-8 ml-4 place-items-start" src="./img/logos/logo__agro--22.svg" />
@@ -72,6 +70,7 @@
         </li>
       </ul>
     </nav>
+    <!-- 0px to 767 px NAVBAR -->
 
     <!-- MAIN CONTENT  -->
     <main role="main" class="tablet:w-5/6 small:w-full">
