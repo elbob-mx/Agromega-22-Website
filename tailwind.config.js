@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'rubik': 'Rubik, sans-serif',
+        'plex': 'IBM Plex Sans Condensed, sans-serif',
         },
         colors: {
           azulAgro: '#1755A1',
