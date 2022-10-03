@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Agromega</title>
     <link rel="stylesheet" href="./css/output.css" />
     <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
@@ -16,7 +15,7 @@
   <body class="box-border font-rubik">
 
     <main class="flex">
-
+      <!-- SIDEBAR -->
       <div class="sticky top-0 flex flex-col justify-between w-1/5 h-screen bg-offWhite">
 
         <header class="px-4 mt-12 bg-offWhite">
@@ -59,33 +58,43 @@
 
       </div>
       
-      <div class="flex flex-col w-4/5 bg-red-400">
-
-        <div class="relative flex bg-blue-700 bg-cover">
-
-          <img src="./img/banner__main__01--agro22.jpg" alt="agricultor trabajando agromega">
-
-          <div class="absolute ml-10">
-
-          <h1 class="mt-10 font-normal text-7xl text-offWhite">INNOVANDO EN EL COMERCIO AGRÍCOLA</h1>
-          
-          <h3 class="w-2/6 my-5 text-2xl font-thin lowercase text-offWhite">¿BUSCAS UNA SOLUCIÓN INTEGRAL A LAS NECESIDADES DE NUTRICIÓN Y PROTECCIÓN DE CULTIVO Y MAYOR RENTABILIDAD PARA TU NEGOCIO?</h3>
-
-          <button class="px-8 py-3 mt-5 text-2xl duration-200 rounded-lg text-offWhite active:bg-blue-900 hover:bg-azulAgroClaro bg-azulAgro">hablemos</button>
-
-          </div>
-          
+      <!-- MAIN BANNER -->
+      <div class="flex flex-col w-4/5 bg-orange-500">
+        <div class="relative flex">
+          <img class="brightness-75" src="./img/banner__main__01--agro22.jpg" alt="agricultor trabajando agromega">
+          <div class="absolute self-start ml-10">
+          <h1 class="mt-10 mr-20 font-normal text-9xl text-offWhite">INNOVANDO EN EL COMERCIO AGRÍCOLA</h1>          
+          <h3 class="w-2/6 my-5 text-2xl font-light lowercase text-offWhite">¿BUSCAS UNA SOLUCIÓN INTEGRAL A LAS NECESIDADES DE NUTRICIÓN Y PROTECCIÓN DE CULTIVO Y MAYOR RENTABILIDAD PARA TU NEGOCIO?</h3>
+          <button class="py-4 mt-5 text-2xl duration-200 rounded-lg px-9 text-offWhite active:bg-blue-900 hover:bg-azulAgroClaro bg-azulAgro">hablemos</button>
         </div>
+      </div>
 
-        <section class="bg-purple-400">
-          <div class="grid grid-cols-3 gap-5">
-            <div class="col-span-2 bg-azulAgroClaro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates rem sequi cumque, quod, at corrupti in mollitia, sapiente error maxime excepturi autem amet vero modi? Unde esse odit error blanditiis?</div>
-            <div class="bg-azulAgro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam aliquam amet ducimus blanditiis iusto eius. Consequuntur repudiandae perferendis magnam voluptatibus, voluptate, exercitationem totam iure repellendus voluptatem nobis iste laborum veniam?</div>
+      <!-- FIRST SECTION / MAIN-->
+        <section>
+          <div class="grid grid-cols-2">
+            <div class="px-10 text-7xl py-14 bg-azulAgroClaro text-offWhite">RELACIONES DE CONFIANZA</div>
+            <div class="text-xl font-light leading-relaxed text-left first-line:text-5xl p-14 bg-offWhite">
+            <span class="font-medium text-azulAgro">Creemos que podemos hacer una gran diferencia en todo lo que hacemos</span>, desafiando el statu quo y añadiendo valor real a nuestros clientes.</span>
+            <br><br>
+            Todo mediante una cultura orientada a la honestidad, la integridad, el compromiso y la armonía entre los colaboradores que se convergen en la satisfacción del cliente.</div>
           </div>
         </section>
+
+        <!-- SECOND SECTION / MAIN-->
+        <section>
+          <div class="grid grid-cols-2">
+            <div>
+              <img src="./img/banner__sec__01--agro22.jpg" alt="guarany">
+            </div>
+            <div class="text-5xl font-medium leading-relaxed text-left text-offWhite p-14 bg-azulAgro">
+              PRODUCTOS Y SERVICIOS</div>
+          </div>
+        </section>
+
         <footer class="py-4 mt-auto bg-pink-300">
           Content Footer
         </footer>
+        
       </div>
     </main>
   </body>
