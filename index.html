@@ -14,27 +14,28 @@
 
   <body class="box-border font-rubik bg-offWhite">
 
-    <main class="flex">
-      <!-- SIDEBAR -->
-      <div class="sticky top-0 flex flex-col w-1/5 h-screen bg-offWhite">
+    <main class="laptop:flex small:flex-none">
 
-        <header class="px-4 mt-16 bg-offWhite">
+      <!-- SIDEBAR -->
+      <div class="sticky top-0 small:flex-none laptop:flex small:w-screen small:bg-black laptop:w-1/5 small:h-1/6 laptop:h-screen small:flex-row laptop:flex-col laptop:bg-offWhite">
+
+        <header class="small:p-0 laptop:px-4 small:m-0 laptop:mt-16 bg-offWhite">
           <img src="./img/logos/logo__agro--22.svg" alt="logo agromega">
         </header>
 
-        <nav class="bg-offWhite">
-          <ul class="w-full mt-12 leading-loose">
-            <li class="text-xl leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#inicio">inicio</a></li>
-            <li class="text-xl leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#nosotros">nosotros</a></li>
-            <li class="text-xl leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#productos">productos</a></li>
-            <li class="text-xl leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#servicios">servicios</a></li>
-            <li class="text-xl leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#trabajo">trabajo</a></li>
-            <li class="text-xl leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#contacto">contacto</a></li>
+        <nav class="flex small:flex-row laptop:flex-col bg-offWhite">
+          <ul class="w-full leading-loose small:flex-row laptop:flex-col small:m-0 laptop:mt-12">
+            <li class="flex laptop:text-xl small:text-sm small:leading-relaxed laptop:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#inicio">inicio</a></li>
+            <li class="flex laptop:text-xl small:text-sm small:leading-relaxed laptop:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#nosotros">nosotros</a></li>
+            <li class="flex laptop:text-xl small:text-sm small:leading-relaxed laptop:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#productos">productos</a></li>
+            <li class="flex laptop:text-xl small:text-sm small:leading-relaxed laptop:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#servicios">servicios</a></li>
+            <li class="flex laptop:text-xl small:text-sm small:leading-relaxed laptop:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#trabajo">trabajo</a></li>
+            <li class="flex laptop:text-xl small:text-sm small:leading-relaxed laptop:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-4" href="#contacto">contacto</a></li>
           </ul>
         </nav>
         
-        <section class="w-full h-full bg-offWhite">
-          
+        <!-- ADDRESS INFO -->
+        <section class="w-full h-full small:hidden laptop:block bg-offWhite">          
           <div>
            <div class="leading-relaxed mt-28">
            <a target="_blank" href="https://goo.gl/maps/fJS3bVtCKDLNCb3w5"> <p class="px-4 py-0 text-sm font-bold text-slate-600"><i class="pr-1 text-azulAgro fa-solid fa-location-dot"></i>Av. Pedro Parra Centeno 110</p>
@@ -44,11 +45,11 @@
           <div class="mt-8 leading-snug">
            <p class="px-4 py-0 mt-2 text-sm font-bold text-slate-600"><i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33) 3798-1526</p>
            <p class="px-4 py-0 mt-2 text-sm font-bold text-slate-600"><i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33) 3798-0637</p>
-          </div>
-          
+          </div>          
         </section>
 
-        <footer class="py-8 mt-auto bg-offWhite">
+        <!-- SOCIAL -->
+        <footer class="py-8 mt-auto small:hidden laptop:block bg-offWhite">
           <div class="px-4 text-xl font-bold duration-300 text-azulAgro hover:text-azulAgroClaro">
             <a target="_blank" href="https://www.facebook.com/profile.php?id=100063775232938">
             <i class="fa-2xl fa-brands fa-square-facebook"></i>
@@ -59,13 +60,13 @@
       </div>
       
       <!-- MAIN BANNER -->
-      <div class="flex flex-col w-4/5 bg-offWhite">
-        <div class="relative flex">
-          <img class="p-16 rounded-[120px] brightness-[.80]" src="./img/banner__main__01--agro22.jpg" alt="agricultor trabajando agromega">
-          <div class="absolute self-center ml-28">
-          <h1 class="mt-10 mr-20 font-semibold w-2/6 text-[5rem] leading-tight text-offWhite">INNOVANDO EN EL COMERCIO AGRÍCOLA</h1>          
-          <h3 class="w-2/6 my-5 text-2xl font-light lowercase text-offWhite">¿BUSCAS UNA SOLUCIÓN INTEGRAL A LAS NECESIDADES DE NUTRICIÓN Y PROTECCIÓN DE CULTIVO Y MAYOR RENTABILIDAD PARA TU NEGOCIO?</h3>
-          <button class="px-8 py-4 mt-5 text-2xl duration-200 outline-offset-4 rounded-2xl focus:bg-azulAgroClaro text-offWhite outline-offWhite active:bg-blue-900 hover:bg-azulAgroClaro bg-azulAgro">hablemos</button>
+      <div class="laptop:flex laptop:flex-col laptop:w-4/5 small:w-screen bg-offWhite">
+        <div class="relative laptop:flex">
+          <img class="laptop:p-16 small:p-4 small:rounded-[30px] laptop:rounded-[120px] brightness-[.80]" src="./img/banner__main__01--agro22.jpg" alt="agricultor trabajando agromega">
+          <div class="absolute laptop:self-center laptop:ml-28 small:m-0">
+          <h1 class="laptop:mt-10 small:m-0 laptop:mr-20 font-semibold laptop:w-2/6 small:w-full laptop:text-[5rem] small:text-2xl small:leading-normal laptop:leading-tight text-offWhite">INNOVANDO EN EL COMERCIO AGRÍCOLA</h1>
+          <h3 class="lowercase laptop:w-2/6 small:w-full laptop:my-5 small:m-0 laptop:text-2xl small:text-lg laptop:font-light small:font-normal text-offWhite">¿BUSCAS UNA SOLUCIÓN INTEGRAL A LAS NECESIDADES DE NUTRICIÓN Y PROTECCIÓN DE CULTIVO Y MAYOR RENTABILIDAD PARA TU NEGOCIO?</h3>
+          <button class="mt-5 text-2xl duration-200 laptop:px-8 small:px-4 laptop:py-4 small:py-2 outline-offset-4 rounded-2xl focus:bg-azulAgroClaro text-offWhite outline-offWhite active:bg-blue-900 hover:bg-azulAgroClaro bg-azulAgro">hablemos</button>
         </div>
       </div>
 
@@ -198,7 +199,7 @@
         <footer class="grid grid-cols-2 gap-20 mx-auto my-40">
 
           <div class="justify-center col-span-1 text-left align-middle">
-            <h3 class="text-4xl font-semibold tracking-wide">
+            <h3 class="text-5xl font-semibold tracking-wide">
               Recibe información de <br> nuestros productos.
             </h3>
             <p class="mt-3 text-xl font-normal tracking-wide">
