@@ -808,6 +808,14 @@ select {
   margin-top: 1rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -964,6 +972,11 @@ select {
 .bg-stone-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -1192,6 +1205,11 @@ select {
   color: rgb(64 64 64 / var(--tw-text-opacity));
 }
 
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1310,6 +1328,14 @@ select {
   .small\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .small\:block {
+    display: block;
+  }
+
+  .small\:inline-block {
+    display: inline-block;
   }
 
   .small\:grid {
@@ -1445,6 +1471,21 @@ select {
     line-height: 1.75rem;
   }
 
+  .small\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .small\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .small\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .small\:font-normal {
     font-weight: 400;
   }
@@ -1456,9 +1497,41 @@ select {
   .small\:leading-normal {
     line-height: 1.5;
   }
+
+  .small\:leading-snug {
+    line-height: 1.375;
+  }
+
+  .small\:leading-tight {
+    line-height: 1.25;
+  }
+
+  .small\:text-red-500 {
+    --tw-text-opacity: 1;
+    color: rgb(239 68 68 / var(--tw-text-opacity));
+  }
+
+  .small\:text-neutral-700 {
+    --tw-text-opacity: 1;
+    color: rgb(64 64 64 / var(--tw-text-opacity));
+  }
+
+  .small\:text-neutral-800 {
+    --tw-text-opacity: 1;
+    color: rgb(38 38 38 / var(--tw-text-opacity));
+  }
+
+  .small\:text-neutral-600 {
+    --tw-text-opacity: 1;
+    color: rgb(82 82 82 / var(--tw-text-opacity));
+  }
 }
 
 @media (min-width: 976px) {
+  .laptop\:absolute {
+    position: absolute;
+  }
+
   .laptop\:sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -1499,6 +1572,10 @@ select {
 
   .laptop\:flex {
     display: flex;
+  }
+
+  .laptop\:hidden {
+    display: none;
   }
 
   .laptop\:h-screen {
@@ -1620,5 +1697,10 @@ select {
 
   .laptop\:leading-tight {
     line-height: 1.25;
+  }
+
+  .laptop\:text-offWhite {
+    --tw-text-opacity: 1;
+    color: rgb(242 242 242 / var(--tw-text-opacity));
   }
 }
