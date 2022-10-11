@@ -13,7 +13,7 @@
     <script type="text/javascript" src="./js/controllers.js" defer></script>
   </head>
 
-  <body class="box-border w-screen font-rubik bg-offWhite">
+  <body class="box-border w-screen font-rubik bg-offWhite laptop:overflow-x-hidden">
 
     <main class="w-screen laptop:flex">
 
@@ -70,7 +70,7 @@
       </div>
 
       <!-- LOGO / BURGER NAV -->
-      <div class="flex flex-row items-center justify-around w-screen mt-6 laptop:hidden">
+      <div class="flex flex-row items-center justify-around w-screen mt-6 bg-offWhite laptop:hidden">
         <img class="small:w-64 " src="./img/logos/logo__agro--22.svg" alt="logo agromega">
         <div class="p-2 mb-4 rounded-lg ring-4 ring-azulAgro laptop:hidden bg-neutral-300 active:bg-neutral-400">
           <button onclick="burgerNav()" class="w-[24px]"><i class="text-azulAgro fa-xl fa-solid fa-bars"></i></button>
@@ -83,22 +83,24 @@
           
           <img class="laptop:p-16 small:p-4 small:rounded-[30px] laptop:rounded-[120px] brightness-[.80]" src="./img/banner__main__01--agro22.jpg" alt="agricultor trabajando agromega">
           
+          <!-- SLOGAN -->
           <div class="laptop:absolute laptop:self-center laptop:ml-28 small:m-0 small:px-4">            
-          <h1 class="laptop:mt-10 small:m-0 laptop:mr-20 font-semibold laptop:w-2/6 small:w-full laptop:text-[5rem] small:text-4xl small:leading-tight laptop:leading-tight laptop:text-offWhite small:text-offWhite small:bg-neutral-400 laptop:bg-transparent small:p-4 laptop:p-0 small:rounded-2xl">INNOVANDO EN EL COMERCIO AGRÍCOLA</h1>
+          <h1 class="laptop:mt-10 small:m-0 laptop:mr-20 font-semibold laptop:w-2/6 small:w-full laptop:text-[5rem] small:text-5xl small:leading-tight laptop:leading-tight laptop:text-offWhite small:text-offWhite small:bg-neutral-400 laptop:bg-transparent small:p-4 laptop:p-0 small:rounded-2xl">INNOVANDO EN EL COMERCIO AGRÍCOLA</h1>
 
           <h3 class="lowercase laptop:text-offWhite small:text-neutral-600 laptop:w-2/6 small:w-full laptop:my-5 small:m-0 laptop:text-2xl small:text-xl laptop:font-light small:font-normal small:py-4">¿BUSCAS UNA SOLUCIÓN INTEGRAL A LAS NECESIDADES DE NUTRICIÓN Y PROTECCIÓN DE CULTIVO Y MAYOR RENTABILIDAD PARA TU NEGOCIO?</h3>
 
-          <button class="text-2xl duration-200 laptop:mt-5 small:mt-0 laptop:px-8 small:px-auto laptop:w-auto small:w-full laptop:py-4 small:py-3 outline-offset-4 rounded-2xl focus:bg-azulAgroClaro text-offWhite outline-offWhite active:bg-blue-900 hover:bg-azulAgroClaro bg-azulAgro">hablemos</button>
+          <button class="duration-200 laptop:text-2xl small:text-3xl laptop:mt-5 small:mt-0 laptop:px-8 small:px-auto laptop:w-auto small:w-full laptop:py-4 small:py-3 outline-offset-4 rounded-2xl focus:bg-azulAgroClaro text-offWhite outline-offWhite active:bg-blue-900 hover:bg-azulAgroClaro bg-azulAgro">hablemos</button>
         </div>
       </div>
 
       <!-- FIRST SECTION / MAIN-->
         <section class="w-full mt-0 laptop:px-16 small:px-0">
-          <div class="grid grid-cols-3 gap-5">
-            <div class="p-20 text-left self-center font-semibold text-offWhite text-4xl bg-azulAgro rounded-[45px] items-center">RELACIONES DE CONFIANZA</div>
+          <div class="laptop:grid laptop:grid-cols-3 laptop:gap-5 small:flex small:flex-col">
 
-            <div class="col-span-2 p-10 text-2xl font-normal leading-relaxed text-justify bg-offWhite text-neutral-800">
-            <span class="font-semibold text-azulAgro">Creemos que podemos hacer una gran diferencia en todo lo que hacemos,</span> desafiando el statu quo y añadiendo valor real a nuestros clientes.
+            <div class="laptop:p-20 small:py-4 small:px-10 small:text-3xl laptop:block laptop:m-0 small:mt-10 small:mx-4 text-left self-center font-semibold text-offWhite laptop:text-5xl laptop:bg-azulAgro small:bg-slate-700 laptop:rounded-[45px] small:rounded-t-2xl items-center">RELACIONES DE CONFIANZA</div>
+
+            <div class="font-normal laptop:col-span-2 laptop:p-10 laptop:text-2xl small:text-xl small:text-neutral-700 small:p-6 laptop:leading-relaxed laptop:text-justify small:rounded-b-2xl small:bg-neutral-300 small:mx-4 laptop:bg-offWhite laptop:text-neutral-800">
+            <span class="font-semibold small:text-neutral-800 laptop:text-azulAgro small:text-4xl laptop:text-2xl">Creemos que podemos hacer una gran diferencia en todo lo que hacemos, desafiando el statu quo y añadiendo valor real a nuestros clientes.</span>
             <br><br>
             Todo mediante una cultura orientada a la honestidad, la integridad, el compromiso y la armonía entre los colaboradores que se convergen en la satisfacción del cliente.</div>
 
@@ -106,12 +108,12 @@
         </section>
 
         <!-- SECOND SECTION - PRODUCTOS / MAIN-->
-        <section class="grid w-full grid-cols-3 gap-10 p-16">
+        <section class="grid w-auto small:mt-10 laptop:p-16 small:p-4 laptop:grid-cols-3 small:grid-cols-1 laptop:gap-10 small:gap-4">
           
           <!-- 2ND BANNER IMAGE -->
-          <div class="h-[32rem] col-span-3"> <img class="object-cover w-full h-full rounded-[60px] brightness-[.80]" src="./img/banner__sec__01--agro22.jpg" alt="técnico aplicando con pulverizador guarany"> </div>
+          <div class="laptop:h-[32rem] laptop:col-span-3 small:col-span-1"> <img class="object-cover w-full h-full laptop:rounded-[60px] small:rounded-2xl brightness-[.80]" src="./img/banner__sec__01--agro22.jpg" alt="técnico aplicando con pulverizador guarany"> </div>
 
-          <div class="h-full w-full justify-center flex align-middle text-6xl font-semibold text-center rounded-[45px] bg-azulAgro text-offWhite"> <h2 class="my-auto"> PRODUCTOS </h2> </div>
+          <div class="h-full w-full justify-center flex align-middle laptop:text-6xl small:text-3xl laptop:font-semibold small:font-medium text-center laptop:rounded-[45px] small:rounded-2xl small:p-4 bg-azulAgro text-offWhite"> <h2 class="my-auto"> PRODUCTOS </h2> </div>
           
           <div class="p-8 flex justify-between flex-col col-span-1 bg-neutral-200 rounded-[45px] hover:drop-shadow-lg duration-300">
             <div>
