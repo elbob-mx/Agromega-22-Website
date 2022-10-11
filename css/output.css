@@ -996,11 +996,6 @@ select {
   padding-bottom: 2rem;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1014,6 +1009,11 @@ select {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .py-10 {
@@ -1308,14 +1308,6 @@ select {
     margin: 0px;
   }
 
-  .small\:m-10 {
-    margin: 2.5rem;
-  }
-
-  .small\:m-4 {
-    margin: 1rem;
-  }
-
   .small\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -1323,22 +1315,6 @@ select {
 
   .small\:mt-0 {
     margin-top: 0px;
-  }
-
-  .small\:mt-4 {
-    margin-top: 1rem;
-  }
-
-  .small\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
-  .small\:mt-20 {
-    margin-top: 5rem;
-  }
-
-  .small\:flex {
-    display: flex;
   }
 
   .small\:hidden {
@@ -1369,10 +1345,6 @@ select {
     flex-direction: row;
   }
 
-  .small\:flex-col {
-    flex-direction: column;
-  }
-
   .small\:flex-wrap {
     flex-wrap: wrap;
   }
@@ -1396,10 +1368,6 @@ select {
 
   .small\:p-4 {
     padding: 1rem;
-  }
-
-  .small\:p-8 {
-    padding: 2rem;
   }
 
   .small\:px-4 {
@@ -1441,6 +1409,16 @@ select {
     line-height: 1.75rem;
   }
 
+  .small\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .small\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .small\:font-normal {
     font-weight: 400;
   }
@@ -1461,13 +1439,6 @@ select {
   .small\:text-neutral-600 {
     --tw-text-opacity: 1;
     color: rgb(82 82 82 / var(--tw-text-opacity));
-  }
-}
-
-@media (min-width: 768px) {
-  .tablet\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
 }
 
@@ -1505,20 +1476,12 @@ select {
     margin-top: 1.25rem;
   }
 
-  .laptop\:mt-0 {
-    margin-top: 0px;
-  }
-
   .laptop\:block {
     display: block;
   }
 
   .laptop\:flex {
     display: flex;
-  }
-
-  .laptop\:grid {
-    display: grid;
   }
 
   .laptop\:hidden {
@@ -1553,20 +1516,12 @@ select {
     width: auto;
   }
 
-  .laptop\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .laptop\:flex-col {
     flex-direction: column;
   }
 
   .laptop\:flex-nowrap {
     flex-wrap: nowrap;
-  }
-
-  .laptop\:gap-5 {
-    gap: 1.25rem;
   }
 
   .laptop\:self-center {
@@ -1592,10 +1547,6 @@ select {
 
   .laptop\:p-16 {
     padding: 4rem;
-  }
-
-  .laptop\:p-20 {
-    padding: 5rem;
   }
 
   .laptop\:px-4 {
