@@ -1476,6 +1476,10 @@ select {
     margin-top: 1.25rem;
   }
 
+  .laptop\:ml-0 {
+    margin-left: 0px;
+  }
+
   .laptop\:block {
     display: block;
   }
