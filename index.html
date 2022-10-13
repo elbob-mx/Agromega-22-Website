@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="w-screen">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,12 +13,12 @@
     <script type="text/javascript" src="./js/controllers.js" defer></script>
   </head>
 
-  <body class="box-border w-screen font-rubik bg-offWhite laptop:overflow-x-hidden">
+  <body class="box-border w-screen overflow-x-hidden font-rubik bg-offWhite">
 
     <main class="w-screen laptop:flex">
 
       <!-- SIDEBAR RESPONSIVE -->
-      <div class="sticky top-0 block small:hidden laptop:flex small:w-screen laptop:w-1/5 small:h-1/6 laptop:h-screen small:flex-row laptop:flex-col laptop:bg-offWhite">
+      <div class="sticky top-0 block small:hidden laptop:flex laptop:w-1/5 laptop:h-screen laptop:flex-col laptop:bg-offWhite">
 
         <header class="small:p-0 laptop:px-4 small:m-0 laptop:mt-16 bg-offWhite">
 
@@ -81,15 +81,15 @@
       <div class="laptop:flex laptop:flex-col laptop:w-4/5 small:w-screen bg-offWhite">
         <div class="relative laptop:flex">
           
-          <img class="laptop:p-16 small:p-4 small:rounded-[30px] laptop:rounded-[120px] brightness-[.80]" src="./img/banner__main__01--agro22.jpg" alt="agricultor trabajando agromega">
+          <img class="laptop:p-16 small:p-4 small:rounded-[30px] laptop:rounded-[120px] laptop:brightness-[.80]" src="./img/banner__main__01--agro22.jpg" alt="agricultor trabajando agromega">
           
           <!-- SLOGAN -->
           <div class="laptop:absolute laptop:self-center laptop:ml-28 small:m-0 small:px-4">            
-          <h1 class="laptop:mt-10 small:m-0 laptop:mr-20 font-semibold laptop:w-2/6 small:w-full laptop:text-[5rem] small:text-5xl small:leading-tight laptop:leading-tight laptop:text-offWhite small:text-offWhite small:bg-neutral-400 laptop:bg-transparent small:p-4 laptop:p-0 small:rounded-2xl">INNOVANDO EN EL COMERCIO AGRÍCOLA</h1>
+          <h1 class="laptop:mt-10 small:m-0 laptop:mr-20 font-semibold laptop:w-2/6 small:w-full laptop:text-[5rem] small:text-5xl small:leading-tight laptop:leading-tight laptop:text-offWhite small:text-offWhite small:bg-zinc-500 laptop:bg-transparent small:p-4 laptop:p-0 small:rounded-2xl">INNOVANDO EN EL COMERCIO AGRÍCOLA</h1>
 
           <h3 class="lowercase laptop:text-offWhite small:text-neutral-600 laptop:w-2/6 small:w-full laptop:my-5 small:m-0 laptop:text-2xl small:text-xl laptop:font-light small:font-normal small:py-4">¿BUSCAS UNA SOLUCIÓN INTEGRAL A LAS NECESIDADES DE NUTRICIÓN Y PROTECCIÓN DE CULTIVO Y MAYOR RENTABILIDAD PARA TU NEGOCIO?</h3>
 
-          <button class="duration-200 laptop:text-2xl small:text-3xl laptop:mt-5 small:mt-0 laptop:px-8 small:px-auto laptop:w-auto small:w-full laptop:py-4 small:py-3 outline-offset-4 rounded-2xl focus:bg-azulAgroClaro text-offWhite outline-offWhite active:bg-blue-900 hover:bg-azulAgroClaro bg-azulAgro">hablemos</button>
+          <button class="duration-200 laptop:text-2xl small:text-3xl laptop:mt-5 small:mt-0 laptop:px-8 small:px-auto laptop:w-auto small:w-full laptop:py-4 small:py-3 outline-offset-4 laptop:rounded-2xl small:rounded-full focus:bg-azulAgroClaro text-offWhite outline-offWhite active:bg-blue-900 hover:bg-azulAgroClaro bg-azulAgro">hablemos</button>
         </div>
       </div>
 
@@ -111,137 +111,162 @@
         <section class="grid w-auto small:mt-10 laptop:p-16 small:p-4 laptop:grid-cols-3 small:grid-cols-1 laptop:gap-10 small:gap-4">
           
           <!-- 2ND BANNER IMAGE -->
-          <div class="laptop:h-[32rem] laptop:col-span-3 small:col-span-1"> <img class="object-cover w-full h-full laptop:rounded-[60px] small:rounded-2xl brightness-[.80]" src="./img/banner__sec__01--agro22.jpg" alt="técnico aplicando con pulverizador guarany"> </div>
+          <div class="laptop:h-[32rem] laptop:col-span-3 small:col-span-1"> <img class="object-cover w-full h-full laptop:rounded-[60px] small:rounded-2xl laptop:brightness-[.80]" src="./img/banner__sec__01--agro22.jpg" alt="técnico aplicando con pulverizador guarany"> </div>
 
-          <div class="h-full w-full justify-center flex align-middle laptop:text-6xl small:text-3xl laptop:font-semibold small:font-medium text-center laptop:rounded-[45px] small:rounded-2xl small:p-4 bg-azulAgro text-offWhite"> <h2 class="my-auto"> PRODUCTOS </h2> </div>
+          <div class="h-full w-full justify-center flex align-middle laptop:text-6xl small:text-3xl laptop:font-semibold small:font-medium text-center laptop:rounded-[45px] small:rounded-2xl small:p-4 small:bg-slate-700 laptop:bg-azulAgro text-offWhite"> <h2 class="my-auto"> PRODUCTOS </h2> </div>
           
-          <div class="p-8 flex justify-between flex-col col-span-1 bg-neutral-200 rounded-[45px] hover:drop-shadow-lg duration-300">
+          <!-- NUTRICIÓN VEGETAL -->
+          <div class="laptop:p-8 small:p-6 flex justify-between flex-col col-span-1 laptop:bg-neutral-200 small:bg-neutral-300 laptop:rounded-[45px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300">
             <div>
+            <div class="laptop:block small:hidden">
             <i class="pb-5 fa-5x fa-solid fa-wheat-awn-circle-exclamation text-azulAgro"></i>
             </div>
-            <div class="text-3xl font-semibold text-azulAgro">NUTRICIÓN VEGETAL:</div>
-            <div class="py-5 text-lg leading-relaxed text-neutral-700">
-            Tenemos una gran oferta de macronutrientes y micronutrientes esenciales para el correcto desarrollo; clasificados en granulados, solubles y especialidades. Hacemos mezclas físicas.
+            <div class="laptop:hidden small:block">
+            <i class="pb-5 fa-3x fa-solid fa-wheat-awn-circle-exclamation text-azulAgro"></i>
             </div>
+            <div class="font-semibold laptop:text-3xl small:text-2xl text-azulAgro">NUTRICIÓN VEGETAL:</div>
+            </div>
+            <div class="leading-relaxed laptop:py-5 small:py-3 small:text-xl laptop:text-lg text-neutral-700">
+            Tenemos una gran oferta de macronutrientes y micronutrientes esenciales para el correcto desarrollo; clasificados en granulados, solubles y especialidades. Hacemos mezclas físicas.
+            </div>            
             <div>
-            <button class="px-8 py-2 text-xl duration-200 rounded-full active:bg-blue-900 bg-azulAgro hover:bg-azulAgroClaro text-offWhite outline-offset-4 focus:bg-azulAgroClaro outline-4 outline-azulAgro">hablemos</button>
+              <button class="px-8 py-2 text-xl duration-200 rounded-full small:mt-2 laptop:mt-0 active:bg-blue-900 bg-azulAgro hover:bg-azulAgroClaro text-offWhite outline-offset-4 focus:bg-azulAgroClaro outline-4 outline-azulAgro">hablemos</button>
             </div>
           </div>
-
-          <div class="p-8 col-span-1 flex justify-between flex-col bg-neutral-200 rounded-[45px] hover:drop-shadow-lg duration-300">
-            <div>
+          
+          <!-- PROTECCION CULTIVO -->
+          <div class="laptop:p-8 small:p-6 col-span-1 flex justify-between flex-col laptop:bg-neutral-200 small:bg-neutral-300 laptop:rounded-[45px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300">
+            <div class="small:hidden laptop:block">
             <i class="pb-5 fa-5x fa-solid fa-shield text-azulAgro"></i>
             </div>
-            <div class="text-3xl font-semibold text-azulAgro">PROTECCIÓN DE CULTIVO:</div>
-            <div class="py-5 text-lg leading-relaxed text-neutral-700">
+            <div class="small:block laptop:hidden">
+              <i class="pb-5 fa-3x fa-solid fa-shield text-azulAgro"></i>
+              </div>
+            <div class="font-semibold laptop:text-3xl small:text-2xl text-azulAgro">PROTECCIÓN DE CULTIVO:</div>
+            <div class="leading-relaxed laptop:text-lg small:text-xl laptop:py-5 small:py-3 text-neutral-700">
               Promovemos agroquímicos innovadores para la protección de cultivo; marcas reconocidas y amigables con el medio ambiente.
             </div>
             <div>
-            <button class="px-8 py-2 m-0 text-xl duration-200 rounded-full active:bg-blue-900 bg-azulAgro hover:bg-azulAgroClaro text-offWhite top-10 outline-offset-4 focus:bg-azulAgroClaro outline-4 outline-azulAgro">hablemos</button>
+            <button class="px-8 py-2 text-xl duration-200 rounded-full small:mt-2 laptop:m-0 active:bg-blue-900 bg-azulAgro hover:bg-azulAgroClaro text-offWhite top-10 outline-offset-4 focus:bg-azulAgroClaro outline-4 outline-azulAgro">hablemos</button>
             </div>
           </div>
 
-          <div class="p-8 flex justify-between flex-col col-span-1 bg-neutral-200 rounded-[45px] hover:drop-shadow-lg duration-300">
-            <div>
+          <!-- EQUIPO RIEGO CONSUMIBLES -->
+          <div class="laptop:p-8 small:p-6 flex justify-between flex-col col-span-1 laptop:bg-neutral-200 small:bg-neutral-300 laptop:rounded-[45px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300">
+            <div class="small:hidden laptop:block">
             <i class="pb-5 fa-5x fa-solid fa-screwdriver-wrench text-azulAgro"></i>
             </div>
-            <div class="text-3xl font-semibold text-azulAgro">EQUIPO DE RIEGO + CONSUMIBLES:</div>
-            <div class="py-5 text-lg leading-relaxed text-neutral-700">
+            <div class="small:block laptop:hidden">
+              <i class="pb-5 fa-3x fa-solid fa-screwdriver-wrench text-azulAgro"></i>
+              </div>
+            <div class="font-semibold laptop:text-3xl small:text-2xl text-azulAgro">EQUIPO DE RIEGO + CONSUMIBLES:</div>
+            <div class="leading-relaxed laptop:py-5 small:py-3 laptop:text-lg small:text-xl text-neutral-700">
               Desarrollamos proyectos a la medida y de llave en mano. <br> Tenemos todos los consumibles y refacciones disponibles.
             </div>
             <div>
-            <button class="px-8 py-2 m-0 text-xl duration-200 rounded-full active:bg-blue-900 bg-azulAgro hover:bg-azulAgroClaro text-offWhite top-10 outline-offset-4 focus:bg-azulAgroClaro outline-4 outline-azulAgro">hablemos</button>
+            <button class="px-8 py-2 text-xl duration-200 rounded-full laptop:m-0 small:mt-2 active:bg-blue-900 bg-azulAgro hover:bg-azulAgroClaro text-offWhite top-10 outline-offset-4 focus:bg-azulAgroClaro outline-4 outline-azulAgro">hablemos</button>
             </div>
           </div>
 
-          <div class="p-8 flex justify-between flex-col col-span-1 bg-neutral-200 rounded-[45px] hover:drop-shadow-lg duration-300">
-            <div>
+          <!-- EQUIPOS DE APLICACIÓN -->
+          <div class="laptop:p-8 small:p-6 flex justify-between flex-col col-span-1 laptop:bg-neutral-200 small:bg-neutral-300 laptop:rounded-[45px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300">
+            <div class="small:hidden laptop:block">
             <i class="pb-5 fa-5x fa-solid fa-boxes-packing text-azulAgro"></i>
             </div>
-            <div class="text-3xl font-semibold text-azulAgro">EQUIPOS DE APLICACIÓN:</div>
-            <div class="py-5 text-lg leading-relaxed text-neutral-700">
-              Importadores y distribuidores de <br> una de las líneas de alta gama, más completas: <br> GUARANY.
+            <div class="small:block laptop:hidden">
+              <i class="pb-5 fa-3x fa-solid fa-boxes-packing text-azulAgro"></i>
+              </div>
+            <div class="font-semibold laptop:text-3xl small:text-2xl text-azulAgro">EQUIPOS DE APLICACIÓN:</div>
+            <div class="py-5 leading-relaxed laptop:text-lg small:text-xl text-neutral-700">
+              Importadores y distribuidores de <br class="small:hidden"> una de las líneas de alta gama, más completas: <br> GUARANY.
             </div>
             <div>
-            <button class="px-8 py-2 m-0 text-xl duration-200 rounded-full active:bg-blue-900 bg-azulAgro hover:bg-azulAgroClaro text-offWhite top-10 outline-offset-4 focus:bg-azulAgroClaro outline-4 outline-azulAgro">hablemos</button>
-            </div>
-
+            <button class="px-8 py-2 text-xl duration-200 rounded-full laptop:m-0 small:mt-2 active:bg-blue-900 bg-azulAgro hover:bg-azulAgroClaro text-offWhite top-10 outline-offset-4 focus:bg-azulAgroClaro outline-4 outline-azulAgro">hablemos</button>
           </div>
-          <div class="p-8 flex justify-between flex-col col-span-1 bg-neutral-200 rounded-[45px] hover:drop-shadow-lg duration-300">
-            <div>
-              <i class="pb-5 fa-5x fa-solid fa-seedling text-azulAgro"></i>
+
+            <!-- SEMILLAS SIEMBRA -->
+          </div>
+            <div class="laptop:p-8 small:p-6 flex justify-between flex-col col-span-1 laptop:bg-neutral-200 small:bg-neutral-300 laptop:rounded-[45px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300">
+            <div class="laptop:block small:hidden">
+            <i class="pb-5 fa-5x fa-solid fa-seedling text-azulAgro"></i>
             </div>
-            <div class="text-3xl font-semibold text-azulAgro">SEMILLAS PARA SIEMBRA:</div>
-            <div class="py-5 text-lg leading-relaxed text-neutral-700">
-              Manejamos una oferta de calidad certificada, <br> principalmente alfalfas, sorgos forrajeros y hortalizas.
+            <div class="laptop:hidden small:block">
+              <i class="pb-5 fa-3x fa-solid fa-seedling text-azulAgro"></i>
+              </div>
+            <div class="font-semibold laptop:text-3xl small:text-2xl text-azulAgro">SEMILLAS PARA SIEMBRA:</div>
+            <div class="py-5 leading-relaxed laptop:text-lg small:text-xl text-neutral-700">
+              Manejamos una oferta de calidad certificada, <br class="small:hidden"> principalmente alfalfas, sorgos forrajeros y hortalizas.
             </div>
             <div>
-            <button class="px-8 py-2 m-0 text-xl duration-200 rounded-full active:bg-blue-900 bg-azulAgro hover:bg-azulAgroClaro text-offWhite top-10 outline-offset-4 focus:bg-azulAgroClaro outline-4 outline-azulAgro">hablemos</button>
+            <button class="px-8 py-2 text-xl duration-200 rounded-full laptop:m-0 small:mt-2 active:bg-blue-900 bg-azulAgro hover:bg-azulAgroClaro text-offWhite top-10 outline-offset-4 focus:bg-azulAgroClaro outline-4 outline-azulAgro">hablemos</button>
             </div>
           </div>
         </section>
 
         <!-- THIRD SECTION - SERVICIOS / MAIN -->
-        <section class="grid w-full grid-cols-3 gap-10 px-16">
+        <section class="w-auto small:bg-slate-300 laptop:bg-transparent laptop:grid small:flex small:flex-col laptop:px-16 small:px-4 small:py-10 laptop:gap-10 small:gap-4 small:mt-1 laptop:grid-cols-3 small:grid-cols-1">
 
-          <div class="h-full col-span-1 row-span-6"> <img class="object-cover w-full h-full rounded-[45px] brightness-[.85]" src="./img/banner__sec__02--agro22.jpg" alt=""> </div>
+          <div class="h-full col-span-1 row-span-6 small:hidden laptop:block"> <img class="object-cover w-full h-full rounded-[45px] brightness-[.85]" src="./img/banner__sec__02--agro22.jpg" alt=""> </div>
 
-          <div class="col-span-2 h-full tracking-wider p-10 text-6xl text-offWhite font-semibold rounded-[45px] bg-azulAgro flex text-center my-auto">
-          <i class="my-auto fa-solid fa-list-check">&nbsp</i>
-          <h3 class="py-10 my-auto">SERVICIOS</h3>
+          <div class="w-full h-full col-span-1 laptop:hidden small:block"> <img class="h-full rounded-2xl" src="./img/banner__sec__02--agro22.jpg" alt=""> </div>
+
+          <!-- SERVICIOS TITLE -->
+          <div class="h-full w-full justify-center flex align-middle laptop:text-6xl small:text-3xl laptop:font-semibold small:font-medium text-center laptop:rounded-[45px] small:rounded-2xl small:p-4 small:bg-slate-700 laptop:bg-azulAgro small:justify-center text-offWhite laptop:col-span-2">
+          <i class="laptop:my-auto small:self-center small:mr-3 laptop:m-0 fa-solid fa-list-check">&nbsp</i>
+          <h3 class="laptop:my-auto laptop:m-0 laptop:py-10 small:p-0">SERVICIOS</h3>
           </div>
 
           <!-- SERVICIOS CARD -->
-          <div class="w-full col-span-2">
-            <div class="text-3xl px-10 py-6 text-offWhite font-medium tracking-widest rounded-t-[45px] bg-neutral-700">ASESORÍA EN NUTRICIÓN</div>
-            <p class="bg-neutral-300 text-2xl p-10 leading-relaxed rounded-b-[45px]">
+          <div class="w-full laptop:col-span-2">
+            <div class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:py-6 small:py-5 text-offWhite font-medium laptop:tracking-widest small:tracking-normal laptop:rounded-t-[45px] small:rounded-t-2xl bg-neutral-600">ASESORÍA EN NUTRICIÓN</div>
+            <p class="laptop:bg-neutral-300 small:bg-offWhite laptop:text-2xl small:text-xl laptop:p-10 small:p-6 leading-relaxed laptop:rounded-b-[45px] small:rounded-b-2xl">
               Examinamos tu cultivo para detectar deficiencias nutricionales. Te otorgamos la correcta recomendación de producto y su método de aplicación.
             </p>
           </div>
 
           <!-- SERVICIOS CARD -->
-          <div class="w-full col-span-2">
-            <div class="text-3xl px-10 py-6 text-offWhite font-medium tracking-widest rounded-t-[45px] bg-neutral-700">ASESORIA EN PROTECCIÓN</div>
-            <p class="bg-neutral-300 text-2xl p-10 leading-relaxed rounded-b-[45px]">
+          <div class="w-full laptop:col-span-2">
+            <div class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:py-6 small:py-5 text-offWhite font-medium laptop:tracking-widest small:tracking-normal laptop:rounded-t-[45px] small:rounded-t-2xl bg-neutral-600">ASESORIA EN PROTECCIÓN</div>
+            <p class="laptop:bg-neutral-300 small:bg-offWhite laptop:text-2xl small:text-xl laptop:p-10 small:p-6 leading-relaxed laptop:rounded-b-[45px] small:rounded-b-2xl">
               Examinamos tu cultivo para detectar plagas y enfermedades. Te otorgamos la correcta recomendación de producto y su método de aplicación.
             </p>
           </div>
 
           <!-- SERVICIOS CARD -->
-          <div class="w-full col-span-2">
-            <div class="text-3xl px-10 py-6 text-offWhite font-medium tracking-widest rounded-t-[45px] bg-neutral-700">PROGRAMAS DE NUTRICIÓN</div>
-            <p class="bg-neutral-300 text-2xl p-10 leading-relaxed rounded-b-[45px]">
+          <div class="w-full laptop:col-span-2">
+            <div class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:py-6 small:py-5 text-offWhite font-medium laptop:tracking-widest small:tracking-normal laptop:rounded-t-[45px] small:rounded-t-2xl bg-neutral-600">PROGRAMAS DE NUTRICIÓN</div>
+            <p class="laptop:bg-neutral-300 small:bg-offWhite laptop:text-2xl small:text-xl laptop:p-10 small:p-6 leading-relaxed laptop:rounded-b-[45px] small:rounded-b-2xl">
               Generamos un programa completo y detallado de las mezclas de producto necesarias para el correcto desarrollo nutricional de tus cultivos.
             </p>
           </div>
 
           <!-- SERVICIOS CARD -->
-          <div class="w-full col-span-2">
-            <div class="text-3xl px-10 py-6 text-offWhite font-medium tracking-widest rounded-t-[45px] bg-neutral-700">MANTENIMIENTO DE EQUIPOS</div>
-            <p class="bg-neutral-300 text-2xl p-10 leading-relaxed rounded-b-[45px]">
+          <div class="w-full laptop:col-span-2">
+            <div class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:py-6 small:py-5 text-offWhite font-medium laptop:tracking-widest small:tracking-normal laptop:rounded-t-[45px] small:rounded-t-2xl bg-neutral-600">MANTENIMIENTO DE EQUIPOS</div>
+            <p class="laptop:bg-neutral-300 small:bg-offWhite laptop:text-2xl small:text-xl laptop:p-10 small:p-6 leading-relaxed laptop:rounded-b-[45px] small:rounded-b-2xl">
               Reparamos y renovamos tus equipos de aplicación GUARANY. Te proveemos de las refacciones necesarias para su óptimo desempeño.
             </p>
           </div>
 
           <!-- SERVICIOS CARD -->
-          <div class="w-full col-span-2">
-            <div class="text-3xl px-10 py-6 text-offWhite font-medium tracking-widest rounded-t-[45px] bg-neutral-700">CAPACITACIONES</div>
-            <p class="bg-neutral-300 text-2xl p-10 leading-relaxed rounded-b-[45px]">
+          <div class="w-full laptop:col-span-2">
+            <div class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:py-6 small:py-5 text-offWhite font-medium laptop:tracking-widest small:tracking-normal laptop:rounded-t-[45px] small:rounded-t-2xl bg-neutral-600">CAPACITACIONES</div>
+            <p class="laptop:bg-neutral-300 small:bg-offWhite laptop:text-2xl small:text-xl laptop:p-10 small:p-6 leading-relaxed laptop:rounded-b-[45px] small:rounded-b-2xl">
               Te capacitamos para el correcto uso y calibración de equipos Guarany.
               Te capacitamos para la correcta aplicación de fertilizantes y agroquímicos.
             </p>
           </div>
 
           <!-- BUTTON CONTACT -->
-          <button class="w-full col-span-3 p-8 text-5xl duration-200 rounded-full outline-none text-offWhite bg-azulAgro hover:bg-azulAgroClaro focus:ring-4 ring-offset-4 active:bg-blue-900 focus:ring-blue-900 focus:bg-azulAgroClaro">pongámonos en contacto</button>
+          <button class="w-full duration-200 outline-none laptop:text-5xl small:text-4xl small:font-medium laptop:font-normal laptop:rounded-full small:rounded-full laptop:p-8 small:p-6 laptop:col-span-3 text-offWhite bg-azulAgro hover:bg-azulAgroClaro focus:ring-4 ring-offset-4 active:bg-blue-900 focus:ring-blue-900 focus:bg-azulAgroClaro">pongámonos en contacto</button>
 
         </section>
 
         <!-- FOOTER -->
-        <footer class="grid grid-cols-2 gap-20 mx-auto my-40">
+        <footer class="laptop:mx-auto small:px-6 small:py-10 laptop:grid small:flex small:flex-col laptop:grid-cols-2 laptop:gap-20 laptop:my-40">
 
-          <div class="justify-center col-span-1 text-left align-middle">
-            <h3 class="text-5xl font-semibold tracking-wide">
+          <div class="text-left laptop:justify-center laptop:col-span-1 laptop:align-middle">
+            <h3 class="font-semibold tracking-wide laptop:text-5xl small:text-2xl">
               Recibe información de <br> nuestros productos.
             </h3>
             <p class="mt-3 text-xl font-normal tracking-wide">
@@ -249,7 +274,7 @@
             </p>
           </div>
 
-          <div class="w-full col-span-1">
+          <div class="w-full col-span-1 small:mt-5 laptop:mt-0">
             <input class="w-full col-span-1 py-4 text-2xl border-none rounded-full bg-neutral-300 focus:ring-4 focus:ring-azulAgroClaro" placeholder="Escribe aquí tu correo" id="news-submit" type="email">
 
             <button class="w-full px-8 py-4 mt-4 text-3xl duration-200 rounded-full active:bg-blue-900 bg-azulAgro hover:bg-azulAgroClaro text-offWhite outline-offset-4 focus:bg-azulAgroClaro outline-4 outline-blue-900">enviar</button>
