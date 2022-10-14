@@ -8,6 +8,7 @@ module.exports = {
       mobileHor: '640px',
       tablet: '768px',
       laptop: '976px',
+      ipad: '1023px',
       desktop: '1440px',
     },
     extend: {
