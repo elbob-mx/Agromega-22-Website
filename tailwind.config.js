@@ -9,7 +9,8 @@ module.exports = {
       tablet: '768px',
       laptop: '976px',
       ipad: '1023px',
-      desktop: '1440px',
+      hd:'1365px',
+      fhd: '1440px',
     },
     extend: {
       fontFamily: {
