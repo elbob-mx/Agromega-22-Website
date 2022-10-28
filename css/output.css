@@ -1502,6 +1502,11 @@ select {
     margin-bottom: 0px;
   }
 
+  .laptop\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
   .laptop\:mt-16 {
     margin-top: 4rem;
   }
@@ -1674,6 +1679,11 @@ select {
   .laptop\:bg-neutral-300 {
     --tw-bg-opacity: 1;
     background-color: rgb(212 212 212 / var(--tw-bg-opacity));
+  }
+
+  .laptop\:bg-blue-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(191 219 254 / var(--tw-bg-opacity));
   }
 
   .laptop\:bg-cover {
@@ -1877,6 +1887,14 @@ select {
     margin-top: 4rem;
   }
 
+  .hd\:p-3 {
+    padding: 0.75rem;
+  }
+
+  .hd\:p-5 {
+    padding: 1.25rem;
+  }
+
   .hd\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1900,6 +1918,19 @@ select {
   .hd\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .hd\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .hd\:leading-loose {
+    line-height: 2;
+  }
+
+  .hd\:leading-snug {
+    line-height: 1.375;
   }
 }
 
@@ -1934,9 +1965,31 @@ select {
     padding: 5rem;
   }
 
+  .fhd\:p-5 {
+    padding: 1.25rem;
+  }
+
+  .fhd\:p-0 {
+    padding: 0px;
+  }
+
+  .fhd\:p-10 {
+    padding: 2.5rem;
+  }
+
   .fhd\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .fhd\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .fhd\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .fhd\:text-3xl {
@@ -1973,7 +2026,20 @@ select {
     line-height: 1;
   }
 
+  .fhd\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .fhd\:leading-loose {
     line-height: 2;
+  }
+
+  .fhd\:tracking-tighter {
+    letter-spacing: -0.05em;
+  }
+
+  .fhd\:tracking-normal {
+    letter-spacing: 0em;
   }
 }
