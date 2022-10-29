@@ -1945,6 +1945,10 @@ select {
     height: 600px;
   }
 
+  .hd\:h-auto {
+    height: auto;
+  }
+
   .hd\:p-5 {
     padding: 1.25rem;
   }
