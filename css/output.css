@@ -964,6 +964,10 @@ select {
   padding-left: 0.5rem;
 }
 
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
 .pr-1 {
   padding-right: 0.25rem;
 }
@@ -972,12 +976,24 @@ select {
   padding-bottom: 1.25rem;
 }
 
-.pr-4 {
-  padding-right: 1rem;
+.pl-0 {
+  padding-left: 0px;
 }
 
-.pr-2 {
-  padding-right: 0.5rem;
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
 }
 
 .text-left {
@@ -1095,10 +1111,6 @@ select {
   outline-width: 4px;
 }
 
-.outline-2 {
-  outline-width: 2px;
-}
-
 .outline-offset-4 {
   outline-offset: 4px;
 }
@@ -1170,42 +1182,14 @@ select {
   color: rgb(0 171 234 / var(--tw-text-opacity));
 }
 
-.focus\:border-b-2:focus {
-  border-bottom-width: 2px;
-}
-
-.focus\:bg-azulAgroClaro:focus {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 171 234 / var(--tw-bg-opacity));
-}
-
-.focus\:bg-blue-100:focus {
-  --tw-bg-opacity: 1;
-  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
-}
-
-.focus\:bg-neutral-200:focus {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
-}
-
 .focus\:bg-azulAgro:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(23 85 161 / var(--tw-bg-opacity));
 }
 
-.focus\:font-bold:focus {
-  font-weight: 700;
-}
-
-.focus\:text-azulAgroClaro:focus {
-  --tw-text-opacity: 1;
-  color: rgb(0 171 234 / var(--tw-text-opacity));
-}
-
-.focus\:text-azulAgro:focus {
-  --tw-text-opacity: 1;
-  color: rgb(23 85 161 / var(--tw-text-opacity));
+.focus\:bg-azulAgroClaro:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 171 234 / var(--tw-bg-opacity));
 }
 
 .focus\:text-offWhite:focus {
@@ -1216,14 +1200,6 @@ select {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.focus\:outline-4:focus {
-  outline-width: 4px;
-}
-
-.focus\:outline-8:focus {
-  outline-width: 8px;
 }
 
 .focus\:outline-azulAgro:focus {
@@ -1951,6 +1927,22 @@ select {
 @media (min-width: 1365px) {
   .hd\:mt-16 {
     margin-top: 4rem;
+  }
+
+  .hd\:h-\[100px\] {
+    height: 100px;
+  }
+
+  .hd\:h-\[500px\] {
+    height: 500px;
+  }
+
+  .hd\:h-\[700px\] {
+    height: 700px;
+  }
+
+  .hd\:h-\[600px\] {
+    height: 600px;
   }
 
   .hd\:p-5 {
