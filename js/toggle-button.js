@@ -1,3 +1,4 @@
+// FUNCTIONS --------->
 function switchTexto() {
   var puntos = document.getElementById("puntos");
   var masTexto = document.getElementById("mas");
