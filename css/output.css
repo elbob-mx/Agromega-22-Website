@@ -1850,6 +1850,11 @@ select {
     line-height: 2rem;
   }
 
+  .small\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .small\:font-normal {
     font-weight: 400;
   }
@@ -1860,6 +1865,14 @@ select {
 
   .small\:leading-tight {
     line-height: 1.25;
+  }
+
+  .small\:leading-relaxed {
+    line-height: 1.625;
+  }
+
+  .small\:leading-loose {
+    line-height: 2;
   }
 
   .small\:tracking-normal {
