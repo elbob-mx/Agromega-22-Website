@@ -1,4 +1,4 @@
-function toggleText() {
+function switchTexto() {
   var puntos = document.getElementById("puntos");
   var masTexto = document.getElementById("mas");
   var leerMas = document.getElementById("leer-mas");
