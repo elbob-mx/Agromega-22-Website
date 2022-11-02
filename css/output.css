@@ -1213,6 +1213,11 @@ select {
   padding-right: 0px;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -1875,6 +1880,10 @@ select {
     --tw-text-opacity: 1;
     color: rgb(64 64 64 / var(--tw-text-opacity));
   }
+
+  .small\:ring-offset-2 {
+    --tw-ring-offset-width: 2px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2437,6 +2446,35 @@ select {
 
   .laptop\:text-transparent {
     color: transparent;
+  }
+
+  .laptop\:text-slate-700 {
+    --tw-text-opacity: 1;
+    color: rgb(51 65 85 / var(--tw-text-opacity));
+  }
+
+  .laptop\:text-teal-700 {
+    --tw-text-opacity: 1;
+    color: rgb(15 118 110 / var(--tw-text-opacity));
+  }
+
+  .laptop\:text-blue-600 {
+    --tw-text-opacity: 1;
+    color: rgb(37 99 235 / var(--tw-text-opacity));
+  }
+
+  .laptop\:text-black {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+
+  .laptop\:text-neutral-600 {
+    --tw-text-opacity: 1;
+    color: rgb(82 82 82 / var(--tw-text-opacity));
+  }
+
+  .laptop\:ring-offset-4 {
+    --tw-ring-offset-width: 4px;
   }
 
   .laptop\:brightness-\[\.80\] {
