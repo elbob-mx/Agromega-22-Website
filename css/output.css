@@ -832,6 +832,10 @@ select {
   width: auto;
 }
 
+.w-\[100px\] {
+  width: 100px;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1779,6 +1783,14 @@ select {
 
   .laptop\:rounded-\[20px\] {
     border-radius: 20px;
+  }
+
+  .laptop\:rounded-lg {
+    border-radius: 0.5rem;
+  }
+
+  .laptop\:rounded-\[10px\] {
+    border-radius: 10px;
   }
 
   .laptop\:rounded-t-\[45px\] {
