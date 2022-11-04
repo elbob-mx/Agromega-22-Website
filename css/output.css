@@ -1749,6 +1749,38 @@ select {
     border-radius: 0px;
   }
 
+  .laptop\:rounded-\[80px\] {
+    border-radius: 80px;
+  }
+
+  .laptop\:rounded-\[90px\] {
+    border-radius: 90px;
+  }
+
+  .laptop\:rounded-\[85px\] {
+    border-radius: 85px;
+  }
+
+  .laptop\:rounded-\[100px\] {
+    border-radius: 100px;
+  }
+
+  .laptop\:rounded-\[35px\] {
+    border-radius: 35px;
+  }
+
+  .laptop\:rounded-\[5px\] {
+    border-radius: 5px;
+  }
+
+  .laptop\:rounded-\[15px\] {
+    border-radius: 15px;
+  }
+
+  .laptop\:rounded-\[20px\] {
+    border-radius: 20px;
+  }
+
   .laptop\:rounded-t-\[45px\] {
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
@@ -1757,6 +1789,16 @@ select {
   .laptop\:rounded-b-\[45px\] {
     border-bottom-right-radius: 45px;
     border-bottom-left-radius: 45px;
+  }
+
+  .laptop\:rounded-t-\[20px\] {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .laptop\:rounded-b-\[20px\] {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
   .laptop\:bg-offWhite {
