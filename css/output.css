@@ -741,6 +741,14 @@ select {
   grid-row: span 6 / span 6;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
+.m-16 {
+  margin: 4rem;
+}
+
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
@@ -754,6 +762,11 @@ select {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mx-16 {
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .mt-4 {
@@ -786,6 +799,10 @@ select {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .box-border {
@@ -832,6 +849,44 @@ select {
   width: auto;
 }
 
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.min-w-\[300px\] {
+  min-width: 300px;
+}
+
+.min-w-\[200px\] {
+  min-width: 200px;
+}
+
+.min-w-\[280px\] {
+  min-width: 280px;
+}
+
+.max-w-\[500px\] {
+  max-width: 500px;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -876,6 +931,10 @@ select {
   border-radius: 9999px;
 }
 
+.rounded-\[20px\] {
+  border-radius: 20px;
+}
+
 .border-none {
   border-style: none;
 }
@@ -915,9 +974,23 @@ select {
   background-color: rgb(0 171 234 / var(--tw-bg-opacity));
 }
 
-.bg-black {
+.bg-slate-200 {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .object-cover {
@@ -927,6 +1000,14 @@ select {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-16 {
+  padding: 4rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .py-0 {
@@ -1838,6 +1919,10 @@ select {
     padding: 2rem;
   }
 
+  .laptop\:p-24 {
+    padding: 6rem;
+  }
+
   .laptop\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1891,6 +1976,16 @@ select {
   .laptop\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .laptop\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .laptop\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .laptop\:pl-2 {
@@ -2025,36 +2120,6 @@ select {
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 
-  .laptop\:brightness-\[\.70\] {
-    --tw-brightness: brightness(.70);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  }
-
-  .laptop\:brightness-\[\.75\] {
-    --tw-brightness: brightness(.75);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  }
-
-  .laptop\:brightness-\[\.85\] {
-    --tw-brightness: brightness(.85);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  }
-
-  .laptop\:brightness-\[\.99\] {
-    --tw-brightness: brightness(.99);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  }
-
-  .laptop\:brightness-\[\.10\] {
-    --tw-brightness: brightness(.10);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  }
-
-  .laptop\:brightness-\[\.78\] {
-    --tw-brightness: brightness(.78);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  }
-
   .laptop\:brightness-\[\.77\] {
     --tw-brightness: brightness(.77);
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -2186,11 +2251,6 @@ select {
     margin-top: 2.5rem;
   }
 
-  .fhd\:bg-black {
-    --tw-bg-opacity: 1;
-    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  }
-
   .fhd\:p-10 {
     padding: 2.5rem;
   }
@@ -2227,35 +2287,6 @@ select {
   .fhd\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
-  }
-
-  .fhd\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .fhd\:text-\[21pt\] {
-    font-size: 21pt;
-  }
-
-  .fhd\:text-\[21px\] {
-    font-size: 21px;
-  }
-
-  .fhd\:text-\[24px\] {
-    font-size: 24px;
-  }
-
-  .fhd\:text-\[32px\] {
-    font-size: 32px;
-  }
-
-  .fhd\:text-\[28px\] {
-    font-size: 28px;
-  }
-
-  .fhd\:text-\[22px\] {
-    font-size: 22px;
   }
 
   .fhd\:font-normal {
