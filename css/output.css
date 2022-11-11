@@ -832,10 +832,6 @@ select {
   width: auto;
 }
 
-.w-\[100px\] {
-  width: 100px;
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -917,6 +913,11 @@ select {
 .bg-azulAgroClaro {
   --tw-bg-opacity: 1;
   background-color: rgb(0 171 234 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -1749,48 +1750,24 @@ select {
     border-radius: 9999px;
   }
 
-  .laptop\:rounded-none {
-    border-radius: 0px;
-  }
-
-  .laptop\:rounded-\[80px\] {
-    border-radius: 80px;
-  }
-
   .laptop\:rounded-\[90px\] {
     border-radius: 90px;
   }
 
-  .laptop\:rounded-\[85px\] {
-    border-radius: 85px;
-  }
-
-  .laptop\:rounded-\[100px\] {
-    border-radius: 100px;
-  }
-
-  .laptop\:rounded-\[35px\] {
-    border-radius: 35px;
-  }
-
-  .laptop\:rounded-\[5px\] {
-    border-radius: 5px;
-  }
-
-  .laptop\:rounded-\[15px\] {
-    border-radius: 15px;
+  .laptop\:rounded-\[10px\] {
+    border-radius: 10px;
   }
 
   .laptop\:rounded-\[20px\] {
     border-radius: 20px;
   }
 
-  .laptop\:rounded-lg {
-    border-radius: 0.5rem;
+  .laptop\:rounded-\[15px\] {
+    border-radius: 15px;
   }
 
-  .laptop\:rounded-\[10px\] {
-    border-radius: 10px;
+  .laptop\:rounded-none {
+    border-radius: 0px;
   }
 
   .laptop\:rounded-t-\[45px\] {
@@ -2048,6 +2025,41 @@ select {
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 
+  .laptop\:brightness-\[\.70\] {
+    --tw-brightness: brightness(.70);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+
+  .laptop\:brightness-\[\.75\] {
+    --tw-brightness: brightness(.75);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+
+  .laptop\:brightness-\[\.85\] {
+    --tw-brightness: brightness(.85);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+
+  .laptop\:brightness-\[\.99\] {
+    --tw-brightness: brightness(.99);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+
+  .laptop\:brightness-\[\.10\] {
+    --tw-brightness: brightness(.10);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+
+  .laptop\:brightness-\[\.78\] {
+    --tw-brightness: brightness(.78);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+
+  .laptop\:brightness-\[\.77\] {
+    --tw-brightness: brightness(.77);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+
   .laptop\:hover\:drop-shadow-lg:hover {
     --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -2174,6 +2186,11 @@ select {
     margin-top: 2.5rem;
   }
 
+  .fhd\:bg-black {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  }
+
   .fhd\:p-10 {
     padding: 2.5rem;
   }
@@ -2210,6 +2227,35 @@ select {
   .fhd\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .fhd\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .fhd\:text-\[21pt\] {
+    font-size: 21pt;
+  }
+
+  .fhd\:text-\[21px\] {
+    font-size: 21px;
+  }
+
+  .fhd\:text-\[24px\] {
+    font-size: 24px;
+  }
+
+  .fhd\:text-\[32px\] {
+    font-size: 32px;
+  }
+
+  .fhd\:text-\[28px\] {
+    font-size: 28px;
+  }
+
+  .fhd\:text-\[22px\] {
+    font-size: 22px;
   }
 
   .fhd\:font-normal {
