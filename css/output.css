@@ -829,6 +829,18 @@ select {
   height: 100px;
 }
 
+.h-\[80px\] {
+  height: 80px;
+}
+
+.h-\[85px\] {
+  height: 85px;
+}
+
+.h-\[90px\] {
+  height: 90px;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -1706,6 +1718,16 @@ select {
     padding-right: 0.75rem;
   }
 
+  .small\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .small\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .small\:pt-8 {
     padding-top: 2rem;
   }
@@ -1724,6 +1746,18 @@ select {
 
   .small\:pb-2 {
     padding-bottom: 0.5rem;
+  }
+
+  .small\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .small\:pb-6 {
+    padding-bottom: 1.5rem;
+  }
+
+  .small\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .small\:text-4xl {
@@ -1799,6 +1833,10 @@ select {
 
   .tablet\:mt-0 {
     margin-top: 0px;
+  }
+
+  .tablet\:h-\[100px\] {
+    height: 100px;
   }
 
   .tablet\:w-full {
