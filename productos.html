@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Agromega</title>
-    <link rel="stylesheet" href="./css/output.css" />
-    <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./js/controllers.js" defer></script>
-    <script type="text/javascript" src="./js/toggle-button.js" defer></script>
-   </head>
-<body class="box-border w-screen overflow-x-hidden font-rubik bg-offWhite" tabindex="0">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Agromega</title>
+  <link rel="stylesheet" href="./css/output.css" />
+  <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/controllers.js" defer></script>
+  <script type="text/javascript" src="./js/toggle-button.js" defer></script>
+ </head>
+
+ <body class="box-border w-screen overflow-x-hidden font-rubik bg-offWhite" tabindex="0">
 
   <main class="w-screen laptop:flex">
 
-       <!-- SIDEBAR RESPONSIVE -->
+   <!-- SIDEBAR RESPONSIVE -->
    <div class="sticky top-0 block small:hidden tablet:px-5 laptop:flex laptop:w-1/5 laptop:h-screen laptop:flex-col laptop:bg-offWhite">
 
     <header class="small:p-0 tablet:px-4 laptop:px-0 small:m-0 laptop:mt-16 bg-offWhite">
@@ -80,123 +81,107 @@
    
    <!-- MAIN BANNER -->
    <div class="laptop:flex laptop:flex-col laptop:w-4/5 small:w-screen bg-offWhite">
-    <div class="relative laptop:flex">
-     
-     <img class="laptop:p-16 small:p-4 small:rounded-[30px] laptop:rounded-[90px] laptop:w-full laptop:bg-cover laptop:brightness-[.80]" src="./img/tinified/banner__main__03__productos--agro22.jpg" alt="irrigación de campo">
-     
-     <!-- SLOGAN -->
-     <div class="laptop:absolute laptop:self-center laptop:ml-28 small:m-0 small:px-4">      
-     <h1 class="fhd:mt-10 laptop:mt-0 small:m-0 ipad:mr-0 hd:mr-20 font-semibold ipad:w-5/6 hd:w-2/6 small:w-full fhd:text-[4.5rem] small:text-4xl small:leading-tight laptop:leading-tight laptop:text-offWhite small:text-offWhite small:bg-zinc-500 laptop:bg-transparent small:p-4 laptop:p-0 small:rounded-2xl fhd:text-8xl hd:text-5xl ipad:text-3xl laptop:text-5xl">SOLUCIONES REALES</h1>
 
-     <h4 class="lowercase laptop:text-offWhite small:text-neutral-600 ipad:w-3/6 hd:w-2/6 small:w-full fhd:my-5 small:m-0 fhd:text-2xl laptop:text-xl small:text-xl laptop:font-light small:font-normal fhd:font-normal tablet:font-semibold small:py-4 laptop:py-2 ipad:text-base hd:text-xl">¿Estás cansado de comprar productos “milagro”?</h4>
+   <section class="laptop:grid small:flex small:flex-col gap-5 laptop:my-16 grid-flow-row grid-cols-3 grid-rows-2 laptop:p-10 rounded-[20px] small:p-4 bg-neutral-200 laptop:mx-16 small:mx-4 small:mt-8">
+     
+    <div class="laptop:col-span-3 laptop:row-span-1 bg-azulAgro flex laptop:flex-row small:flex-col justify-between laptop:items-center laptop:rounded-[10px] small:rounded-[20px] p-8 laptop:text-5xl small:text-4xl font-medium text-offWhite">Soluciones reales <button class="flex text-lg font-normal bg-azulAgroClaro px-4 py-1 hover:bg-offWhite hover:text-azulAgro rounded-[20px] small:mt-4 laptop:mt-0 laptop:items-end align-middle">contáctanos</button></div>
+    
+    <img class="laptop:block small:hidden col-span-2 row-span-2 flex relative laptop:rounded-[10px] text-4xl hover:sepia duration-500 h-full object-cover object-center" src="img/tinified/banner__main__03__productos--agro22.jpg">
+    
+    <div class="col-span-1 laptop:rounded-[10px] small:rounded-[20px] p-4 bg-orange-200 text-2xl italic font-medium">¿Estás cansado de comprar productos "milagro"?</div>
 
-     <a class="focus:outline-none" href="#contacto" tabindex="-1"> <button title="contactar a Agromega" title="contactar a Agromega" class="duration-200 laptop:text-2xl small:text-3xl fhd:mt-5 laptop:mt-5 small:mt-0 laptop:px-8 small:px-auto laptop:w-auto small:w-full laptop:py-4 small:py-3 outline-offset-4 laptop:rounded-[10px] small:rounded-full focus:bg-azulAgroClaro text-offWhite outline-offWhite active:bg-blue-900 hover:bg-azulAgroClaro bg-azulAgro">platiquémos</button> </a>
+    <!-- SISTEMAS DE RIEGO -->
+    <div class="col-span-1  hover:drop-shadow-lg laptop:rounded-[10px] small:rounded-[20px] p-4 bg-sky-300 hover:bg-sky-400 duration-500"><img class="object-cover object-center p-0 laptop:rounded-[10px] small:rounded-[20px]" src="img/tinified/banner__main__03__productos--agro22.jpg" alt="test">
+    <h1 class="pt-2 font-semibold laptop:text-2xl small:text-3xl text-neutral-900">Sistemas de riego</h1>
+    <p class="py-2 laptop:text-base small:text-lg text-neutral-800">En <strong>Agromega</strong>, te ayudamos a tener más y mejores rendimientos con un sistema de riego de precisión hecho a la medida, sin importar el clima, cultivo o tipo de suelo.</p>
+    <button class="w-full py-2 duration-300 rounded-full laptop:text-lg small:text-xl bg-azulAgro hover:bg-offWhite text-offWhite hover:text-neutral-800">ver más</button>
     </div>
-   </div>
-
-    <!-- SECOND SECTION - PRODUCTOS / MAIN-->
-    <section class="grid w-auto p-16 rounded-[20px] tablet:mx-16 small:mx-4 laptop:mt-0 small:mt-10 small:p-4 laptop:grid-cols-5 small:grid-cols-1 laptop:gap-4 small:gap-4 bg-neutral-200">
+    
+    <!-- SEMILLAS -->
+    <div class="col-span-1 small:rounded-[20px] hover:drop-shadow-lg flex flex-wrap content-between laptop:rounded-[10px] p-4 bg-green-400 hover:bg-green-500 duration-500"><img class="object-cover small:rounded-[20px] object-center p-0 laptop:rounded-[10px]" src="img/tinified/banner__main__03__productos__semillas--agro22.jpg" alt="test">
+      <h1 class="pt-2 font-semibold laptop:text-2xl small:text-3xl text-neutral-900">Semillas</h1>
+      <p class="py-2 laptop:text-base small:text-lg text-neutral-800">Te ayudamos a rentabilizar tu negocio pecuario con la mejor calidad certificada de alfalfas, sorgos forrajeros y hortalizas.</p>
+      <button class="w-full py-2 duration-300 bg-green-600 rounded-full laptop:text-lg small:text-xl text-offWhite hover:bg-green-700 hover:text-offWhite">ver más</button>
+    </div>
+    
+    <!-- EQUIPOS DE APLICACIÓN -->
+    <div class="col-span-2 small:rounded-[20px] laptop:rounded-[10px] hover:drop-shadow-lg p-4 bg-amber-300 hover:bg-amber-400 duration-500"><img class="object-cover small:rounded-[20px] object-center p-0 laptop:rounded-[10px]" src="img/tinified/banner__sec__01--agro22.jpg" alt="test">
+      <h1 class="pt-2 font-semibold laptop:text-2xl small:text-3xl text-neutral-900">Equipos de aplicación</h1>
+      <p class="py-2 laptop:text-base small:text-lg text-neutral-800">Distribuidores autorizados <strong>GUARANY</strong>, referente en calidad y eficiencia en productos de aplicación manuales y motorizados del mercado.</p>
+      <button class="w-full py-2 duration-300 rounded-full laptop:text-lg small:text-xl text-offWhite bg-amber-500 hover:bg-amber-700">ver más</button>
+      </div>
       
-      <!-- SISTEMAS DE RIEGO -->
-      <div class="flex flex-col col-span-1 laptop:rounded-[20px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300 small:pb-6 laptop:pb-0">  
-        <img class="object-cover object-center rounded-t-[20px]" src="img/tinified/banner__sec__01--agro22.jpg" alt="test">
-        <h4 class="font-semibold leading-none bg-blue-600 laptop:text-xl small:text-3xl text-offWhite laptop:p-4 small:p-6">Sistemas de riego</h4>      
-        <p class="bg-blue-200 laptop:px-4 small:py-4 laptop:py-4 small:px-4 rounded-b-[20px] small:text-xl laptop:text-sm text-neutral-700 hover:bg-blue-600 hover:text-offWhite duration-500 leading-relaxed">
-        Tenemos una gran oferta de macronutrientes y micronutrientes esenciales para el correcto desarrollo; clasificados en granulados, solubles y especialidades. Hacemos mezclas físicas.<br>
-        <button class="w-full px-2 py-1 mt-4 duration-500 rounded-full text-offWhite hover:bg-azulAgroClaro bg-azulAgro">ver más</button>
-        </p>
-      </div>
-
-      <!-- EQUIPOS DE APLICACIÓN -->
-      <div class="flex flex-col col-span-1 laptop:rounded-[20px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300 small:pb-6 laptop:pb-0">  
-        <img class="object-cover object-center rounded-t-[20px]" src="img/tinified/banner__sec__01--agro22.jpg" alt="test">
-        <h4 class="font-semibold leading-none bg-amber-600 laptop:text-xl small:text-3xl text-offWhite laptop:p-4 small:p-6">Equipos de aplicación</h4>      
-        <p class="bg-amber-200 laptop:px-4 laptop:py-4 small:px-4 small:py-4 rounded-b-[20px] small:text-xl laptop:text-sm text-neutral-700 hover:bg-amber-600 hover:text-offWhite duration-500 leading-relaxed">
-          Distribuidores autorizados <strong>GUARANY</strong>, referente en calidad y eficiencia en productos de aplicación manuales y motorizados del mercado.<br><br><br>
-        <button class="w-full px-2 py-1 mt-4 duration-500 rounded-full text-offWhite hover:bg-azulAgroClaro bg-azulAgro">ver más</button>
-        </p>
-      </div>
-
-      <!-- SEMILLAS -->
-      <div class="flex flex-col col-span-1 laptop:rounded-[20px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300 small:pb-6 laptop:pb-0">  
-        <img class="object-cover object-center rounded-t-[20px]" src="img/tinified/banner__sec__01--agro22.jpg" alt="test">
-        <h4 class="font-semibold leading-none bg-green-600 laptop:text-xl small:text-3xl text-offWhite laptop:p-4 small:p-6">Semillas<br><br></h4>      
-        <p class="bg-green-200 laptop:px-4 laptop:py-4 small:px-6 small:py-6 rounded-b-[20px] small:text-xl laptop:text-sm text-neutral-700 hover:bg-green-600 hover:text-offWhite duration-500 leading-relaxed">
-          Te ayudamos a rentabilizar tu negocio pecuario con la mejor calidad certificada de alfalfas, sorgos forrajeros y hortalizas.<br><br><br><br>
-        <button class="w-full px-2 py-1 mt-4 duration-500 rounded-full text-offWhite hover:bg-azulAgroClaro bg-azulAgro">ver más</button>
-        </p>
-      </div>
-
       <!-- FERTILIZANTES -->
-      <div class="flex flex-col col-span-1 laptop:rounded-[20px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300 small:pb-6 laptop:pb-0">  
-        <img class="object-cover object-center rounded-t-[20px]" src="img/tinified/banner__sec__01--agro22.jpg" alt="test">
-        <h4 class="font-semibold leading-none bg-sky-600 laptop:text-xl small:text-3xl text-offWhite laptop:p-4 small:p-6">Fertilizantes<br><br></h4>      
-        <p class="bg-sky-200 laptop:px-4 laptop:py-4 small:px-6 small:py-6 rounded-b-[20px] small:text-xl laptop:text-sm text-neutral-700 hover:bg-sky-600 hover:text-offWhite duration-500 leading-relaxed">
-          En <strong>Agromega</strong>, manejamos una amplia variedad de nutrientes esenciales para la alimentación de tu cultivo, granulados y solubles; mezclas físicas personalizadas.<br><br>
-        <button class="w-full px-2 py-1 mt-4 duration-500 rounded-full text-offWhite hover:bg-azulAgroClaro bg-azulAgro">ver más</button>
-        </p>
+      <div class="col-span-2 small:rounded-[20px] laptop:rounded-[10px] p-4 bg-indigo-400 hover:bg-indigo-500 duration-500"><img class="object-cover small:rounded-[20px] object-center p-0 laptop:rounded-[10px]" src="img/tinified/banner__main__03__productos__fertilizantes--agro22.jpg" alt="test">
+        <h1 class="pt-2 font-semibold laptop:text-2xl small:text-3xl text-neutral-900">Fertilizantes</h1>
+        <p class="py-2 laptop:text-base small:text-lg text-offWhite">En <strong class="text-neutral-800">Agromega</strong>, manejamos una amplia variedad de nutrientes esenciales para la alimentación de tu cultivo, granulados y solubles; mezclas físicas personalizadas.</p>
+        <button class="w-full py-2 duration-300 bg-indigo-600 rounded-full laptop:text-lg small:text-xl text-offWhite hover:bg-indigo-800">ver más</button>
       </div>
 
-      <!-- PROTECCIÓN DE CULTIVOS -->
-      <div class="flex flex-col col-span-1 laptop:rounded-[20px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300 small:pb-0 laptop:pb-0">  
-        <img class="object-cover object-center rounded-t-[20px]" src="img/tinified/banner__sec__01--agro22.jpg" alt="test">
-        <h4 class="font-semibold leading-none bg-teal-600 laptop:text-xl small:text-3xl text-offWhite laptop:p-4 small:p-6">Protección de cultivos</h4>      
-        <p class="bg-teal-200 laptop:px-4 laptop:py-4 small:px-6 small:py-6 rounded-b-[20px] small:text-xl laptop:text-sm text-neutral-700 hover:bg-teal-600 hover:text-offWhite duration-500 leading-relaxed">
-          Tenemos y distribuimos la línea más completa, ecológica y altamente efectiva para proteger tu cultivo contra plagas y enfermedades.<br><br><br><br>
-        <button class="w-full px-2 py-1 mt-4 duration-500 rounded-full text-offWhite hover:bg-azulAgroClaro bg-azulAgro">ver más</button>
-        </p>
+      <!-- PROTECCIÓN DE CULTIVO -->
+      <div class="flex flex-wrap small:rounded-[20px] content-between col-span-1 laptop:rounded-[10px] p-4 bg-teal-300 hover:bg-teal-400 duration-500"><img class="small:rounded-[20px] object-cover object-center p-0 laptop:rounded-[10px]" src="img/tinified/banner__main__03__productos__cuidados--agro22.jpg" alt="test">
+        <h1 class="pt-2 font-semibold laptop:text-2xl small:text-3xl text-neutral-900">Protección de cultivo</h1>
+        <p class="py-2 laptop:text-base small:text-lg text-neutral-800">Distribuimos la línea más completa, ecológica y altamente efectiva contra plagas y enfermedades.</p>
+        <button class="w-full py-2 duration-300 bg-teal-600 rounded-full laptop:text-lg small:text-xl text-offWhite hover:bg-teal-800">ver más</button>
       </div>
+      
+   </section>
 
-     </section>
+    <!-- NEWSLETTER -->
+    <section class="laptop:mx-auto laptop:px-16 small:px-6 small:pt-20 small:pb-5 laptop:grid small:flex small:flex-col laptop:grid-cols-2 laptop:gap-20 fhd:my-16 laptop:my-0 tablet:mt-0 tablet:py-10 tablet:pb-20">
 
-       <!-- NEWSLETTER -->
-      <section class="laptop:mx-auto laptop:px-16 small:px-6 small:pt-20 small:pb-5 laptop:grid small:flex small:flex-col laptop:grid-cols-2 laptop:gap-20 fhd:my-16 laptop:my-0 tablet:mt-0 tablet:pt-16 tablet:pb-16">
+      <div class="text-left laptop:justify-center laptop:col-span-1 laptop:align-middle">
 
-        <div class="text-left laptop:justify-center laptop:col-span-1 laptop:align-middle">  
-          <h3 class="font-semibold tracking-wide laptop:text-5xl small:text-2xl">
-         Recibe información de nuestros productos.
-          </h3>  
-          <p class="mt-3 text-xl font-normal tracking-wide font-plex">
-         Regístrate con tu dirección de correo electrónico para recibir noticias y actualizaciones.
-          </p>          
-        </div>
-  
-        <div class="w-full col-span-1 small:mt-5 fhd:mt-0 laptop:mt-12">
-  
-          <input class="w-full col-span-1 px-6 py-4 text-2xl border-none rounded-full font-plex bg-neutral-300 focus:ring-4 focus:ring-azulAgroClaro" placeholder="Escribe aquí tu correo" id="news-submit" type="email">
-  
-          <button title="enviar correo" class="w-full px-8 py-4 mt-4 text-3xl duration-200 rounded-full active:bg-blue-900 bg-azulAgro hover:bg-azulAgroClaro text-offWhite outline-offset-4 focus:bg-azulAgroClaro ring-4 ring-azulAgroClaro outline-4 outline-blue-900">enviar</button>
-  
-        </div>
-   
-      </section>
-  
-      <!-- FOOTER -->
-      <!-- ADDRESS INFO -->
-      <footer class="w-full h-full mx-0 mt-5 laptop:hidden bg-slate-300">     
+        <h3 class="font-semibold tracking-wide laptop:text-5xl small:text-2xl">
+       Recibe información de nuestros productos.
+        </h3>
+
+        <p class="mt-3 text-xl font-normal tracking-wide font-plex">
+       Regístrate con tu dirección de correo electrónico para recibir noticias y actualizaciones.
+        </p>
         
-        <div class="px-6 py-6">
-          <div class="leading-relaxed">
-            <a class="pl-2 pr-2 focus:outline-azulAgro" target="_blank" href="https://goo.gl/maps/fJS3bVtCKDLNCb3w5"> <p class="py-2 text-base font-bold text-neutral-800"><i class="pr-1 text-azulAgro fa-solid fa-location-dot"></i>Av. Pedro Parra Centeno 110</p>
-            <span class="py-0 pl-0 text-base font-normal fhd:text-lg text-slate-600">Tlajomulco de Zúñiga, Jalisco</span> </a>
-          </div>
-   
-          <div class="mt-6 leading-snug">
-            <p class="py-0 mt-2 text-base font-bold text-slate-600"><i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33) 3798-1526</p>
-            <p class="py-0 mt-2 text-base font-bold text-slate-600"><i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33) 3798-0637</p>
-          </div>
-          
-          <!-- SOCIAL -->
-          <section class="my-8">
-            <div class="text-xl font-bold duration-300 text-azulAgro hover:text-azulAgroClaro">
-              <a title="facebook Agromega" class="py-2 pl-0 pr-2 focus:outline-azulAgro" target="_blank" href="https://www.facebook.com/profile.php?id=100063775232938">
-                <i class="fa-2xl fa-brands fa-square-facebook"></i>
-              </a>      
-            </div>
-          </section>
-          
+      </div>
+
+      <div class="w-full col-span-1 small:mt-5 fhd:mt-0 laptop:mt-12">
+
+        <input class="w-full col-span-1 px-6 py-4 text-2xl border-none rounded-full font-plex bg-neutral-300 focus:ring-4 focus:ring-azulAgroClaro" placeholder="Escribe aquí tu correo" id="news-submit" type="email">
+
+        <button title="enviar correo" class="w-full px-8 py-4 mt-4 text-3xl duration-200 rounded-full active:bg-blue-900 bg-azulAgro hover:bg-azulAgroClaro text-offWhite outline-offset-4 focus:bg-azulAgroClaro ring-4 ring-azulAgroClaro outline-4 outline-blue-900">enviar</button>
+
+      </div> 
+ 
+    </section>
+
+    <!-- FOOTER -->
+    <!-- ADDRESS INFO -->
+    <footer class="w-full h-full mx-0 mt-5 laptop:hidden bg-slate-300">     
+      
+      <div class="px-6 py-6">
+        <div class="leading-relaxed">
+          <a class="pl-2 pr-2 focus:outline-azulAgro" target="_blank" href="https://goo.gl/maps/fJS3bVtCKDLNCb3w5"> <p class="py-2 text-base font-bold text-neutral-800"><i class="pr-1 text-azulAgro fa-solid fa-location-dot"></i>Av. Pedro Parra Centeno 110</p>
+          <span class="py-0 pl-0 text-base font-normal fhd:text-lg text-slate-600">Tlajomulco de Zúñiga, Jalisco</span> </a>
         </div>
-      </footer>
-  </main>  
-</body>
+ 
+        <div class="mt-6 leading-snug">
+          <p class="py-0 mt-2 text-base font-bold text-slate-600"><i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33) 3798-1526</p>
+          <p class="py-0 mt-2 text-base font-bold text-slate-600"><i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33) 3798-0637</p>
+        </div>
+        
+        <!-- SOCIAL -->
+        <section class="my-8">
+          <div class="text-xl font-bold duration-300 text-azulAgro hover:text-azulAgroClaro">
+            <a title="facebook Agromega" class="py-2 pl-0 pr-2 focus:outline-azulAgro" target="_blank" href="https://www.facebook.com/profile.php?id=100063775232938">
+              <i class="fa-2xl fa-brands fa-square-facebook"></i>
+            </a>      
+          </div>
+        </section>
+        
+      </div>
+    </footer>
+    
+   </div>
+  </main>
+ </body>
+ 
+ 
 </html>
