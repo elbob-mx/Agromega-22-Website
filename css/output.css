@@ -892,6 +892,14 @@ select {
   gap: 1.25rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
 .self-center {
   align-self: center;
 }
@@ -2059,6 +2067,10 @@ select {
     gap: 1rem;
   }
 
+  .small\:gap-6 {
+    gap: 1.5rem;
+  }
+
   .small\:self-center {
     align-self: center;
   }
@@ -2136,6 +2148,10 @@ select {
     padding: 1.5rem;
   }
 
+  .small\:p-2 {
+    padding: 0.5rem;
+  }
+
   .small\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -2189,6 +2205,10 @@ select {
 
   .small\:pb-2 {
     padding-bottom: 0.5rem;
+  }
+
+  .small\:text-center {
+    text-align: center;
   }
 
   .small\:text-4xl {
@@ -2261,8 +2281,20 @@ select {
     margin-top: 0px;
   }
 
+  .tablet\:h-\[300px\] {
+    height: 300px;
+  }
+
   .tablet\:w-full {
     width: 100%;
+  }
+
+  .tablet\:p-6 {
+    padding: 1.5rem;
+  }
+
+  .tablet\:p-5 {
+    padding: 1.25rem;
   }
 
   .tablet\:px-5 {
@@ -2282,6 +2314,11 @@ select {
 
   .tablet\:pb-20 {
     padding-bottom: 5rem;
+  }
+
+  .tablet\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .tablet\:font-semibold {
@@ -2471,6 +2508,10 @@ select {
     gap: 2.5rem;
   }
 
+  .laptop\:gap-4 {
+    gap: 1rem;
+  }
+
   .laptop\:self-center {
     align-self: center;
   }
@@ -2565,6 +2606,10 @@ select {
     padding: 1.5rem;
   }
 
+  .laptop\:p-4 {
+    padding: 1rem;
+  }
+
   .laptop\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -2656,6 +2701,10 @@ select {
 
   .laptop\:pb-10 {
     padding-bottom: 2.5rem;
+  }
+
+  .laptop\:text-left {
+    text-align: left;
   }
 
   .laptop\:text-justify {
