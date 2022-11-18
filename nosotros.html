@@ -1,353 +1,689 @@
 <!DOCTYPE html>
 <html lang="es">
- <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title>Agromega</title>
-  <link rel="stylesheet" href="./css/output.css" />
-  <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="./js/controllers.js" defer></script>
-  <script type="text/javascript" src="./js/toggle-button.js" defer></script>
- </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Agromega</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <script
+      src="https://kit.fontawesome.com/9846627988.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./js/controllers.js" defer></script>
+    <script type="text/javascript" src="./js/toggle-button.js" defer></script>
+  </head>
 
- <body class="box-border w-screen overflow-x-hidden font-rubik bg-offWhite" tabindex="0">
+  <body
+    class="box-border w-screen overflow-x-hidden font-rubik bg-offWhite"
+    tabindex="0"
+  >
+    <main class="w-screen laptop:flex">
+      <!-- SIDEBAR RESPONSIVE -->
+      <div
+        class="sticky top-0 block small:hidden tablet:px-5 laptop:flex laptop:w-1/5 laptop:h-screen laptop:flex-col laptop:bg-offWhite"
+      >
+        <header
+          class="small:p-0 tablet:px-4 laptop:px-0 small:m-0 laptop:mt-16 bg-offWhite"
+        >
+          <img
+            class="small:pt-8 laptop:p-0 laptop:pl-2 laptop:h-auto small:h-28 small:mx-auto small:p-4"
+            src="./img/logos/logo__agro--22.svg"
+            alt="logo agromega"
+          />
+        </header>
 
-  <main class="w-screen laptop:flex">
+        <nav
+          class="flex small:flex-wrap laptop:flex-nowrap small:flex-row laptop:flex-col bg-offWhite"
+        >
+          <ul
+            class="flex leading-loose small:flex-row laptop:flex-col small:m-0 laptop:mt-12"
+          >
+            <li
+              class="flex laptop:text-lg fhd:text-2xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-2 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="index.html"
+                >inicio</a
+              >
+            </li>
 
-   <!-- SIDEBAR RESPONSIVE -->
-   <div class="sticky top-0 block small:hidden tablet:px-5 laptop:flex laptop:w-1/5 laptop:h-screen laptop:flex-col laptop:bg-offWhite">
+            <li
+              class="flex laptop:text-lg fhd:text-2xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-2 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="nosotros.html"
+                >nosotros</a
+              >
+            </li>
 
-    <header class="small:p-0 tablet:px-4 laptop:px-0 small:m-0 laptop:mt-16 bg-offWhite">
+            <li
+              class="flex laptop:text-lg fhd:text-2xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-2 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="productos.html"
+                >productos</a
+              >
+            </li>
 
-     <img class="small:pt-8 laptop:p-0 laptop:pl-2 laptop:h-auto small:h-28 small:mx-auto small:p-4" src="./img/logos/logo__agro--22.svg" alt="logo agromega">
-     
-    </header>
+            <li
+              class="flex laptop:text-lg fhd:text-2xl hd:text-xl laptop:leading-loose ipad:leading-normal hd:leading-loose fhd:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-2 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="servicios.html"
+                >servicios</a
+              >
+            </li>
 
-    <nav class="flex small:flex-wrap laptop:flex-nowrap small:flex-row laptop:flex-col bg-offWhite">
+            <li
+              class="flex laptop:text-lg fhd:text-2xl hd:text-xl laptop:leading-loose ipad:leading-normal hd:leading-loose fhd:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-2 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="bolsa-de-trabajo.html"
+                >trabajo</a
+              >
+            </li>
 
-     <ul class="flex leading-loose small:flex-row laptop:flex-col small:m-0 laptop:mt-12">
+            <li
+              class="flex laptop:text-lg fhd:text-2xl hd:text-xl laptop:leading-loose ipad:leading-normal hd:leading-loose fhd:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-2 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="contacto.html"
+                >contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
 
-      <li class="flex laptop:text-lg fhd:text-2xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-2 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite" href="index.html" >inicio</a></li>
+        <!-- ADDRESS INFO -->
+        <section
+          class="w-full h-full small:hidden laptop:block bg-offWhite laptop:mt-14 fhd:mt-0"
+        >
+          <div>
+            <div class="leading-relaxed fhd:mt-28 laptop:mt-0">
+              <a
+                class="pl-2 pr-2 focus:outline-azulAgro"
+                target="_blank"
+                href="https://goo.gl/maps/fJS3bVtCKDLNCb3w5"
+              >
+                <p
+                  class="py-0 pl-2 text-xs font-bold fhd:text-lg text-slate-600"
+                >
+                  <i class="pr-1 text-azulAgro fa-solid fa-location-dot"></i>Av.
+                  Pedro Parra Centeno 110
+                </p>
+                <span
+                  class="py-0 pl-2 text-xs font-normal fhd:text-lg text-slate-600"
+                  >Tlajomulco de Zúñiga, Jalisco</span
+                >
+              </a>
+            </div>
 
-      <li class="flex laptop:text-lg fhd:text-2xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-2 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite" href="nosotros.html">nosotros</a></li>
- 
-      <li class="flex laptop:text-lg fhd:text-2xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-2 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite" href="productos.html">productos</a></li>
-
-      <li class="flex laptop:text-lg fhd:text-2xl hd:text-xl laptop:leading-loose ipad:leading-normal hd:leading-loose fhd:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-2 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite" href="servicios.html">servicios</a></li>
- 
-      <li class="flex laptop:text-lg fhd:text-2xl hd:text-xl laptop:leading-loose ipad:leading-normal hd:leading-loose fhd:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-2 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite" href="bolsa-de-trabajo.html">trabajo</a></li>
-       
-      <li class="flex laptop:text-lg fhd:text-2xl hd:text-xl laptop:leading-loose ipad:leading-normal hd:leading-loose fhd:leading-loose duration-300 hover:border-l-[20px] hover:font-bold hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"><a class="pl-2 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite" href="contacto.html">contacto</a></li>
-     </ul>
-    </nav>
-    
-    <!-- ADDRESS INFO -->
-    <section class="w-full h-full small:hidden laptop:block bg-offWhite laptop:mt-14 fhd:mt-0">     
-     <div>
-      <div class="leading-relaxed fhd:mt-28 laptop:mt-0">
-      <a class="pl-2 pr-2 focus:outline-azulAgro" target="_blank" href="https://goo.gl/maps/fJS3bVtCKDLNCb3w5"> <p class="py-0 pl-2 text-xs font-bold fhd:text-lg text-slate-600"><i class="pr-1 text-azulAgro fa-solid fa-location-dot"></i>Av. Pedro Parra Centeno 110</p>
-      <span class="py-0 pl-2 text-xs font-normal fhd:text-lg text-slate-600">Tlajomulco de Zúñiga, Jalisco</span> </a>
-     </div>
-  
-     <div class="mt-4 leading-snug">
-      <p class="py-0 pl-2 mt-2 text-sm font-bold fhd:text-lg text-slate-600"><i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33) 3798-1526</p>
-      <p class="py-0 pl-2 mt-2 text-sm font-bold fhd:text-lg text-slate-600"><i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33) 3798-0637</p>
-     </div>
-     </div>
-    </section>
-
-    <!-- SOCIAL -->
-    <footer class="pt-0 pb-6 mt-auto small:hidden laptop:block bg-offWhite">
-     <div class="pl-2 text-xl font-bold duration-300 text-azulAgro hover:text-azulAgroClaro">
-      <a title="facebook Agromega" class="py-2 pl-0 pr-2 focus:outline-azulAgro" target="_blank" href="https://www.facebook.com/profile.php?id=100063775232938">
-      <i class="fa-2xl fa-brands fa-square-facebook"></i>
-      </a>      
-     </div>
-    </footer>
-
-   </div>
-
-   <!-- LOGO / BURGER NAV -->
-   <div class="flex flex-row items-center justify-between w-full mt-6 small:px-4 tablet:px-4 bg-offWhite laptop:hidden">
-    <img class="small:w-60 " src="./img/logos/logo__agro--22.svg" alt="logo agromega">
-    <div class="p-2 mb-4 rounded-lg ring-4 ring-azulAgro laptop:hidden bg-neutral-300 active:bg-neutral-400">
-     <button title="menu nav" onclick="burgerNav()" class="w-[24px]"><i class="text-azulAgro fa-xl fa-solid fa-bars"></i></button>
-    </div>
-   </div>
-   
-   <!-- MAIN BANNER -->
-   <div class="laptop:flex laptop:flex-col laptop:w-4/5 small:w-screen bg-offWhite">
-    <div class="relative laptop:flex">
-     
-     <img class="laptop:p-16 small:p-4 small:rounded-[30px] laptop:rounded-[90px] laptop:w-full laptop:bg-cover laptop:brightness-[.77]" src="./img/tinified/banner__main__02__nosotros--agro22.jpg" alt="campo al amanecer">
-     
-     <!-- SLOGAN -->
-     <div class="laptop:absolute laptop:self-center laptop:ml-28 small:m-0 small:px-4">      
-     <h1 class="fhd:mt-10 laptop:mt-0 small:m-0 ipad:mr-0 hd:mr-20 font-medium ipad:w-5/6 hd:w-2/6 small:w-full fhd:text-[4.5rem] small:text-4xl small:leading-tight laptop:leading-tight laptop:text-offWhite small:text-offWhite small:bg-zinc-500 laptop:bg-transparent small:p-4 laptop:p-0 small:rounded-2xl fhd:text-8xl hd:text-5xl ipad:text-3xl laptop:text-5xl">SOBRE NOSOTROS</h1>
-
-     <h4 class="laptop:text-offWhite small:text-neutral-600 ipad:w-3/6 hd:w-2/6 small:w-full fhd:my-5 small:m-0 fhd:text-2xl laptop:text-xl small:text-xl laptop:font-light small:font-normal fhd:font-normal tablet:font-semibold small:py-4 laptop:py-2 ipad:text-base hd:text-xl">Nuestro objetivo es simple: brindar soluciones integrales a tus necesidades de suministro y desarrollo de productos agrícolas.</h4>
-
-     <a class="focus:outline-none" href="contacto.html" tabindex="-1"> <button title="contactar a Agromega" title="contactar a Agromega" class="duration-200 laptop:text-2xl small:text-3xl fhd:mt-5 laptop:mt-5 small:mt-0 laptop:px-8 small:px-auto laptop:w-auto small:w-full laptop:py-4 small:py-3 outline-offset-4 laptop:rounded-[10px] small:rounded-full focus:bg-azulAgroClaro text-offWhite outline-offWhite active:bg-blue-900 hover:bg-azulAgroClaro bg-azulAgro">conócenos</button> </a>
-    </div>
-   </div>
-
-   <!-- FIRST SECTION / LO QUE CREEMOS -->
-    <section class="w-full mt-0 laptop:px-16 small:px-4">
-     <div class="laptop:grid laptop:grid-cols-3 laptop:gap-5 small:flex small:flex-col ipad:mt-0 laptop:mt-0">
-
-      <h4 class="fhd:p-10 hd:p-5 fhd:tracking-normal laptop:p-10 small:text-3xl small:p-6 laptop:m-0 laptop:h-full laptop:flex laptop:flex-wrap small:mt-10 text-left self-center font-semibold text-offWhite ipad:text-base hd:text-4xl fhd:text-4xl laptop:text-4xl laptop:bg-azulAgro small:bg-slate-700 laptop:rounded-[20px] small:rounded-t-2xl items-center small:w-full">LO QUE CREEMOS</h4>
-
-      <div class="font-normal laptop:col-span-2 small:w-full laptop:grid laptop:p-10 laptop:text-2xl fhd:text-2xl small:text-xl small:text-neutral-700 small:p-6 laptop:leading-relaxed laptop:text-justify small:rounded-b-2xl small:bg-neutral-300 laptop:bg-offWhite laptop:text-neutral-800">
-      <p><span class="font-semibold laptop:leading-relaxed small:text-neutral-700 laptop:text-azulAgro small:text-xl laptop:text-2xl">Creemos que la industria agrícola en méxico necesita cambiar en todos los sentidos,</span> la forma de hacer negocios y la utilización de nuevas tecnologías son imprescindibles.</p>
-      </div>
-
-     </div>
-    </section>
-
-    <!-- SECOND SECTION - LO QUE CREEMOS -->
-    <section class="grid w-auto h-auto small:mt-5 laptop:mt-0 laptop:p-16 small:p-0 laptop:grid-cols-3 small:grid-cols-1 laptop:gap-10 ipad:gap-5 hd:gap-10 small:gap-4">
-     <!-- 2ND BANNER IMAGE -->
-      <div class="laptop:h-auto laptop:col-span-3 small:hidden laptop:block"> <img class="object-cover w-full laptop:rounded-[20px] laptop:brightness-[.80]" src="./img/tinified/banner__sec__02__nosotros--agro22.jpg" alt="berries"> </div>     
-    </section>
-
-    <div class="laptop:px-24 laptop:py-12">
-    <!-- EQUIPO EXPERIMENTADO -->
-    <section class="flex items-center small:flex-col laptop:flex-row laptop:px-16 laptop:pb-16 small:pb-8 small:px-4">      
-      <div>
-        <img class="object-cover min-w-[200px] max-w-[300px] laptop:pr-5 small:pb-2 laptop:pb-0" src="./img/tinified/toons/agro--team.png" alt="equipo trabajo Agromega">
-      </div>
-      
-      <div class="laptop:p-8 small:p-6 flex justify-center flex-col laptop:bg-neutral-200 small:bg-neutral-300 laptop:rounded-[15px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300">
-        
-        <!-- TITLE -->          
-        <h3 class="font-semibold laptop:text-3xl ipad:text-xl hd:text-4xl small:text-2xl text-azulAgro">Somos un equipo de trabajo experimentado: </h3>
-
-        <!-- TEXT -->
-        <p class="leading-relaxed laptop:py-5 small:py-3 small:text-xl laptop:text-xl text-neutral-700">
-        Contamos con personal calificado con más de 20 años de experiencia y excelentes relaciones con las principales empresas del ramo a todos los niveles.
-        </p>
-
-      </div>
-    </section>
-
-    <!-- SOLUCIONES REALES -->
-    <section class="flex items-center small:flex-col laptop:flex-row laptop:px-16 laptop:pb-16 small:pb-8 small:px-4">      
-      <div>
-      <img class="object-cover min-w-[200px] max-w-[300px] laptop:pr-5 small:pb-2 laptop:pb-0" src="./img/tinified/toons/agro--solutions2.png" alt="equipo solucionando">
-      </div>
-  
-      <div class="laptop:p-8 small:p-6 flex justify-center flex-col laptop:bg-neutral-200 small:bg-neutral-300 laptop:rounded-[15px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300">
-    
-    <!-- TITLE -->          
-      <h3 class="font-semibold laptop:text-3xl ipad:text-xl hd:text-4xl small:text-2xl text-azulAgro">Tenemos soluciones reales a tus problemas: </h3>
-    
-    <!-- TEXT -->
-      <p class="leading-relaxed laptop:py-5 small:py-3 small:text-xl laptop:text-xl text-neutral-700">
-        Ofrecemos productos de vanguardia probados de la más alta calidad y servicios personalizados, a través de personal capacitado y especializado por área.
-      </p>
-
-      </div>
-    </section>
-    
-    <!-- NOS COMPROMETEMOS -->
-    <section class="flex items-center small:flex-col laptop:flex-row laptop:px-16 laptop:pb-16 small:pb-8 small:px-4">      
-      <div>
-      <img class="object-cover min-w-[200px] max-w-[300px] laptop:pr-5 small:pb-2 laptop:pb-0" src="./img/tinified/toons/agro--commitment.png" alt="equipo analizando">
-      </div>
-  
-      <div class="laptop:p-8 small:p-6 flex justify-center flex-col laptop:bg-neutral-200 small:bg-neutral-300 laptop:rounded-[15px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300">
-    
-    <!-- TITLE -->          
-      <h3 class="font-semibold laptop:text-3xl ipad:text-xl hd:text-4xl small:text-2xl text-azulAgro">Nos comprometemos con el campo y el agricultor: </h3>
-    
-    <!-- TEXT -->
-      <p class="leading-relaxed laptop:py-5 small:py-3 small:text-xl laptop:text-xl text-neutral-700">
-        Buscamos continuamente tecnologías y prácticas amigables con el agricultor y el medio ambiente, cuidando así todos los aspectos que conforman su contexto.
-      </p>
-
-    </div>
-  </section>
-
-    <!-- AHORRA HASTA 20% -->
-      <section class="flex items-center small:flex-col laptop:flex-row laptop:px-16 laptop:pb-16 small:pb-8 small:px-4">      
-        <div>
-          <img class="object-cover min-w-[200px] max-w-[300px] laptop:pr-5 small:pb-2 laptop:pb-0" src="./img/tinified/toons/agro--save.png" alt="ahorre con Agromega">
-        </div>
-      
-        <div class="laptop:p-8 small:p-6 flex justify-center flex-col laptop:bg-neutral-200 small:bg-neutral-300 laptop:rounded-[15px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300">
-        
-        <!-- TITLE -->          
-          <h3 class="font-semibold laptop:text-3xl ipad:text-xl hd:text-4xl small:text-2xl text-azulAgro">Ahorra hasta un 20%: </h3>
-        
-        <!-- TEXT -->
-          <p class="leading-relaxed laptop:py-5 small:py-3 small:text-xl laptop:text-xl text-neutral-700">
-            Somos distribuidores e importadores directos de varias líneas de productos. Sin intermediarios, recibe el producto directamente del fabricante a precios competitivos.
-          </p>
-    
-        </div>
-      </section>
-      </div>
-
-      <!-- THIRD SECTION - SERVICIOS / MAIN -->
-      <section class="w-auto small:bg-neutral-300 laptop:bg-azulAgro laptop:bg-opacity-20 laptop:grid small:flex small:flex-col laptop:px-16 small:px-4 small:py-10 laptop:py-16 laptop:gap-10 small:gap-4 small:mt-6 laptop:mt-0 laptop:grid-cols-4 small:grid-cols-1">
-   
-        <!-- QUIENES SOMOS -->
-        <div class="flex w-full h-full font-medium align-middle laptop:text-5xl small:text-3xl laptop:rounded-none small:rounded-2xl small:p-4 laptop:p-0 small:justify-center laptop:justify-start small:bg-azulAgro small:text-offWhite laptop:text-azulAgro laptop:bg-transparent text-neutral-700 laptop:col-span-4 small:col-span-1">
-        <h2 class="laptop:my-auto laptop:m-0 laptop:py-0 small:p-0">QUIENES SOMOS</h2>
-        </div>        
-   
-        <!-- SOMOS - HISTORIA -->
-        <div class="w-full laptop:col-span-2">
-
-         <h3 class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:pt-10 laptop:pb-0 small:py-5 small:text-offWhite laptop:text-neutral-700 font-medium laptop:tracking-normal small:tracking-normal laptop:rounded-t-[20px] small:rounded-t-2xl small:bg-neutral-600 laptop:bg-offWhite">NUESTRA HISTORIA</h3>
-
-         <p class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-10 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl laptop:leading-relaxed">
-          Inició hace 18 años, como una pequeña comercializadora que vendía agroquímicos y semillas.
-          
-          <span id="puntos" title="Leer más" class="py-0 pl-0 pr-2 text-lg text-black align-middle" tabindex="0"> ... </span>
-          
-          <span id="mas" class="hidden"> Hoy en día seguimos vendiendo agroquímicos y semillas, pero también fertilizantes, equipos de aplicación, equipos de riego y más. Ese “más” es el valor agregado que brindamos a través del mejor servicio al cliente, con soluciones integrales y una cultura de trabajo que nos permita generar relaciones de confianza a largo plazo.</span>
-
-          <button onclick="switchTexto()" id="leer-mas"
-          class="px-3 py-0 text-lg text-white align-middle duration-200 rounded-lg bg-azulAgroClaro hover:bg-azulAgro focus:bg-azulAgro focus:ring-4 laptop:ring-offset-4 small:ring-offset-2 focus:outline-none ring-azulAgroClaro">leer más</button>
-
-          </p>
-
-        </div>
-
-      <!-- SOMOS - MISIÓN -->
-      <div class="w-full laptop:col-span-2">
-
-        <h3 class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:pt-10 laptop:pb-0 small:py-5 small:text-offWhite laptop:text-neutral-700 font-medium laptop:tracking-normal small:tracking-normal laptop:rounded-t-[20px] small:rounded-t-2xl small:bg-neutral-600 laptop:bg-offWhite">MISIÓN</h3>
-
-        <p class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-10 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl laptop:leading-relaxed">
-          NUESTRA MISIÓN es descontracturar el modelo de negocio agrícola actual, cambiando la forma de negociar,
-         
-         <span id="puntos" title="Leer más" class="py-0 pl-0 pr-2 text-lg text-black align-middle" tabindex="0"> ... </span>
-         
-         <span id="mas" class="hidden"> al demostrar que es posible generar valor para toda la cadena de proveeduría a largo plazo y de manera sostenida.</span>
-
-         <button onclick="switchTexto()" id="leer-mas"
-         class="px-3 py-0 text-lg text-white align-middle duration-200 rounded-lg bg-azulAgroClaro hover:bg-azulAgro focus:bg-azulAgro focus:ring-4 laptop:ring-offset-4 small:ring-offset-2 focus:outline-none ring-azulAgroClaro">leer más</button>
-
-         </p>
-
-       </div>
-
-      <!-- SOMOS - VISIÓN -->
-      <div class="w-full laptop:col-span-2">
-
-        <h3 class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:pt-10 laptop:pb-0 small:py-5 small:text-offWhite laptop:text-neutral-700 font-medium laptop:tracking-normal small:tracking-normal laptop:rounded-t-[20px] small:rounded-t-2xl small:bg-neutral-600 laptop:bg-offWhite">VISIÓN</h3>
-
-        <p class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-10 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl laptop:leading-relaxed">
-          Esperamos que en el futuro la gente no nos identifique como una comercializadora de insumos agrícolas, 
-         
-         <span id="puntos" title="Leer más" class="py-0 pl-0 pr-2 text-lg text-black align-middle" tabindex="0"> ... </span>
-         
-         <span id="mas" class="hidden"> sino como una empresa que brinda servicios confiables, con un compromiso permanente de calidad y transferencia de tecnología, bajo un marco de responsabilidad con la sociedad y el medio ambiente.</span>
-
-         <button onclick="switchTexto()" id="leer-mas"
-         class="px-3 py-0 text-lg text-white align-middle duration-200 rounded-lg bg-azulAgroClaro hover:bg-azulAgro focus:bg-azulAgro focus:ring-4 laptop:ring-offset-4 small:ring-offset-2 focus:outline-none ring-azulAgroClaro">leer más</button>
-
-         </p>
-
-       </div>
-      
-      <!-- SOMOS - VALORES -->
-      <div  class="w-full laptop:col-span-2">
-
-        <h3 class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:pt-10 laptop:pb-0 small:py-5 small:text-offWhite laptop:text-neutral-700 font-medium laptop:tracking-normal small:tracking-normal laptop:rounded-t-[20px] small:rounded-t-2xl small:bg-neutral-600 laptop:bg-offWhite">VALORES</h3>
-
-        <div class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-10 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl laptop:leading-relaxed">
-          A medida que crecemos como empresa, el mercado, nuestros procesos y estrategias, se irán adaptando, 
-         
-         <span id="puntos" title="Leer más" class="py-0 pl-0 pr-2 text-lg text-black align-middle" tabindex="0"> ... </span>
-         
-          <div id="mas" class="hidden"> pero nuestros valores seguirán siendo los mismos:
-
-            <ul>
-              <li>Exceder las expectativas a través del servicio.</li>
-              <li>Aceptar el cambio y potencializarlo.</li>
-              <li>Perseguir el crecimiento y el aprendizaje.</li>
-              <li>Construir relaciones honestas con comunicación.</li>
-              <li>Crear un equipo de trabajo positivo con humildad y espíritu familiar.</li>
-              <li>Hacer más con menos.</li>
-              <li>Ser apasionados y determinados.</li>
-            </ul>
-
-          </div>
-
-          <button onclick="switchTexto()" id="leer-mas"
-          class="px-3 py-0 text-lg text-white align-middle duration-200 rounded-lg bg-azulAgroClaro hover:bg-azulAgro focus:bg-azulAgro focus:ring-4 laptop:ring-offset-4 small:ring-offset-2 focus:outline-none ring-azulAgroClaro">leer más</button>
-
-        </div>
-
-      </div>
-   
-        <!-- BUTTON CONTACT -->
-        <a class="w-full focus:outline-none laptop:col-span-4" href="#contacto" tabindex="-1"> <button title="contactar a Agromega" class="w-full duration-200 !outline-none laptop:text-5xl small:text-3xl small:font-medium laptop:font-normal laptop:rounded-full small:rounded-full laptop:p-8 small:p-6 laptop:col-span-3 text-offWhite bg-azulAgro hover:bg-azulAgroClaro focus:ring-4 ring-offset-4 active:bg-blue-900 focus:ring-blue-900 focus:bg-azulAgroClaro">pongámonos en contacto</button> </a>
-   
-       </section>
-
-    <!-- NEWSLETTER -->
-    <section class="laptop:mx-auto laptop:px-16 small:px-6 small:pt-20 small:pb-5 laptop:grid small:flex small:flex-col laptop:grid-cols-2 laptop:gap-20 fhd:my-16 laptop:my-0 tablet:mt-0 tablet:py-10 tablet:pb-20">
-
-      <div class="text-left laptop:justify-center laptop:col-span-1 laptop:align-middle">
-
-        <h3 class="font-semibold tracking-wide laptop:text-5xl small:text-2xl">
-       Recibe información de nuestros productos.
-        </h3>
-
-        <p class="mt-3 text-xl font-normal tracking-wide font-plex">
-       Regístrate con tu dirección de correo electrónico para recibir noticias y actualizaciones.
-        </p>
-        
-      </div>
-
-      <div class="w-full col-span-1 small:mt-5 fhd:mt-0 laptop:mt-12">
-
-        <input class="w-full col-span-1 px-6 py-4 text-2xl border-none rounded-full font-plex bg-neutral-300 focus:ring-4 focus:ring-azulAgroClaro" placeholder="Escribe aquí tu correo" id="news-submit" type="email">
-
-        <button title="enviar correo" class="w-full px-8 py-4 mt-4 text-3xl duration-200 rounded-full active:bg-blue-900 bg-azulAgro hover:bg-azulAgroClaro text-offWhite outline-offset-4 focus:bg-azulAgroClaro ring-4 ring-azulAgroClaro outline-4 outline-blue-900">enviar</button>
-
-      </div> 
- 
-    </section>
-
-    <!-- FOOTER -->
-    <!-- ADDRESS INFO -->
-    <footer class="w-full h-full mx-0 mt-5 laptop:hidden bg-slate-300">     
-      
-      <div class="px-6 py-6">
-        <div class="leading-relaxed">
-          <a class="pl-2 pr-2 focus:outline-azulAgro" target="_blank" href="https://goo.gl/maps/fJS3bVtCKDLNCb3w5"> <p class="py-2 text-base font-bold text-neutral-800"><i class="pr-1 text-azulAgro fa-solid fa-location-dot"></i>Av. Pedro Parra Centeno 110</p>
-          <span class="py-0 pl-0 text-base font-normal fhd:text-lg text-slate-600">Tlajomulco de Zúñiga, Jalisco</span> </a>
-        </div>
- 
-        <div class="mt-6 leading-snug">
-          <p class="py-0 mt-2 text-base font-bold text-slate-600"><i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33) 3798-1526</p>
-          <p class="py-0 mt-2 text-base font-bold text-slate-600"><i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33) 3798-0637</p>
-        </div>
-        
-        <!-- SOCIAL -->
-        <section class="my-8">
-          <div class="text-xl font-bold duration-300 text-azulAgro hover:text-azulAgroClaro">
-            <a title="facebook Agromega" class="py-2 pl-0 pr-2 focus:outline-azulAgro" target="_blank" href="https://www.facebook.com/profile.php?id=100063775232938">
-              <i class="fa-2xl fa-brands fa-square-facebook"></i>
-            </a>      
+            <div class="mt-4 leading-snug">
+              <p
+                class="py-0 pl-2 mt-2 text-sm font-bold fhd:text-lg text-slate-600"
+              >
+                <i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33)
+                3798-1526
+              </p>
+              <p
+                class="py-0 pl-2 mt-2 text-sm font-bold fhd:text-lg text-slate-600"
+              >
+                <i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33)
+                3798-0637
+              </p>
+            </div>
           </div>
         </section>
-        
+
+        <!-- SOCIAL -->
+        <footer class="pt-0 pb-6 mt-auto small:hidden laptop:block bg-offWhite">
+          <div
+            class="pl-2 text-xl font-bold duration-300 text-azulAgro hover:text-azulAgroClaro"
+          >
+            <a
+              title="facebook Agromega"
+              class="py-2 pl-0 pr-2 focus:outline-azulAgro"
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=100063775232938"
+            >
+              <i class="fa-2xl fa-brands fa-square-facebook"></i>
+            </a>
+          </div>
+        </footer>
       </div>
-    </footer>
-    
-   </div>
-  </main>
- </body>
- 
- 
+
+      <!-- LOGO / BURGER NAV -->
+      <div
+        class="flex flex-row items-center justify-between w-full mt-6 small:px-4 tablet:px-4 bg-offWhite laptop:hidden"
+      >
+        <img
+          class="small:w-60"
+          src="./img/logos/logo__agro--22.svg"
+          alt="logo agromega"
+        />
+        <div
+          class="p-2 mb-4 rounded-lg ring-4 ring-azulAgro laptop:hidden bg-neutral-300 active:bg-neutral-400"
+        >
+          <button title="menu nav" onclick="burgerNav()" class="w-[24px]">
+            <i class="text-azulAgro fa-xl fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- MAIN BANNER -->
+      <div
+        class="laptop:flex laptop:flex-col laptop:w-4/5 small:w-screen bg-offWhite"
+      >
+        <div class="relative laptop:flex">
+          <img
+            class="laptop:p-16 small:p-4 small:rounded-[30px] laptop:rounded-[90px] laptop:w-full laptop:bg-cover laptop:brightness-[.77]"
+            src="./img/tinified/banner__main__02__nosotros--agro22.jpg"
+            alt="campo al amanecer"
+          />
+
+          <!-- SLOGAN -->
+          <div
+            class="laptop:absolute laptop:self-center laptop:ml-28 small:m-0 small:px-4"
+          >
+            <h1
+              class="fhd:mt-10 laptop:mt-0 small:m-0 ipad:mr-0 hd:mr-20 font-medium ipad:w-5/6 hd:w-2/6 small:w-full fhd:text-[4.5rem] small:text-4xl small:leading-tight laptop:leading-tight laptop:text-offWhite small:text-offWhite small:bg-zinc-500 laptop:bg-transparent small:p-4 laptop:p-0 small:rounded-2xl fhd:text-8xl hd:text-5xl ipad:text-3xl laptop:text-5xl"
+            >
+              SOBRE NOSOTROS
+            </h1>
+
+            <h4
+              class="laptop:text-offWhite small:text-neutral-600 ipad:w-3/6 hd:w-2/6 small:w-full fhd:my-5 small:m-0 fhd:text-2xl laptop:text-xl small:text-xl laptop:font-light small:font-normal fhd:font-normal tablet:font-semibold small:py-4 laptop:py-2 ipad:text-base hd:text-xl"
+            >
+              Nuestro objetivo es simple: brindar soluciones integrales a tus
+              necesidades de suministro y desarrollo de productos agrícolas.
+            </h4>
+
+            <a class="focus:outline-none" href="contacto.html" tabindex="-1">
+              <button
+                title="contactar a Agromega"
+                title="contactar a Agromega"
+                class="duration-200 laptop:text-2xl small:text-3xl fhd:mt-5 laptop:mt-5 small:mt-0 laptop:px-8 small:px-auto laptop:w-auto small:w-full laptop:py-4 small:py-3 outline-offset-4 laptop:rounded-[10px] small:rounded-full focus:bg-azulAgroClaro text-offWhite outline-offWhite active:bg-blue-900 hover:bg-azulAgroClaro bg-azulAgro"
+              >
+                conócenos
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!-- FIRST SECTION / LO QUE CREEMOS -->
+        <section class="w-full mt-0 laptop:px-16 small:px-4">
+          <div
+            class="laptop:grid laptop:grid-cols-3 laptop:gap-5 small:flex small:flex-col ipad:mt-0 laptop:mt-0"
+          >
+            <h4
+              class="fhd:p-10 hd:p-5 fhd:tracking-normal laptop:p-10 small:text-3xl small:p-6 laptop:m-0 laptop:h-full laptop:flex laptop:flex-wrap small:mt-10 text-left self-center font-semibold text-offWhite ipad:text-base hd:text-4xl fhd:text-4xl laptop:text-4xl laptop:bg-azulAgro small:bg-slate-700 laptop:rounded-[20px] small:rounded-t-2xl items-center small:w-full"
+            >
+              LO QUE CREEMOS
+            </h4>
+
+            <div
+              class="font-normal laptop:col-span-2 small:w-full laptop:grid laptop:p-10 laptop:text-2xl fhd:text-2xl small:text-xl small:text-neutral-700 small:p-6 laptop:leading-relaxed laptop:text-justify small:rounded-b-2xl small:bg-neutral-300 laptop:bg-offWhite laptop:text-neutral-800"
+            >
+              <p>
+                <span
+                  class="font-semibold laptop:leading-relaxed small:text-neutral-700 laptop:text-azulAgro small:text-xl laptop:text-2xl"
+                  >Creemos que la industria agrícola en méxico necesita cambiar
+                  en todos los sentidos,</span
+                >
+                la forma de hacer negocios y la utilización de nuevas
+                tecnologías son imprescindibles.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECOND SECTION - LO QUE CREEMOS -->
+        <section
+          class="grid w-auto h-auto small:mt-5 laptop:mt-0 laptop:p-16 small:p-0 laptop:grid-cols-3 small:grid-cols-1 laptop:gap-10 ipad:gap-5 hd:gap-10 small:gap-4"
+        >
+          <!-- 2ND BANNER IMAGE -->
+          <div
+            class="laptop:h-auto laptop:col-span-3 small:hidden laptop:block"
+          >
+            <img
+              class="object-cover w-full laptop:rounded-[20px] laptop:brightness-[.80]"
+              src="./img/tinified/banner__sec__02__nosotros--agro22.jpg"
+              alt="berries"
+            />
+          </div>
+        </section>
+
+        <div class="laptop:px-24 laptop:py-12">
+          <!-- EQUIPO EXPERIMENTADO -->
+          <section
+            class="flex items-center small:flex-col laptop:flex-row laptop:px-16 laptop:pb-16 small:pb-8 small:px-4"
+          >
+            <div>
+              <img
+                class="object-cover min-w-[200px] max-w-[300px] laptop:pr-5 small:pb-2 laptop:pb-0"
+                src="./img/tinified/toons/agro--team.png"
+                alt="equipo trabajo Agromega"
+              />
+            </div>
+
+            <div
+              class="laptop:p-8 small:p-6 flex justify-center flex-col laptop:bg-neutral-200 small:bg-neutral-300 laptop:rounded-[15px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300"
+            >
+              <!-- TITLE -->
+              <h3
+                class="font-semibold laptop:text-3xl ipad:text-xl hd:text-4xl small:text-2xl text-azulAgro"
+              >
+                Somos un equipo de trabajo experimentado:
+              </h3>
+
+              <!-- TEXT -->
+              <p
+                class="leading-relaxed laptop:py-5 small:py-3 small:text-xl laptop:text-xl text-neutral-700"
+              >
+                Contamos con personal calificado con más de 20 años de
+                experiencia y excelentes relaciones con las principales empresas
+                del ramo a todos los niveles.
+              </p>
+            </div>
+          </section>
+
+          <!-- SOLUCIONES REALES -->
+          <section
+            class="flex items-center small:flex-col laptop:flex-row laptop:px-16 laptop:pb-16 small:pb-8 small:px-4"
+          >
+            <div>
+              <img
+                class="object-cover min-w-[200px] max-w-[300px] laptop:pr-5 small:pb-2 laptop:pb-0"
+                src="./img/tinified/toons/agro--solutions2.png"
+                alt="equipo solucionando"
+              />
+            </div>
+
+            <div
+              class="laptop:p-8 small:p-6 flex justify-center flex-col laptop:bg-neutral-200 small:bg-neutral-300 laptop:rounded-[15px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300"
+            >
+              <!-- TITLE -->
+              <h3
+                class="font-semibold laptop:text-3xl ipad:text-xl hd:text-4xl small:text-2xl text-azulAgro"
+              >
+                Tenemos soluciones reales a tus problemas:
+              </h3>
+
+              <!-- TEXT -->
+              <p
+                class="leading-relaxed laptop:py-5 small:py-3 small:text-xl laptop:text-xl text-neutral-700"
+              >
+                Ofrecemos productos de vanguardia probados de la más alta
+                calidad y servicios personalizados, a través de personal
+                capacitado y especializado por área.
+              </p>
+            </div>
+          </section>
+
+          <!-- NOS COMPROMETEMOS -->
+          <section
+            class="flex items-center small:flex-col laptop:flex-row laptop:px-16 laptop:pb-16 small:pb-8 small:px-4"
+          >
+            <div>
+              <img
+                class="object-cover min-w-[200px] max-w-[300px] laptop:pr-5 small:pb-2 laptop:pb-0"
+                src="./img/tinified/toons/agro--commitment.png"
+                alt="equipo analizando"
+              />
+            </div>
+
+            <div
+              class="laptop:p-8 small:p-6 flex justify-center flex-col laptop:bg-neutral-200 small:bg-neutral-300 laptop:rounded-[15px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300"
+            >
+              <!-- TITLE -->
+              <h3
+                class="font-semibold laptop:text-3xl ipad:text-xl hd:text-4xl small:text-2xl text-azulAgro"
+              >
+                Nos comprometemos con el campo y el agricultor:
+              </h3>
+
+              <!-- TEXT -->
+              <p
+                class="leading-relaxed laptop:py-5 small:py-3 small:text-xl laptop:text-xl text-neutral-700"
+              >
+                Buscamos continuamente tecnologías y prácticas amigables con el
+                agricultor y el medio ambiente, cuidando así todos los aspectos
+                que conforman su contexto.
+              </p>
+            </div>
+          </section>
+
+          <!-- AHORRA HASTA 20% -->
+          <section
+            class="flex items-center small:flex-col laptop:flex-row laptop:px-16 laptop:pb-16 small:pb-8 small:px-4"
+          >
+            <div>
+              <img
+                class="object-cover min-w-[200px] max-w-[300px] laptop:pr-5 small:pb-2 laptop:pb-0"
+                src="./img/tinified/toons/agro--save.png"
+                alt="ahorre con Agromega"
+              />
+            </div>
+
+            <div
+              class="laptop:p-8 small:p-6 flex justify-center flex-col laptop:bg-neutral-200 small:bg-neutral-300 laptop:rounded-[15px] small:rounded-2xl laptop:hover:drop-shadow-lg duration-300"
+            >
+              <!-- TITLE -->
+              <h3
+                class="font-semibold laptop:text-3xl ipad:text-xl hd:text-4xl small:text-2xl text-azulAgro"
+              >
+                Ahorra hasta un 20%:
+              </h3>
+
+              <!-- TEXT -->
+              <p
+                class="leading-relaxed laptop:py-5 small:py-3 small:text-xl laptop:text-xl text-neutral-700"
+              >
+                Somos distribuidores e importadores directos de varias líneas de
+                productos. Sin intermediarios, recibe el producto directamente
+                del fabricante a precios competitivos.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <!-- THIRD SECTION - SERVICIOS / MAIN -->
+        <section
+          class="w-auto small:bg-neutral-300 laptop:bg-azulAgro laptop:bg-opacity-20 laptop:grid small:flex small:flex-col laptop:px-16 small:px-4 small:py-10 laptop:py-16 laptop:gap-10 small:gap-4 small:mt-6 laptop:mt-0 laptop:grid-cols-4 small:grid-cols-1"
+        >
+          <!-- QUIENES SOMOS -->
+          <div
+            class="flex w-full h-full font-medium align-middle laptop:text-5xl small:text-3xl laptop:rounded-none small:rounded-2xl small:p-4 laptop:p-0 small:justify-center laptop:justify-start small:bg-azulAgro small:text-offWhite laptop:text-azulAgro laptop:bg-transparent text-neutral-700 laptop:col-span-4 small:col-span-1"
+          >
+            <h2 class="laptop:my-auto laptop:m-0 laptop:py-0 small:p-0">
+              QUIENES SOMOS
+            </h2>
+          </div>
+
+          <!-- SOMOS - HISTORIA -->
+          <div class="w-full laptop:col-span-2">
+            <h3
+              class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:pt-10 laptop:pb-0 small:py-5 small:text-offWhite laptop:text-neutral-700 font-medium laptop:tracking-normal small:tracking-normal laptop:rounded-t-[20px] small:rounded-t-2xl small:bg-neutral-600 laptop:bg-offWhite"
+            >
+              NUESTRA HISTORIA
+            </h3>
+
+            <p
+              class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-10 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl laptop:leading-relaxed"
+            >
+              Inició hace 18 años, como una pequeña comercializadora que vendía
+              agroquímicos y semillas.
+
+              <span
+                id="puntos"
+                title="Leer más"
+                class="py-0 pl-0 pr-2 text-lg text-black align-middle"
+                tabindex="0"
+              >
+                ...
+              </span>
+
+              <span id="mas" class="hidden">
+                Hoy en día seguimos vendiendo agroquímicos y semillas, pero
+                también fertilizantes, equipos de aplicación, equipos de riego y
+                más. Ese “más” es el valor agregado que brindamos a través del
+                mejor servicio al cliente, con soluciones integrales y una
+                cultura de trabajo que nos permita generar relaciones de
+                confianza a largo plazo.</span
+              >
+
+              <button
+                onclick="switchTexto()"
+                id="leer-mas"
+                class="px-3 py-0 text-lg text-white align-middle duration-200 rounded-lg bg-azulAgroClaro hover:bg-azulAgro focus:bg-azulAgro focus:ring-4 laptop:ring-offset-4 small:ring-offset-2 focus:outline-none ring-azulAgroClaro"
+              >
+                leer más
+              </button>
+            </p>
+          </div>
+
+          <!-- SOMOS - MISIÓN -->
+          <div class="w-full laptop:col-span-2">
+            <h3
+              class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:pt-10 laptop:pb-0 small:py-5 small:text-offWhite laptop:text-neutral-700 font-medium laptop:tracking-normal small:tracking-normal laptop:rounded-t-[20px] small:rounded-t-2xl small:bg-neutral-600 laptop:bg-offWhite"
+            >
+              MISIÓN
+            </h3>
+
+            <p
+              class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-10 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl laptop:leading-relaxed"
+            >
+              NUESTRA MISIÓN es descontracturar el modelo de negocio agrícola
+              actual, cambiando la forma de negociar,
+
+              <span
+                id="puntos"
+                title="Leer más"
+                class="py-0 pl-0 pr-2 text-lg text-black align-middle"
+                tabindex="0"
+              >
+                ...
+              </span>
+
+              <span id="mas" class="hidden">
+                al demostrar que es posible generar valor para toda la cadena de
+                proveeduría a largo plazo y de manera sostenida.</span
+              >
+
+              <button
+                onclick="switchTexto()"
+                id="leer-mas"
+                class="px-3 py-0 text-lg text-white align-middle duration-200 rounded-lg bg-azulAgroClaro hover:bg-azulAgro focus:bg-azulAgro focus:ring-4 laptop:ring-offset-4 small:ring-offset-2 focus:outline-none ring-azulAgroClaro"
+              >
+                leer más
+              </button>
+            </p>
+          </div>
+
+          <!-- SOMOS - VISIÓN -->
+          <div class="w-full laptop:col-span-2">
+            <h3
+              class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:pt-10 laptop:pb-0 small:py-5 small:text-offWhite laptop:text-neutral-700 font-medium laptop:tracking-normal small:tracking-normal laptop:rounded-t-[20px] small:rounded-t-2xl small:bg-neutral-600 laptop:bg-offWhite"
+            >
+              VISIÓN
+            </h3>
+
+            <p
+              class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-10 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl laptop:leading-relaxed"
+            >
+              Esperamos que en el futuro la gente no nos identifique como una
+              comercializadora de insumos agrícolas,
+
+              <span
+                id="puntos"
+                title="Leer más"
+                class="py-0 pl-0 pr-2 text-lg text-black align-middle"
+                tabindex="0"
+              >
+                ...
+              </span>
+
+              <span id="mas" class="hidden">
+                sino como una empresa que brinda servicios confiables, con un
+                compromiso permanente de calidad y transferencia de tecnología,
+                bajo un marco de responsabilidad con la sociedad y el medio
+                ambiente.</span
+              >
+
+              <button
+                onclick="switchTexto()"
+                id="leer-mas"
+                class="px-3 py-0 text-lg text-white align-middle duration-200 rounded-lg bg-azulAgroClaro hover:bg-azulAgro focus:bg-azulAgro focus:ring-4 laptop:ring-offset-4 small:ring-offset-2 focus:outline-none ring-azulAgroClaro"
+              >
+                leer más
+              </button>
+            </p>
+          </div>
+
+          <!-- SOMOS - VALORES -->
+          <div class="w-full laptop:col-span-2">
+            <h3
+              class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:pt-10 laptop:pb-0 small:py-5 small:text-offWhite laptop:text-neutral-700 font-medium laptop:tracking-normal small:tracking-normal laptop:rounded-t-[20px] small:rounded-t-2xl small:bg-neutral-600 laptop:bg-offWhite"
+            >
+              VALORES
+            </h3>
+
+            <div
+              class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-10 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl laptop:leading-relaxed"
+            >
+              A medida que crecemos como empresa, el mercado, nuestros procesos
+              y estrategias, se irán adaptando,
+
+              <span
+                id="puntos"
+                title="Leer más"
+                class="py-0 pl-0 pr-2 text-lg text-black align-middle"
+                tabindex="0"
+              >
+                ...
+              </span>
+
+              <div id="mas" class="hidden">
+                pero nuestros valores seguirán siendo los mismos:
+
+                <ul>
+                  <li>Exceder las expectativas a través del servicio.</li>
+                  <li>Aceptar el cambio y potencializarlo.</li>
+                  <li>Perseguir el crecimiento y el aprendizaje.</li>
+                  <li>Construir relaciones honestas con comunicación.</li>
+                  <li>
+                    Crear un equipo de trabajo positivo con humildad y espíritu
+                    familiar.
+                  </li>
+                  <li>Hacer más con menos.</li>
+                  <li>Ser apasionados y determinados.</li>
+                </ul>
+              </div>
+
+              <button
+                onclick="switchTexto()"
+                id="leer-mas"
+                class="px-3 py-0 text-lg text-white align-middle duration-200 rounded-lg bg-azulAgroClaro hover:bg-azulAgro focus:bg-azulAgro focus:ring-4 laptop:ring-offset-4 small:ring-offset-2 focus:outline-none ring-azulAgroClaro"
+              >
+                leer más
+              </button>
+            </div>
+          </div>
+
+          <!-- BUTTON CONTACT -->
+          <a
+            class="w-full focus:outline-none laptop:col-span-4"
+            href="#contacto"
+            tabindex="-1"
+          >
+            <button
+              title="contactar a Agromega"
+              class="w-full duration-200 !outline-none laptop:text-5xl small:text-3xl small:font-medium laptop:font-normal laptop:rounded-full small:rounded-full laptop:p-8 small:p-6 laptop:col-span-3 text-offWhite bg-azulAgro hover:bg-azulAgroClaro focus:ring-4 ring-offset-4 active:bg-blue-900 focus:ring-blue-900 focus:bg-azulAgroClaro"
+            >
+              pongámonos en contacto
+            </button>
+          </a>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section
+          class="laptop:mx-auto laptop:px-16 small:px-6 small:pt-20 small:pb-5 laptop:grid small:flex small:flex-col laptop:grid-cols-2 laptop:gap-20 fhd:my-16 laptop:my-0 tablet:mt-0 tablet:py-10 tablet:pb-20"
+        >
+          <div
+            class="text-left laptop:justify-center laptop:col-span-1 laptop:align-middle"
+          >
+            <h3
+              class="font-semibold tracking-wide laptop:text-5xl small:text-2xl"
+            >
+              Recibe información de nuestros productos.
+            </h3>
+
+            <p class="mt-3 text-xl font-normal tracking-wide font-plex">
+              Regístrate con tu dirección de correo electrónico para recibir
+              noticias y actualizaciones.
+            </p>
+          </div>
+
+          <div class="w-full col-span-1 small:mt-5 fhd:mt-0 laptop:mt-12">
+            <input
+              class="w-full col-span-1 px-6 py-4 text-2xl border-none rounded-full font-plex bg-neutral-300 focus:ring-4 focus:ring-azulAgroClaro"
+              placeholder="Escribe aquí tu correo"
+              id="news-submit"
+              type="email"
+            />
+
+            <button
+              title="enviar correo"
+              class="w-full px-8 py-4 mt-4 text-3xl duration-200 rounded-full active:bg-blue-900 bg-azulAgro hover:bg-azulAgroClaro text-offWhite outline-offset-4 focus:bg-azulAgroClaro ring-4 ring-azulAgroClaro outline-4 outline-blue-900"
+            >
+              enviar
+            </button>
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+        <!-- ADDRESS INFO -->
+        <footer class="w-full h-full mx-0 mt-5 laptop:hidden bg-slate-300">
+          <div class="px-6 py-6">
+            <div class="leading-relaxed">
+              <a
+                class="pl-2 pr-2 focus:outline-azulAgro"
+                target="_blank"
+                href="https://goo.gl/maps/fJS3bVtCKDLNCb3w5"
+              >
+                <p class="py-2 text-base font-bold text-neutral-800">
+                  <i class="pr-1 text-azulAgro fa-solid fa-location-dot"></i>Av.
+                  Pedro Parra Centeno 110
+                </p>
+                <span
+                  class="py-0 pl-0 text-base font-normal fhd:text-lg text-slate-600"
+                  >Tlajomulco de Zúñiga, Jalisco</span
+                >
+              </a>
+            </div>
+
+            <div class="mt-6 leading-snug">
+              <p class="py-0 mt-2 text-base font-bold text-slate-600">
+                <i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33)
+                3798-1526
+              </p>
+              <p class="py-0 mt-2 text-base font-bold text-slate-600">
+                <i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33)
+                3798-0637
+              </p>
+            </div>
+
+            <!-- SOCIAL -->
+            <section class="my-8">
+              <div
+                class="text-xl font-bold duration-300 text-azulAgro hover:text-azulAgroClaro"
+              >
+                <a
+                  title="facebook Agromega"
+                  class="py-2 pl-0 pr-2 focus:outline-azulAgro"
+                  target="_blank"
+                  href="https://www.facebook.com/profile.php?id=100063775232938"
+                >
+                  <i class="fa-2xl fa-brands fa-square-facebook"></i>
+                </a>
+              </div>
+            </section>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </body>
 </html>
