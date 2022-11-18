@@ -1259,6 +1259,16 @@ select {
   background-color: transparent;
 }
 
+.bg-\[\#92a6ff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(146 166 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#92ddff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(146 221 255 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1288,6 +1298,10 @@ select {
 
 .p-0 {
   padding: 0px;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .py-0 {
@@ -1828,6 +1842,16 @@ select {
   background-color: rgb(74 228 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#7f71ff\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(127 113 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#71b3ff\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(113 179 255 / var(--tw-bg-opacity));
+}
+
 .hover\:pl-0:hover {
   padding-left: 0px;
 }
@@ -1914,6 +1938,26 @@ select {
 .active\:bg-blue-900:active {
   --tw-bg-opacity: 1;
   background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+}
+
+.active\:bg-neutral-500:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(115 115 115 / var(--tw-bg-opacity));
+}
+
+.active\:text-offWhite:active {
+  --tw-text-opacity: 1;
+  color: rgb(242 242 242 / var(--tw-text-opacity));
+}
+
+.active\:text-neutral-800:active {
+  --tw-text-opacity: 1;
+  color: rgb(38 38 38 / var(--tw-text-opacity));
+}
+
+.active\:text-blue-900:active {
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
 }
 
 @media (min-width: 0px) {
@@ -2836,6 +2880,11 @@ select {
   .fhd\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  .fhd\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .fhd\:mt-0 {
