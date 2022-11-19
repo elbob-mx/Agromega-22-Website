@@ -22,7 +22,29 @@
 // }
 
 function switchTexto() {
-const historia = "Inició hace 18 años, como una pequeña comercializadora que vendía agroquímicos y semillas. Hoy en día seguimos vendiendo agroquímicos y semillas, pero también fertilizantes, equipos de aplicación, equipos de riego y más. Ese “más” es el valor agregado que brindamos a través del mejor servicio al cliente, con soluciones integrales y una cultura de trabajo que nos permita generar relaciones de confianza a largo plazo."
+const historia = document.getElementById("historia");
+const textoRestante = document.getElementById("textoRestante");
+const heading = document.getElementById("headingHistoria");
+const leerMas = document.getElementById("leer-mas");
 
-document.getElementById("mas").innerHTML = historia;
+if(parrafo.classList.contains("block")) {
+  historia.classList.add("laptop:col-span-4","duration-300")
+  historia.classList.remove("laptop:col-span-2")
+  parrafo.classList.remove("block");
+  textoRestante.classList.remove("hidden");
+  textoRestante.classList.add("block");
+  heading.classList.add("laptop:bg-azulAgroClaro","laptop:pb-2","duration-200");
+  heading.classList.remove("laptop:bg-offWhite","laptop:pb-0");
+  leerMas.innerHTML = "leer menos";
+} else {
+  historia.classList.remove("laptop:col-span-4","duration-300")
+  historia.classList.add("laptop:col-span-2")
+  parrafo.classList.add("block");
+  textoRestante.classList.add("hidden");
+  textoRestante.classList.remove("block");
+  heading.classList.remove("laptop:bg-azulAgroClaro","laptop:pb-2","duration-200");
+  heading.classList.add("laptop:bg-offWhite","laptop:pb-0","duration-200");
+  leerMas.innerHTML = "leer más";
+};
+
 };
