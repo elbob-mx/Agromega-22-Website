@@ -1599,6 +1599,11 @@ select {
     background-color: rgb(23 85 161 / var(--tw-bg-opacity));
   }
 
+  .small\:bg-neutral-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(115 115 115 / var(--tw-bg-opacity));
+  }
+
   .small\:p-0 {
     padding: 0px;
   }

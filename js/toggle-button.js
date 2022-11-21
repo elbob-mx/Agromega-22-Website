@@ -20,8 +20,7 @@
 //       leerMas.innerHTML = "leer menos";
 //   }
 // }
-
-function switchTexto(button) {
+function switchTexto() {
 const historia = document.getElementById("historia");
 const heading = document.getElementById("heading-historia");
 const textoHistoria = document.getElementById("texto-historia");
@@ -31,8 +30,8 @@ const leerMas = document.getElementById("leer-mas");
 
 if(intro.classList.contains("block")) {
   historia.classList.remove("laptop:col-span-2");
-  historia.classList.add("laptop:col-span-4","duration-300");
-  heading.classList.remove("laptop:bg-offWhite","laptop:pb-0","laptop:text-neutral-700");
+  historia.classList.add("laptop:col-span-4","laptop:duration-300","small:duration-300");
+  heading.classList.remove("laptop:bg-offWhite","laptop:pb-0","laptop:text-neutral-700","small-bg-neutral-500");
   heading.classList.add("laptop:bg-azulAgroClaro","laptop:pb-2","laptop:text-offWhite","duration-300","small:bg-neutral-600");
   intro.classList.remove("block");
   intro.classList.add("hidden","duration-300");

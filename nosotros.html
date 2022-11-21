@@ -266,6 +266,7 @@
           </div>
         </section>
 
+        <!-- EQUIPO -->
         <div class="laptop:px-24 laptop:py-12">
           <!-- EQUIPO EXPERIMENTADO -->
           <section
@@ -412,13 +413,12 @@
               QUIENES SOMOS
             </h2>
           </div>
-
           <!-- SOMOS - HISTORIA -->
           <section id="historia" class="w-full laptop:col-span-2">
 
-            <p id="texto-historia" class="block">
+            <div id="texto-historia" class="block">
               <h3 id="heading-historia"
-              class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:pt-10 laptop:pb-0 small:py-5 small:text-offWhite laptop:text-neutral-700 font-medium laptop:tracking-normal small:tracking-normal laptop:rounded-t-[20px] small:rounded-t-2xl laptop:bg-offWhite"
+              class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:pt-10 laptop:pb-0 small:py-5 small:text-offWhite laptop:text-neutral-700 font-medium laptop:tracking-normal small:tracking-normal laptop:rounded-t-[20px] small:rounded-t-2xl laptop:bg-azulAgroClaro small:bg-neutral-500"
               >
               NUESTRA HISTORIA
             </h3>
@@ -430,17 +430,17 @@
             </div>
             
             <button
-            type="button"
-            onclick="switchTexto(this)"
-            id="btn-historia"
+            onclick="switchTexto()"
+            id="leerHistoria"
             role="button"
-            class="px-4 py-1 mt-4 text-lg text-white align-middle rounded-lg bg-azulAgroClaro hover:bg-azulAgro active:bg-blue-900 duration-300 outline-4 outline-purple-500"
+            class="px-4 py-1 mt-4 text-lg text-white align-middle duration-300 rounded-lg bg-azulAgroClaro hover:bg-azulAgro active:bg-blue-900 outline-4 outline-purple-500"
             >
             leer más
           </button>
-          </p>
+          </div>
+        </div>
         </section>
-
+        
         <!-- SOMOS - MISIÓN -->
         <section id="historia" class="w-full laptop:col-span-2">
           <p id="texto-historia" class="block">
@@ -457,11 +457,9 @@
           </div>
           
           <button
-          type="button"
-          onclick="switchTexto(this)"
-          id="btn-mision"
+          id="leer-mas"
           role="button"
-          class="px-4 py-1 mt-4 text-lg text-white align-middle rounded-lg bg-azulAgroClaro hover:bg-azulAgro active:bg-blue-900 duration-300 outline-4 outline-purple-500"
+          class="px-4 py-1 mt-4 text-lg text-white align-middle duration-300 rounded-lg bg-azulAgroClaro hover:bg-azulAgro active:bg-blue-900 outline-4 outline-purple-500"
           >
           leer más
         </button>
@@ -486,7 +484,7 @@
           <button
           id="leer-mas"
           role="button"
-          class="px-4 py-1 mt-4 text-lg text-white align-middle rounded-lg bg-azulAgroClaro hover:bg-azulAgro active:bg-blue-900 duration-300 outline-4 outline-purple-500"
+          class="px-4 py-1 mt-4 text-lg text-white align-middle duration-300 rounded-lg bg-azulAgroClaro hover:bg-azulAgro active:bg-blue-900 outline-4 outline-purple-500"
           >
           leer más
         </button>
@@ -494,38 +492,37 @@
       </section>
 
               <!-- SOMOS - VALORES -->
-              <section id="historia" class="w-full laptop:col-span-2">
-                <p id="texto-historia" class="block">
-                  <h3 id="heading-historia"
-                  class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:pt-10 laptop:pb-0 small:py-5 small:text-offWhite laptop:text-neutral-700 font-medium laptop:tracking-normal small:tracking-normal laptop:rounded-t-[20px] small:rounded-t-2xl laptop:bg-offWhite"
-                  >
-                  NUESTROS VALORES
-                </h3>
-                
-                <div id="intro" class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-10 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl  laptop:leading-relaxed block">A medida que crecemos como empresa, el mercado, nuestros procesos y estrategias, se irán adaptando...</div>
-                
-                <div id="textoRestante" class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-0 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl laptop:leading-relaxed hidden">
-                  A medida que crecemos como empresa, el mercado, nuestros procesos y estrategias, se irán adaptando, pero nuestros valores seguirán siendo los mismos. <ul>
-
-                    <li>Exceder las expectativas a través del servicio.</li>
-                    <li>Aceptar el cambio y potencializarlo.</li>
-                    <li>Perseguir el crecimiento y el aprendizaje.</li>
-                    <li>Construir relaciones honestas con comunicación.</li>
-                    <li>Crear un equipo de trabajo positivo con humildad y espíritu familiar.</li>
-                    <li>Hacer más con menos.</li>
-                    <li>Ser apasionados y determinados.</li>
-                  </ul>
-                </div>
-                
-                <button
-                id="leer-mas"
-                role="button"
-                class="px-4 py-1 mt-4 text-lg text-white align-middle rounded-lg bg-azulAgroClaro hover:bg-azulAgro active:bg-blue-900 duration-300 outline-4 outline-purple-500"
-                >
-                leer más
-              </button>
-              </p>
-            </section>
+      <section id="historia" class="w-full laptop:col-span-2">
+        <p id="texto-historia" class="block">
+          <h3 id="heading-historia"
+          class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:pt-10 laptop:pb-0 small:py-5 small:text-offWhite laptop:text-neutral-700 font-medium laptop:tracking-normal small:tracking-normal laptop:rounded-t-[20px] small:rounded-t-2xl laptop:bg-offWhite"
+          >
+          NUESTROS VALORES
+        </h3>
+        
+        <div id="intro" class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-10 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl  laptop:leading-relaxed block">A medida que crecemos como empresa, el mercado, nuestros procesos y estrategias, se irán adaptando...</div>
+        
+        <div id="textoRestante" class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-0 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl laptop:leading-relaxed hidden">
+          A medida que crecemos como empresa, el mercado, nuestros procesos y estrategias, se irán adaptando, pero nuestros valores seguirán siendo los mismos. <
+            <li>Exceder las expectativas a través del servicio.</li>
+            <li>Aceptar el cambio y potencializarlo.</li>
+            <li>Perseguir el crecimiento y el aprendizaje.</li>
+            <li>Construir relaciones honestas con comunicación.</li>
+            <li>Crear un equipo de trabajo positivo con humildad y espíritu familiar.</li>
+            <li>Hacer más con menos.</li>
+            <li>Ser apasionados y determinados.</li>
+          </ul>
+        </div>
+        
+        <button
+        id="leer-mas"
+        role="button"
+        class="px-4 py-1 mt-4 text-lg text-white align-middle duration-300 rounded-lg bg-azulAgroClaro hover:bg-azulAgro active:bg-blue-900 outline-4 outline-purple-500"
+        >
+          leer más
+        </button>
+        </p>
+      </section>
 
           <!-- BUTTON CONTACT -->
           <a
