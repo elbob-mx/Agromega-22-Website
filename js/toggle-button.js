@@ -21,30 +21,33 @@
 //   }
 // }
 
-function switchTexto() {
+function switchTexto(button) {
 const historia = document.getElementById("historia");
+const heading = document.getElementById("heading-historia");
+const textoHistoria = document.getElementById("texto-historia");
+const intro = document.getElementById("intro");
 const textoRestante = document.getElementById("textoRestante");
-const heading = document.getElementById("headingHistoria");
 const leerMas = document.getElementById("leer-mas");
 
-if(parrafo.classList.contains("block")) {
-  historia.classList.add("laptop:col-span-4","duration-300")
-  historia.classList.remove("laptop:col-span-2")
-  parrafo.classList.remove("block");
-  textoRestante.classList.remove("hidden");
-  textoRestante.classList.add("block");
-  heading.classList.add("laptop:bg-azulAgroClaro","laptop:pb-2","duration-200");
-  heading.classList.remove("laptop:bg-offWhite","laptop:pb-0");
+if(intro.classList.contains("block")) {
+  historia.classList.remove("laptop:col-span-2");
+  historia.classList.add("laptop:col-span-4","duration-300");
+  heading.classList.remove("laptop:bg-offWhite","laptop:pb-0","laptop:text-neutral-700");
+  heading.classList.add("laptop:bg-azulAgroClaro","laptop:pb-2","laptop:text-offWhite","duration-300","small:bg-neutral-600");
+  intro.classList.remove("block");
+  intro.classList.add("hidden","duration-300");
+  textoRestante.classList.remove("hidden","laptop:px-0");
+  textoRestante.classList.add("block","laptop:px-10","duration-300");
   leerMas.innerHTML = "leer menos";
 } else {
-  historia.classList.remove("laptop:col-span-4","duration-300")
-  historia.classList.add("laptop:col-span-2")
-  parrafo.classList.add("block");
-  textoRestante.classList.add("hidden");
-  textoRestante.classList.remove("block");
-  heading.classList.remove("laptop:bg-azulAgroClaro","laptop:pb-2","duration-200");
-  heading.classList.add("laptop:bg-offWhite","laptop:pb-0","duration-200");
+  historia.classList.remove("laptop:col-span-4");
+  historia.classList.add("laptop:col-span-2");
+  heading.classList.remove("laptop:bg-azulAgroClaro","laptop:pb-2","laptop:text-offWhite");
+  heading.classList.add("laptop:bg-offWhite","laptop:pb-0","laptop:text-neutral-700");
+  intro.classList.remove("hidden");
+  intro.classList.add("block");
+  textoRestante.classList.remove("block","laptop:px-10");
+  textoRestante.classList.add("hidden","laptop:px-0");
   leerMas.innerHTML = "leer más";
 };
-
 };
