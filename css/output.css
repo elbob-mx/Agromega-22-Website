@@ -953,6 +953,14 @@ select {
   gap: 1rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-0 {
+  gap: 0px;
+}
+
 .self-center {
   align-self: center;
 }
