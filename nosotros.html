@@ -402,141 +402,55 @@
         </div>
 
         <!-- THIRD SECTION - SERVICIOS / MAIN -->
-        <section
-          class="w-auto small:bg-neutral-300 laptop:bg-azulAgro laptop:bg-opacity-20 laptop:grid small:flex small:flex-col laptop:px-16 small:px-4 small:py-10 laptop:py-16 laptop:gap-10 small:gap-4 small:mt-6 laptop:mt-0 laptop:grid-cols-4 small:grid-cols-1"
-        >
-          <!-- QUIENES SOMOS -->
-          <div
-            class="flex w-full h-full font-medium align-middle laptop:text-5xl small:text-3xl laptop:rounded-none small:rounded-2xl small:p-4 laptop:p-0 small:justify-center laptop:justify-start small:bg-azulAgro small:text-offWhite laptop:text-azulAgro laptop:bg-transparent text-neutral-700 laptop:col-span-4 small:col-span-1"
-          >
-            <h2 class="laptop:my-auto laptop:m-0 laptop:py-0 small:p-0">
-              QUIENES SOMOS
-            </h2>
-          </div>
-          <!-- SOMOS - HISTORIA -->
-          <section id="historia" class="w-full laptop:col-span-2">
+        <section class="grid gap-4 small:py-4 laptop:grid-cols-4 small:grid-cols-1 bg-slate-300 laptop:w-auto laptop:py-8 laptop:px-16 small:w-auto laptop:h-auto">
+          
+          <!-- NUESTRA HISTORIA -->
+          <section id="historia" class="laptop:col-span-2 small:col-span-1 laptop:m-6 small:m-4 bg-offWhite rounded-xl">
+            <h3 id="heading-historia" class="p-6 text-3xl font-medium duration-300 rounded-t-xl text-offWhite bg-neutral-400">NUESTRA HISTORIA</h3>
 
-            <div id="texto-historia" class="block">
-              <h3 id="heading-historia"
-              class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:pt-10 laptop:pb-0 small:py-5 small:text-offWhite laptop:text-neutral-700 font-medium laptop:tracking-normal small:tracking-normal laptop:rounded-t-[20px] small:rounded-t-2xl laptop:bg-azulAgroClaro small:bg-neutral-500"
-              >
-              NUESTRA HISTORIA
-            </h3>
+            <p id="intro-historia" class="block m-6 text-neutral-700 small:text-xl laptop:text-base"><strong>NUESTRA HISTORIA</strong> inició hace 18 años, como una pequeña comercializadora que vendía agroquímicos y semillas...</p>
+
+            <p id="texto-historia" class="hidden m-6 text-neutral-700 small:text-xl laptop:text-base"><strong>NUESTRA HISTORIA</strong> inició hace 18 años, como una pequeña comercializadora que vendía agroquímicos y semillas. Hoy en día seguimos vendiendo agroquímicos y semillas, pero también fertilizantes, equipos de aplicación, equipos de riego y más. Ese “más” es el valor agregado que brindamos a través del mejor servicio al cliente, con soluciones integrales y una cultura de trabajo que nos permita generar relaciones de confianza a largo plazo.</p>
+
+            <button id="btn-historia" onclick="switchTexto()" class="px-3 py-1 mx-6 my-3 text-lg duration-300 rounded-lg bg-azulAgroClaro hover:bg-azulAgro text-offWhite">leer más</button>
             
-            <div id="intro" class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-10 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl  laptop:leading-relaxed block">Inició hace 18 años, como una pequeña comercializadora que vendía agroquímicos y semillas...</div>
+          </section>
+
+          <!-- MISIÓN -->
+          <section id="historia" class="laptop:col-span-2 small:col-span-1 laptop:m-6 small:m-4 bg-offWhite rounded-xl">
+            <h3 id="heading-historia" class="p-6 text-3xl font-medium duration-300 rounded-t-xl text-offWhite bg-neutral-400">MISIÓN</h3>
+
+            <p id="intro-historia" class="block m-6 small:text-xl laptop:text-base text-neutral-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, exercitationem!</p>
+
+            <p id="texto-historia" class="hidden m-6 small:text-xl laptop:text-base text-neutral-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur hic placeat architecto tempore labore quaerat vel officiis molestiae facilis.</p>
+
+            <button id="btn-historia" onclick="switchTexto()" class="px-3 py-1 mx-6 my-3 text-lg duration-300 rounded-lg bg-azulAgroClaro hover:bg-azulAgro text-offWhite">leer más</button>
             
-            <div id="textoRestante" class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-0 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl laptop:leading-relaxed hidden">
-              Inició hace 18 años, como una pequeña comercializadora que vendía agroquímicos y semillas. Hoy en día seguimos vendiendo agroquímicos y semillas, pero también fertilizantes, equipos de aplicación, equipos de riego y más. Ese “más” es el valor agregado que brindamos a través del mejor servicio al cliente, con soluciones integrales y una cultura de trabajo que nos permita generar relaciones de confianza a largo plazo.
-            </div>
+          </section>
+
+          <!-- VISIÓN -->
+          <section id="historia" class="laptop:col-span-2 small:col-span-1 laptop:m-6 small:m-4 bg-offWhite rounded-xl">
+            <h3 id="heading-historia" class="p-6 text-3xl font-medium duration-300 rounded-t-xl text-offWhite bg-neutral-400">VISIÓN</h3>
+
+            <p id="intro-historia" class="block m-6 small:text-xl laptop:text-base text-neutral-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, exercitationem!</p>
+
+            <p id="texto-historia" class="hidden m-6 small:text-xl laptop:text-base text-neutral-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur hic placeat architecto tempore labore quaerat vel officiis molestiae facilis.</p>
+
+            <button id="btn-historia" onclick="switchTexto()" class="px-3 py-1 mx-6 my-3 text-lg duration-300 rounded-lg bg-azulAgroClaro hover:bg-azulAgro text-offWhite">leer más</button>
             
-            <button
-            onclick="switchTexto()"
-            id="leerHistoria"
-            role="button"
-            class="px-4 py-1 mt-4 text-lg text-white align-middle duration-300 rounded-lg bg-azulAgroClaro hover:bg-azulAgro active:bg-blue-900 outline-4 outline-purple-500"
-            >
-            leer más
-          </button>
-          </div>
-        </div>
-        </section>
-        
-        <!-- SOMOS - MISIÓN -->
-        <section id="historia" class="w-full laptop:col-span-2">
-          <p id="texto-historia" class="block">
-            <h3 id="heading-historia"
-            class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:pt-10 laptop:pb-0 small:py-5 small:text-offWhite laptop:text-neutral-700 font-medium laptop:tracking-normal small:tracking-normal laptop:rounded-t-[20px] small:rounded-t-2xl laptop:bg-offWhite"
-            >
-            MISIÓN
-          </h3>
-          
-          <div id="intro" class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-10 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl  laptop:leading-relaxed block"> <strong class="text-azulAgro">NUESTRA MISIÓN</strong> es descontracturar el modelo de negocio agrícola actual, cambiando la forma de negociar...</div>
-          
-          <div id="textoRestante" class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-0 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl laptop:leading-relaxed hidden">
-            <strong>NUESTRA MISIÓN</strong> es descontracturar el modelo de negocio agrícola actual, cambiando la forma de negociar, al demostrar que es posible generar valor para toda la cadena de proveeduría a largo plazo y de manera sostenida.
-          </div>
-          
-          <button
-          id="leer-mas"
-          role="button"
-          class="px-4 py-1 mt-4 text-lg text-white align-middle duration-300 rounded-lg bg-azulAgroClaro hover:bg-azulAgro active:bg-blue-900 outline-4 outline-purple-500"
-          >
-          leer más
-        </button>
-        </p>
-      </section>
+          </section>
 
-        <!-- SOMOS - VISIÓN -->
-        <section id="historia" class="w-full laptop:col-span-2">
-          <p id="texto-historia" class="block">
-            <h3 id="heading-historia"
-            class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:pt-10 laptop:pb-0 small:py-5 small:text-offWhite laptop:text-neutral-700 font-medium laptop:tracking-normal small:tracking-normal laptop:rounded-t-[20px] small:rounded-t-2xl laptop:bg-offWhite"
-            >
-            VISIÓN
-          </h3>
-          
-          <div id="intro" class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-10 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl  laptop:leading-relaxed block"> Esperamos que en el futuro la gente no nos identifique como una comercializadora de insumos agrícolas...</div>
-          
-          <div id="textoRestante" class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-0 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl laptop:leading-relaxed hidden">
-            Esperamos que en el futuro la gente no nos identifique como una comercializadora de insumos agrícolas, sino como una empresa que brinda servicios confiables, con un compromiso permanente de calidad y transferencia de tecnología, bajo un marco de responsabilidad con la sociedad y el medio ambiente.
-          </div>
-          
-          <button
-          id="leer-mas"
-          role="button"
-          class="px-4 py-1 mt-4 text-lg text-white align-middle duration-300 rounded-lg bg-azulAgroClaro hover:bg-azulAgro active:bg-blue-900 outline-4 outline-purple-500"
-          >
-          leer más
-        </button>
-        </p>
-      </section>
+          <!-- VALORES -->
+          <section id="historia" class="laptop:col-span-2 small:col-span-1 laptop:m-6 small:m-4 bg-offWhite rounded-xl">
+            <h3 id="heading-historia" class="p-6 text-3xl font-medium duration-300 rounded-t-xl text-offWhite bg-neutral-400">NUESTROS VALORES</h3>
 
-              <!-- SOMOS - VALORES -->
-      <section id="historia" class="w-full laptop:col-span-2">
-        <p id="texto-historia" class="block">
-          <h3 id="heading-historia"
-          class="laptop:text-3xl small:text-2xl laptop:px-10 small:px-6 laptop:pt-10 laptop:pb-0 small:py-5 small:text-offWhite laptop:text-neutral-700 font-medium laptop:tracking-normal small:tracking-normal laptop:rounded-t-[20px] small:rounded-t-2xl laptop:bg-offWhite"
-          >
-          NUESTROS VALORES
-        </h3>
-        
-        <div id="intro" class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-10 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl  laptop:leading-relaxed block">A medida que crecemos como empresa, el mercado, nuestros procesos y estrategias, se irán adaptando...</div>
-        
-        <div id="textoRestante" class="laptop:bg-offWhite laptop:text-neutral-600 small:bg-offWhite laptop:text-lg small:text-lg laptop:px-0 laptop:pt-4 laptop:pb-10 small:p-6 small:leading-relaxed laptop:rounded-b-[20px] small:rounded-b-2xl laptop:leading-relaxed hidden">
-          A medida que crecemos como empresa, el mercado, nuestros procesos y estrategias, se irán adaptando, pero nuestros valores seguirán siendo los mismos. <
-            <li>Exceder las expectativas a través del servicio.</li>
-            <li>Aceptar el cambio y potencializarlo.</li>
-            <li>Perseguir el crecimiento y el aprendizaje.</li>
-            <li>Construir relaciones honestas con comunicación.</li>
-            <li>Crear un equipo de trabajo positivo con humildad y espíritu familiar.</li>
-            <li>Hacer más con menos.</li>
-            <li>Ser apasionados y determinados.</li>
-          </ul>
-        </div>
-        
-        <button
-        id="leer-mas"
-        role="button"
-        class="px-4 py-1 mt-4 text-lg text-white align-middle duration-300 rounded-lg bg-azulAgroClaro hover:bg-azulAgro active:bg-blue-900 outline-4 outline-purple-500"
-        >
-          leer más
-        </button>
-        </p>
-      </section>
+            <p id="intro-historia" class="block m-6 small:text-xl laptop:text-base text-neutral-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, exercitationem!</p>
 
-          <!-- BUTTON CONTACT -->
-          <a
-            class="w-full focus:outline-none laptop:col-span-4"
-            href="#contacto"
-            tabindex="-1"
-          >
-            <button
-              title="contactar a Agromega"
-              class="w-full duration-200 !outline-none laptop:text-5xl small:text-3xl small:font-medium laptop:font-normal laptop:rounded-full small:rounded-full laptop:p-8 small:p-6 laptop:col-span-3 text-offWhite bg-azulAgro hover:bg-azulAgroClaro focus:ring-4 ring-offset-4 active:bg-blue-900 focus:ring-blue-900 focus:bg-azulAgroClaro"
-            >
-              pongámonos en contacto
-            </button>
-          </a>
+            <p id="texto-historia" class="hidden m-6 small:text-xl laptop:text-base text-neutral-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur hic placeat architecto tempore labore quaerat vel officiis molestiae facilis.</p>
+
+            <button id="btn-historia" onclick="switchTexto()" class="px-3 py-1 mx-6 my-3 text-lg duration-300 rounded-lg bg-azulAgroClaro hover:bg-azulAgro text-offWhite">leer más</button>
+            
+          </section>
         </section>
 
         <!-- NEWSLETTER -->
