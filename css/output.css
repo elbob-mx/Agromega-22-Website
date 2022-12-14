@@ -874,10 +874,6 @@ select {
   max-width: 300px;
 }
 
-.snap-center {
-  scroll-snap-align: center;
-}
-
 .grid-flow-row {
   grid-auto-flow: row;
 }
@@ -1121,12 +1117,16 @@ select {
   padding-right: 1rem;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .pr-1 {
@@ -1151,14 +1151,6 @@ select {
 
 .pt-2 {
   padding-top: 0.5rem;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
 }
 
 .text-left {
@@ -1357,14 +1349,6 @@ select {
   transition-duration: 500ms;
 }
 
-.hover\:border-l-\[20px\]:hover {
-  border-left-width: 20px;
-}
-
-.hover\:border-l-\[40px\]:hover {
-  border-left-width: 40px;
-}
-
 .hover\:border-l-\[30px\]:hover {
   border-left-width: 30px;
 }
@@ -1411,14 +1395,6 @@ select {
 
 .hover\:pl-0:hover {
   padding-left: 0px;
-}
-
-.hover\:font-bold:hover {
-  font-weight: 700;
-}
-
-.hover\:font-semibold:hover {
-  font-weight: 600;
 }
 
 .hover\:font-medium:hover {
@@ -1713,11 +1689,6 @@ select {
     padding-right: 2.5rem;
   }
 
-  .small\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
   .small\:pt-8 {
     padding-top: 2rem;
   }
@@ -1738,12 +1709,20 @@ select {
     padding-bottom: 0.5rem;
   }
 
-  .small\:pr-10 {
-    padding-right: 2.5rem;
+  .small\:pt-10 {
+    padding-top: 2.5rem;
   }
 
-  .small\:pr-20 {
-    padding-right: 5rem;
+  .small\:pt-6 {
+    padding-top: 1.5rem;
+  }
+
+  .small\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .small\:pt-12 {
+    padding-top: 3rem;
   }
 
   .small\:text-center {
@@ -1828,9 +1807,9 @@ select {
     padding: 1.25rem;
   }
 
-  .tablet\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+  .tablet\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .tablet\:px-4 {
@@ -1843,13 +1822,16 @@ select {
     padding-bottom: 2.5rem;
   }
 
-  .tablet\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .tablet\:pb-20 {
     padding-bottom: 5rem;
+  }
+
+  .tablet\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .tablet\:pb-12 {
+    padding-bottom: 3rem;
   }
 
   .tablet\:text-2xl {
@@ -1918,11 +1900,6 @@ select {
   .laptop\:mx-16 {
     margin-left: 4rem;
     margin-right: 4rem;
-  }
-
-  .laptop\:my-44 {
-    margin-top: 11rem;
-    margin-bottom: 11rem;
   }
 
   .laptop\:mt-16 {
@@ -1997,10 +1974,6 @@ select {
     width: auto;
   }
 
-  .laptop\:snap-center {
-    scroll-snap-align: center;
-  }
-
   .laptop\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2033,6 +2006,10 @@ select {
     align-items: flex-end;
   }
 
+  .laptop\:items-center {
+    align-items: center;
+  }
+
   .laptop\:justify-center {
     justify-content: center;
   }
@@ -2047,6 +2024,18 @@ select {
 
   .laptop\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .laptop\:gap-24 {
+    gap: 6rem;
+  }
+
+  .laptop\:gap-28 {
+    gap: 7rem;
+  }
+
+  .laptop\:gap-48 {
+    gap: 12rem;
   }
 
   .laptop\:self-center {
@@ -2111,17 +2100,12 @@ select {
     background-size: cover;
   }
 
-  .laptop\:object-center {
-    -o-object-position: center;
-       object-position: center;
+  .laptop\:p-16 {
+    padding: 4rem;
   }
 
   .laptop\:p-0 {
     padding: 0px;
-  }
-
-  .laptop\:p-16 {
-    padding: 4rem;
   }
 
   .laptop\:p-10 {
@@ -2136,13 +2120,19 @@ select {
     padding: 1rem;
   }
 
-  .laptop\:p-6 {
-    padding: 1.5rem;
-  }
-
   .laptop\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .laptop\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .laptop\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .laptop\:py-2 {
@@ -2180,11 +2170,6 @@ select {
     padding-right: 2.5rem;
   }
 
-  .laptop\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
   .laptop\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -2198,16 +2183,6 @@ select {
   .laptop\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .laptop\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .laptop\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 
   .laptop\:pl-2 {
@@ -2224,18 +2199,6 @@ select {
 
   .laptop\:pb-0 {
     padding-bottom: 0px;
-  }
-
-  .laptop\:pl-4 {
-    padding-left: 1rem;
-  }
-
-  .laptop\:pl-8 {
-    padding-left: 2rem;
-  }
-
-  .laptop\:pl-6 {
-    padding-left: 1.5rem;
   }
 
   .laptop\:text-left {
@@ -2283,11 +2246,6 @@ select {
   .laptop\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .laptop\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .laptop\:font-light {
