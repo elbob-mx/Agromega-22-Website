@@ -745,6 +745,10 @@ select {
   grid-column: span 4 / span 4;
 }
 
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
 .row-span-6 {
   grid-row: span 6 / span 6;
 }
@@ -884,6 +888,10 @@ select {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-rows-2 {
@@ -1041,6 +1049,36 @@ select {
   background-color: rgb(108 184 255 / var(--tw-bg-opacity));
 }
 
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-sky-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
+}
+
+.bg-sky-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(186 230 253 / var(--tw-bg-opacity));
+}
+
+.bg-sky-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(125 211 252 / var(--tw-bg-opacity));
+}
+
+.bg-sky-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 242 254 / var(--tw-bg-opacity));
+}
+
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1186,11 +1224,6 @@ select {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-3xl {
@@ -1391,6 +1424,46 @@ select {
 .hover\:bg-\[\#3a99f1\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(58 153 241 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-sky-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-sky-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 105 161 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-sky-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(186 230 253 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-sky-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(125 211 252 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#6cb8ff\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(108 184 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#95ccff\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(149 204 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#81b9ec\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(129 185 236 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#7bb9ff\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(123 185 255 / var(--tw-bg-opacity));
 }
 
 .hover\:pl-0:hover {
@@ -1669,9 +1742,9 @@ select {
     padding-bottom: 0.75rem;
   }
 
-  .small\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  .small\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .small\:py-10 {
@@ -1679,22 +1752,22 @@ select {
     padding-bottom: 2.5rem;
   }
 
+  .small\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .small\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  .small\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .small\:pt-8 {
     padding-top: 2rem;
   }
 
-  .small\:pt-20 {
-    padding-top: 5rem;
+  .small\:pt-12 {
+    padding-top: 3rem;
   }
 
   .small\:pb-5 {
@@ -1707,22 +1780,6 @@ select {
 
   .small\:pb-2 {
     padding-bottom: 0.5rem;
-  }
-
-  .small\:pt-10 {
-    padding-top: 2.5rem;
-  }
-
-  .small\:pt-6 {
-    padding-top: 1.5rem;
-  }
-
-  .small\:pt-0 {
-    padding-top: 0px;
-  }
-
-  .small\:pt-12 {
-    padding-top: 3rem;
   }
 
   .small\:text-center {
@@ -1764,6 +1821,10 @@ select {
 
   .small\:leading-tight {
     line-height: 1.25;
+  }
+
+  .small\:leading-snug {
+    line-height: 1.375;
   }
 
   .small\:tracking-normal {
@@ -1819,14 +1880,6 @@ select {
 
   .tablet\:py-10 {
     padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
-  .tablet\:pb-20 {
-    padding-bottom: 5rem;
-  }
-
-  .tablet\:pb-10 {
     padding-bottom: 2.5rem;
   }
 
@@ -2014,8 +2067,8 @@ select {
     justify-content: center;
   }
 
-  .laptop\:gap-20 {
-    gap: 5rem;
+  .laptop\:gap-28 {
+    gap: 7rem;
   }
 
   .laptop\:gap-5 {
@@ -2024,18 +2077,6 @@ select {
 
   .laptop\:gap-10 {
     gap: 2.5rem;
-  }
-
-  .laptop\:gap-24 {
-    gap: 6rem;
-  }
-
-  .laptop\:gap-28 {
-    gap: 7rem;
-  }
-
-  .laptop\:gap-48 {
-    gap: 12rem;
   }
 
   .laptop\:self-center {
@@ -2272,6 +2313,10 @@ select {
     line-height: 1.625;
   }
 
+  .laptop\:leading-normal {
+    line-height: 1.5;
+  }
+
   .laptop\:tracking-widest {
     letter-spacing: 0.1em;
   }
@@ -2409,11 +2454,6 @@ select {
   .fhd\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
-  }
-
-  .fhd\:my-8 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
   }
 
   .fhd\:mt-0 {
