@@ -745,10 +745,6 @@ select {
   grid-column: span 4 / span 4;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
 .row-span-6 {
   grid-row: span 6 / span 6;
 }
@@ -890,10 +886,6 @@ select {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
@@ -956,10 +948,6 @@ select {
 
 .rounded-\[45px\] {
   border-radius: 45px;
-}
-
-.rounded-2xl {
-  border-radius: 1rem;
 }
 
 .rounded-xl {
@@ -1047,31 +1035,6 @@ select {
 .bg-\[\#6cb8ff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(108 184 255 / var(--tw-bg-opacity));
-}
-
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
-.bg-sky-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
-}
-
-.bg-sky-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(186 230 253 / var(--tw-bg-opacity));
-}
-
-.bg-sky-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(125 211 252 / var(--tw-bg-opacity));
-}
-
-.bg-sky-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(224 242 254 / var(--tw-bg-opacity));
 }
 
 .bg-slate-200 {
@@ -1406,9 +1369,9 @@ select {
   background-color: rgb(121 183 255 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-\[\#71b3ff\]:hover {
+.hover\:bg-\[\#7bb9ff\]:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(113 179 255 / var(--tw-bg-opacity));
+  background-color: rgb(123 185 255 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-\[\#4ae4ff\]:hover {
@@ -1416,44 +1379,9 @@ select {
   background-color: rgb(74 228 255 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-sky-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[\#3a99f1\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(58 153 241 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-sky-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-sky-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(3 105 161 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-sky-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(186 230 253 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-sky-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(125 211 252 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[\#6cb8ff\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(108 184 255 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[\#95ccff\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(149 204 255 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-\[\#81b9ec\]:hover {
@@ -1461,9 +1389,14 @@ select {
   background-color: rgb(129 185 236 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-\[\#7bb9ff\]:hover {
+.hover\:bg-\[\#71b3ff\]:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(123 185 255 / var(--tw-bg-opacity));
+  background-color: rgb(113 179 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#3a99f1\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(58 153 241 / var(--tw-bg-opacity));
 }
 
 .hover\:pl-0:hover {
@@ -2009,6 +1942,18 @@ select {
 
   .laptop\:h-\[32rem\] {
     height: 32rem;
+  }
+
+  .laptop\:h-\[200px\] {
+    height: 200px;
+  }
+
+  .laptop\:h-\[300px\] {
+    height: 300px;
+  }
+
+  .laptop\:h-\[400px\] {
+    height: 400px;
   }
 
   .laptop\:w-1\/5 {
