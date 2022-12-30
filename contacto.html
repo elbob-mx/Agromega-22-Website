@@ -1,206 +1,247 @@
 <!DOCTYPE html>
 <html lang="es">
- <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title>Agromega</title>
-  <link rel="stylesheet" href="./css/output.css" />
-  <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="./js/controllers.js" defer></script>
-  <script type="text/javascript" src="./js/toggle-button.js" defer></script>
- </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Agromega</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <script
+      src="https://kit.fontawesome.com/9846627988.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./js/controllers.js" defer></script>
+    <script type="text/javascript" src="./js/toggle-button.js" defer></script>
+  </head>
 
- <body class="box-border w-screen overflow-x-hidden font-rubik bg-offWhite" tabindex="0">
+  <body
+    class="box-border w-screen overflow-x-hidden font-rubik bg-offWhite"
+    tabindex="0"
+  >
+    <main class="w-screen laptop:flex">
+      <!-- SIDEBAR RESPONSIVE -->
+      <div
+        class="sticky top-0 block small:hidden tablet:px-0 laptop:flex laptop:w-1/5 laptop:h-screen laptop:flex-col laptop:bg-offWhite"
+      >
+        <header
+          class="small:p-0 tablet:px-4 laptop:px-0 small:m-0 laptop:mt-16 bg-offWhite"
+        >
+          <img
+            class="small:pt-8 laptop:py-0 laptop:px-4 laptop:h-auto small:h-28 small:mx-auto small:p-4"
+            src="./img/logos/logo__agro--22.svg"
+            alt="logo agromega"
+          />
+        </header>
 
-  <main class="w-screen laptop:flex">
+        <nav
+          class="flex small:flex-wrap laptop:flex-nowrap small:flex-row laptop:flex-col bg-offWhite"
+        >
+          <ul
+            class="flex leading-loose small:flex-row laptop:flex-col small:m-0 laptop:mt-12"
+          >
+            <li
+              class="flex laptop:text-lg fhd:text-2xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-4 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="index.html"
+                >inicio</a
+              >
+            </li>
 
-         <!-- SIDEBAR RESPONSIVE -->
-         <div
-         class="sticky top-0 block small:hidden tablet:px-0 laptop:flex laptop:w-1/5 laptop:h-screen laptop:flex-col laptop:bg-offWhite"
-       >
-         <header
-           class="small:p-0 tablet:px-4 laptop:px-0 small:m-0 laptop:mt-16 bg-offWhite"
-         >
-           <img
-             class="small:pt-8 laptop:py-0 laptop:px-4 laptop:h-auto small:h-28 small:mx-auto small:p-4"
-             src="./img/logos/logo__agro--22.svg"
-             alt="logo agromega"
-           />
-         </header>
- 
-         <nav
-           class="flex small:flex-wrap laptop:flex-nowrap small:flex-row laptop:flex-col bg-offWhite"
-         >
-           <ul
-             class="flex leading-loose small:flex-row laptop:flex-col small:m-0 laptop:mt-12"
-           >
-             <li
-               class="flex laptop:text-lg fhd:text-2xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
-             >
-               <a
-                 class="pl-4 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
-                 href="index.html"
-                 >inicio</a
-               >
-             </li>
- 
-             <li
-               class="flex laptop:text-lg fhd:text-2xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
-             >
-               <a
-                 class="pl-4 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
-                 href="nosotros.html"
-                 >nosotros</a
-               >
-             </li>
- 
-             <li
-               class="flex laptop:text-lg fhd:text-2xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
-             >
-               <a
-                 class="pl-4 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
-                 href="productos.html"
-                 >productos</a
-               >
-             </li>
- 
-             <li
-               class="flex laptop:text-lg fhd:text-2xl hd:text-xl laptop:leading-loose ipad:leading-normal hd:leading-loose fhd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
-             >
-               <a
-                 class="pl-4 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
-                 href="servicios.html"
-                 >servicios</a
-               >
-             </li>
- 
-             <li
-               class="flex laptop:text-lg fhd:text-2xl hd:text-xl laptop:leading-loose ipad:leading-normal hd:leading-loose fhd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
-             >
-               <a
-                 class="pl-4 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
-                 href="bolsa-de-trabajo.html"
-                 >trabajo</a
-               >
-             </li>
- 
-             <li
-               class="flex laptop:text-lg fhd:text-2xl hd:text-xl laptop:leading-loose ipad:leading-normal hd:leading-loose fhd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
-             >
-               <a
-                 class="pl-4 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
-                 href="contacto.html"
-                 >contacto</a
-               >
-             </li>
-           </ul>
-         </nav>
- 
-         <!-- ADDRESS INFO -->
-         <section
-           class="w-full h-full small:hidden laptop:block bg-offWhite laptop:mt-14 laptop:pl-2 fhd:mt-0"
-         >
-           <div>
-             <div class="leading-relaxed fhd:mt-28 laptop:mt-0">
-               <a
-                 class="pl-2 pr-2 focus:outline-azulAgro"
-                 target="_blank"
-                 href="https://goo.gl/maps/fJS3bVtCKDLNCb3w5"
-               >
-                 <p
-                   class="py-0 pl-2 text-xs font-bold fhd:text-lg text-slate-600"
-                 >
-                   <i class="pr-1 text-azulAgro fa-solid fa-location-dot"></i>Av.
-                   Pedro Parra Centeno 110
-                 </p>
-                 <span
-                   class="py-0 pl-2 text-xs font-normal fhd:text-lg text-slate-600"
-                   >Tlajomulco de Zúñiga, Jalisco</span
-                 >
-               </a>
-             </div>
- 
-             <div class="mt-4 leading-snug">
-               <p
-                 class="py-0 pl-2 mt-2 text-sm font-bold fhd:text-lg text-slate-600"
-               >
-                 <i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33)
-                 3798-1526
-               </p>
-               <p
-                 class="py-0 pl-2 mt-2 text-sm font-bold fhd:text-lg text-slate-600"
-               >
-                 <i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33)
-                 3798-0637
-               </p>
-             </div>
-           </div>
-         </section>
- 
-         <!-- SOCIAL -->
-         <footer class="pt-0 pb-6 mt-auto small:hidden laptop:block laptop:pl-2 bg-offWhite">
-           <div
-             class="pl-2 text-xl font-bold duration-300 text-azulAgro hover:text-azulAgroClaro"
-           >
-             <a
-               title="facebook Agromega"
-               class="py-2 pl-0 pr-2 focus:outline-azulAgro"
-               target="_blank"
-               href="https://www.facebook.com/profile.php?id=100063775232938"
-             >
-               <i class="fa-2xl fa-brands fa-square-facebook"></i>
-             </a>
-           </div>
-         </footer>
-       </div>
- 
-       <!-- LOGO / BURGER NAV -->
-       <div
-         class="flex flex-row items-center justify-between w-full mt-6 small:px-4 tablet:px-4 bg-offWhite laptop:hidden"
-       >
-         <img
-           class="small:w-60"
-           src="./img/logos/logo__agro--22.svg"
-           alt="logo agromega"
-         />
-         <div
-           class="p-2 mb-4 rounded-lg ring-4 ring-azulAgro laptop:hidden bg-neutral-300 active:bg-neutral-400"
-         >
-           <button title="menu nav" onclick="burgerNav()" class="w-[24px]">
-             <i class="text-azulAgro fa-xl fa-solid fa-bars"></i>
-           </button>
-         </div>
-       </div>
+            <li
+              class="flex laptop:text-lg fhd:text-2xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-4 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="nosotros.html"
+                >nosotros</a
+              >
+            </li>
 
-   <!-- LOGO / BURGER NAV -->
-   <div class="flex flex-row items-center justify-between w-full mt-6 small:px-4 tablet:px-4 bg-offWhite laptop:hidden">
-    <img class="small:w-60 " src="./img/logos/logo__agro--22.svg" alt="logo agromega">
-    <div class="p-2 mb-4 rounded-lg ring-4 ring-azulAgro laptop:hidden bg-neutral-300 active:bg-neutral-400">
-     <button title="menu nav" onclick="burgerNav()" class="w-[24px]"><i class="text-azulAgro fa-xl fa-solid fa-bars"></i></button>
-    </div>
-   </div>
-   
-   <!-- MAIN BANNER -->
-   <div class="laptop:flex laptop:flex-col laptop:w-4/5 small:w-screen bg-offWhite">
-    <div class="relative laptop:flex">
-     
-     <img class="laptop:p-16 small:p-4 small:rounded-[30px] laptop:rounded-[90px] laptop:w-full laptop:bg-cover laptop:brightness-[.77]" src="./img/tinified/index-main-banner.jpg" alt="campo al amanecer">
-     
-     <!-- SLOGAN -->
-     <div class="laptop:absolute laptop:self-center laptop:ml-28 small:m-0 small:px-4">      
-     <h1 class="fhd:mt-10 laptop:mt-0 small:m-0 ipad:mr-0 hd:mr-20 font-semibold ipad:w-5/6 hd:w-2/6 small:w-full fhd:text-[4.5rem] small:text-4xl small:leading-tight laptop:leading-tight laptop:text-offWhite small:text-offWhite small:bg-zinc-500 laptop:bg-transparent small:p-4 laptop:p-0 small:rounded-2xl fhd:text-8xl hd:text-5xl ipad:text-3xl laptop:text-5xl">SOBRE NOSOTROS</h1>
+            <li
+              class="flex laptop:text-lg fhd:text-2xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-4 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="productos.html"
+                >productos</a
+              >
+            </li>
 
-     <h4 class="lowercase laptop:text-offWhite small:text-neutral-600 ipad:w-3/6 hd:w-2/6 small:w-full fhd:my-5 small:m-0 fhd:text-2xl laptop:text-xl small:text-xl laptop:font-light small:font-normal fhd:font-normal tablet:font-semibold small:py-4 laptop:py-2 ipad:text-base hd:text-xl">NUESTRO OBJETIVO ES SIMPLE: BRINDAR SOLUCIONES INTEGRALES A TUS NECESIDADES DE SUMINISTRO Y DESARROLLO DE PRODUCTOS AGRÍCOLAS.</h4>
+            <li
+              class="flex laptop:text-lg fhd:text-2xl hd:text-xl laptop:leading-loose ipad:leading-normal hd:leading-loose fhd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-4 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="servicios.html"
+                >servicios</a
+              >
+            </li>
 
-     <a class="focus:outline-none" href="#contacto" tabindex="-1"> <button title="contactar a Agromega" title="contactar a Agromega" class="duration-200 laptop:text-2xl small:text-3xl fhd:mt-5 laptop:mt-5 small:mt-0 laptop:px-8 small:px-auto laptop:w-auto small:w-full laptop:py-4 small:py-3 outline-offset-4 laptop:rounded-[10px] small:rounded-full focus:bg-azulAgroClaro text-offWhite outline-offWhite active:bg-blue-900 hover:bg-azulAgroClaro bg-azulAgro">conócenos</button> </a>
-    </div>
-   </div>
+            <li
+              class="flex laptop:text-lg fhd:text-2xl hd:text-xl laptop:leading-loose ipad:leading-normal hd:leading-loose fhd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-4 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="bolsa-de-trabajo.html"
+                >trabajo</a
+              >
+            </li>
 
+            <li
+              class="flex laptop:text-lg fhd:text-2xl hd:text-xl laptop:leading-loose ipad:leading-normal hd:leading-loose fhd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-4 pr-2 focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="contacto.html"
+                >contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
 
+        <!-- ADDRESS INFO -->
+        <section
+          class="w-full h-full small:hidden laptop:block bg-offWhite laptop:mt-14 laptop:pl-2 fhd:mt-0"
+        >
+          <div>
+            <div class="leading-relaxed fhd:mt-28 laptop:mt-0">
+              <a
+                class="pl-2 pr-2 focus:outline-azulAgro"
+                target="_blank"
+                href="https://goo.gl/maps/fJS3bVtCKDLNCb3w5"
+              >
+                <p
+                  class="py-0 pl-2 text-xs font-bold fhd:text-lg text-slate-600"
+                >
+                  <i class="pr-1 text-azulAgro fa-solid fa-location-dot"></i>Av.
+                  Pedro Parra Centeno 110
+                </p>
+                <span
+                  class="py-0 pl-2 text-xs font-normal fhd:text-lg text-slate-600"
+                  >Tlajomulco de Zúñiga, Jalisco</span
+                >
+              </a>
+            </div>
+
+            <div class="mt-4 leading-snug">
+              <p
+                class="py-0 pl-2 mt-2 text-sm font-bold fhd:text-lg text-slate-600"
+              >
+                <i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33)
+                3798-1526
+              </p>
+              <p
+                class="py-0 pl-2 mt-2 text-sm font-bold fhd:text-lg text-slate-600"
+              >
+                <i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33)
+                3798-0637
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SOCIAL -->
+        <footer
+          class="pt-0 pb-6 mt-auto small:hidden laptop:block laptop:pl-2 bg-offWhite"
+        >
+          <div
+            class="pl-2 text-xl font-bold duration-300 text-azulAgro hover:text-azulAgroClaro"
+          >
+            <a
+              title="facebook Agromega"
+              class="py-2 pl-0 pr-2 focus:outline-azulAgro"
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=100063775232938"
+            >
+              <i class="fa-2xl fa-brands fa-square-facebook"></i>
+            </a>
+          </div>
+        </footer>
+      </div>
+
+      <!-- LOGO / BURGER NAV -->
+      <div
+        class="flex flex-row items-center justify-between w-full mt-6 small:px-4 tablet:px-4 bg-offWhite laptop:hidden"
+      >
+        <img
+          class="small:w-60"
+          src="./img/logos/logo__agro--22.svg"
+          alt="logo agromega"
+        />
+        <div
+          class="p-2 mb-4 rounded-lg ring-4 ring-azulAgro laptop:hidden bg-neutral-300 active:bg-neutral-400"
+        >
+          <button title="menu nav" onclick="burgerNav()" class="w-[24px]">
+            <i class="text-azulAgro fa-xl fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- LOGO / BURGER NAV -->
+      <div
+        class="flex flex-row items-center justify-between w-full mt-6 small:px-4 tablet:px-4 bg-offWhite laptop:hidden"
+      >
+        <img
+          class="small:w-60"
+          src="./img/logos/logo__agro--22.svg"
+          alt="logo agromega"
+        />
+        <div
+          class="p-2 mb-4 rounded-lg ring-4 ring-azulAgro laptop:hidden bg-neutral-300 active:bg-neutral-400"
+        >
+          <button title="menu nav" onclick="burgerNav()" class="w-[24px]">
+            <i class="text-azulAgro fa-xl fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- MAIN BANNER -->
+      <div
+        class="laptop:flex laptop:flex-col laptop:w-4/5 small:w-screen bg-offWhite"
+      >
+        <div class="relative laptop:flex">
+          <img
+            class="laptop:p-16 small:p-4 small:rounded-[30px] laptop:rounded-[90px] laptop:w-full laptop:bg-cover laptop:brightness-[.77]"
+            src="./img/tinified/index-main-banner.jpg"
+            alt="campo al amanecer"
+          />
+
+          <!-- SLOGAN -->
+          <div
+            class="laptop:absolute laptop:self-center laptop:ml-28 small:m-0 small:px-4"
+          >
+            <h1
+              class="fhd:mt-10 laptop:mt-0 small:m-0 ipad:mr-0 hd:mr-20 font-semibold ipad:w-5/6 hd:w-2/6 small:w-full fhd:text-[4.5rem] small:text-4xl small:leading-tight laptop:leading-tight laptop:text-offWhite small:text-offWhite small:bg-zinc-500 laptop:bg-transparent small:p-4 laptop:p-0 small:rounded-2xl fhd:text-8xl hd:text-5xl ipad:text-3xl laptop:text-5xl"
+            >
+              SOBRE NOSOTROS
+            </h1>
+
+            <h4
+              class="lowercase laptop:text-offWhite small:text-neutral-600 ipad:w-3/6 hd:w-2/6 small:w-full fhd:my-5 small:m-0 fhd:text-2xl laptop:text-xl small:text-xl laptop:font-light small:font-normal fhd:font-normal tablet:font-semibold small:py-4 laptop:py-2 ipad:text-base hd:text-xl"
+            >
+              NUESTRO OBJETIVO ES SIMPLE: BRINDAR SOLUCIONES INTEGRALES A TUS
+              NECESIDADES DE SUMINISTRO Y DESARROLLO DE PRODUCTOS AGRÍCOLAS.
+            </h4>
+
+            <a class="focus:outline-none" href="#contacto" tabindex="-1">
+              <button
+                title="contactar a Agromega"
+                title="contactar a Agromega"
+                class="duration-200 laptop:text-2xl small:text-3xl fhd:mt-5 laptop:mt-5 small:mt-0 laptop:px-8 small:px-auto laptop:w-auto small:w-full laptop:py-4 small:py-3 outline-offset-4 laptop:rounded-[10px] small:rounded-full focus:bg-azulAgroClaro text-offWhite outline-offWhite active:bg-blue-900 hover:bg-azulAgroClaro bg-azulAgro"
+              >
+                conócenos
+              </button>
+            </a>
+          </div>
+        </div>
 
         <!-- NEWSLETTER -->
         <section
@@ -238,36 +279,56 @@
           </div>
         </section>
 
-    <!-- FOOTER -->
-    <!-- ADDRESS INFO -->
-    <footer class="w-full h-full mx-0 mt-5 laptop:hidden bg-slate-300">     
-      
-      <div class="px-6 py-6">
-        <div class="leading-relaxed">
-          <a class="pl-2 pr-2 focus:outline-azulAgro" target="_blank" href="https://goo.gl/maps/fJS3bVtCKDLNCb3w5"> <p class="py-2 text-base font-bold text-neutral-800"><i class="pr-1 text-azulAgro fa-solid fa-location-dot"></i>Av. Pedro Parra Centeno 110</p>
-          <span class="py-0 pl-0 text-base font-normal fhd:text-lg text-slate-600">Tlajomulco de Zúñiga, Jalisco</span> </a>
-        </div>
- 
-        <div class="mt-6 leading-snug">
-          <p class="py-0 mt-2 text-base font-bold text-slate-600"><i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33) 3798-1526</p>
-          <p class="py-0 mt-2 text-base font-bold text-slate-600"><i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33) 3798-0637</p>
-        </div>
-        
-        <!-- SOCIAL -->
-        <section class="my-8">
-          <div class="text-xl font-bold duration-300 text-azulAgro hover:text-azulAgroClaro">
-            <a title="facebook Agromega" class="py-2 pl-0 pr-2 focus:outline-azulAgro" target="_blank" href="https://www.facebook.com/profile.php?id=100063775232938">
-              <i class="fa-2xl fa-brands fa-square-facebook"></i>
-            </a>      
+        <!-- FOOTER -->
+        <!-- ADDRESS INFO -->
+        <footer class="w-full h-full mx-0 mt-5 laptop:hidden bg-slate-300">
+          <div class="px-6 py-6">
+            <div class="leading-relaxed">
+              <a
+                class="pl-2 pr-2 focus:outline-azulAgro"
+                target="_blank"
+                href="https://goo.gl/maps/fJS3bVtCKDLNCb3w5"
+              >
+                <p class="py-2 text-base font-bold text-neutral-800">
+                  <i class="pr-1 text-azulAgro fa-solid fa-location-dot"></i>Av.
+                  Pedro Parra Centeno 110
+                </p>
+                <span
+                  class="py-0 pl-0 text-base font-normal fhd:text-lg text-slate-600"
+                  >Tlajomulco de Zúñiga, Jalisco</span
+                >
+              </a>
+            </div>
+
+            <div class="mt-6 leading-snug">
+              <p class="py-0 mt-2 text-base font-bold text-slate-600">
+                <i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33)
+                3798-1526
+              </p>
+              <p class="py-0 mt-2 text-base font-bold text-slate-600">
+                <i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33)
+                3798-0637
+              </p>
+            </div>
+
+            <!-- SOCIAL -->
+            <section class="my-8">
+              <div
+                class="text-xl font-bold duration-300 text-azulAgro hover:text-azulAgroClaro"
+              >
+                <a
+                  title="facebook Agromega"
+                  class="py-2 pl-0 pr-2 focus:outline-azulAgro"
+                  target="_blank"
+                  href="https://www.facebook.com/profile.php?id=100063775232938"
+                >
+                  <i class="fa-2xl fa-brands fa-square-facebook"></i>
+                </a>
+              </div>
+            </section>
           </div>
-        </section>
-        
+        </footer>
       </div>
-    </footer>
-    
-   </div>
-  </main>
- </body>
- 
- 
+    </main>
+  </body>
 </html>
