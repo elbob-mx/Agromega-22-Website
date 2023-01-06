@@ -1847,6 +1847,14 @@ select {
   background-color: rgb(0 171 234 / var(--tw-bg-opacity));
 }
 
+.focus\:font-medium:focus {
+  font-weight: 500;
+}
+
+.focus\:font-bold:focus {
+  font-weight: 700;
+}
+
 .focus\:text-offWhite:focus {
   --tw-text-opacity: 1;
   color: rgb(242 242 242 / var(--tw-text-opacity));
