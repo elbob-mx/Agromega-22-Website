@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sistemas de riego | Agromega</title>
+    <link
+      rel="shortcut icon"
+      href="img/favicon/fav_agro_a.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/output.css" />
+    <script
+      src="https://kit.fontawesome.com/9846627988.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./js/controllers.js" defer></script>
+    <script type="text/javascript" src="./js/toggle-button.js" defer></script>
+  </head>
+
+  <body
+    class="box-border w-screen overflow-x-hidden font-rubik bg-offWhite"
+    tabindex="0"
+  >
+    <main class="w-screen laptop:flex">
+      <!-- SIDEBAR RESPONSIVE -->
+      <div
+        class="sticky top-0 block small:hidden tablet:px-0 laptop:flex laptop:w-1/5 laptop:h-screen laptop:flex-col laptop:bg-offWhite"
+      >
+        <header class="tablet:px-4 laptop:px-0 laptop:mt-16 bg-offWhite">
+          <img
+            class="laptop:py-0 laptop:px-4 laptop:h-12"
+            src="./img/logos/logo__agro--22.svg"
+            alt="logo agromega"
+          />
+        </header>
+
+        <nav
+          class="flex small:flex-wrap laptop:flex-nowrap small:flex-row laptop:flex-col bg-offWhite"
+        >
+          <ul
+            class="flex leading-loose small:flex-row laptop:flex-col small:m-0 laptop:mt-12"
+          >
+            <li
+              class="flex laptop:text-lg fhd:text-xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-4 pr-10 duration-200 rounded-r-xl focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="index.html"
+                >inicio</a
+              >
+            </li>
+
+            <li
+              class="flex laptop:text-lg fhd:text-xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-4 pr-10 duration-200 rounded-r-xl focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="nosotros.html"
+                >nosotros</a
+              >
+            </li>
+
+            <li
+              class="flex laptop:text-lg fhd:text-xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-4 pr-10 duration-200 rounded-r-xl focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="productos.html"
+                >productos</a
+              >
+            </li>
+
+            <li
+              class="flex laptop:text-lg fhd:text-xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-4 pr-10 duration-200 rounded-r-xl focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="servicios.html"
+                >servicios</a
+              >
+            </li>
+
+            <li
+              class="flex laptop:text-lg fhd:text-xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-4 pr-10 duration-200 rounded-r-xl focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="bolsa-de-trabajo.html"
+                >trabajo</a
+              >
+            </li>
+
+            <li
+              class="flex laptop:text-lg fhd:text-xl hd:text-xl fhd:leading-loose laptop:leading-loose ipad:leading-normal hd:leading-loose duration-300 hover:border-l-[30px] hover:font-medium hover:pl-0 border-azulAgro hover:text-azulAgro text-slate-600"
+            >
+              <a
+                class="pl-4 pr-10 duration-200 rounded-r-xl focus:outline-azulAgro focus:bg-azulAgro focus:text-offWhite"
+                href="contacto.html"
+                >contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- ADDRESS INFO -->
+        <section
+          class="w-full h-full small:hidden laptop:block bg-offWhite laptop:mt-14 laptop:pl-2 fhd:mt-0"
+        >
+          <div>
+            <div class="leading-relaxed fhd:mt-28 laptop:mt-0">
+              <a
+                class="pl-2 pr-2 focus:outline-azulAgro"
+                target="_blank"
+                href="https://goo.gl/maps/fJS3bVtCKDLNCb3w5"
+              >
+                <p
+                  class="py-0 pl-2 text-xs font-bold fhd:text-sm text-slate-600"
+                >
+                  <i class="pr-1 text-azulAgro fa-solid fa-location-dot"></i>Av.
+                  Pedro Parra Centeno 110
+                </p>
+                <span class="py-0 pl-2 text-xs fhd:text-sm text-slate-600"
+                  >Tlajomulco de Zúñiga, Jalisco</span
+                >
+              </a>
+            </div>
+
+            <div class="mt-4 leading-snug">
+              <p
+                class="py-0 pl-2 mt-2 text-sm font-bold fhd:text-base text-slate-600"
+              >
+                <i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33)
+                3798-1526
+              </p>
+              <p
+                class="py-0 pl-2 mt-2 text-sm font-bold fhd:text-base text-slate-600"
+              >
+                <i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33)
+                3798-0637
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SOCIAL -->
+        <footer
+          class="pt-0 pb-6 mt-auto small:hidden laptop:block laptop:pl-2 bg-offWhite"
+        >
+          <div
+            class="pl-2 text-xl font-bold duration-300 text-azulAgro hover:text-azulAgroClaro"
+          >
+            <a
+              title="facebook Agromega"
+              class="py-2 pl-0 pr-2 focus:outline-azulAgro"
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=100063775232938"
+            >
+              <i class="fa-2xl fa-brands fa-square-facebook"></i>
+            </a>
+          </div>
+        </footer>
+      </div>
+
+      <!-- LOGO / BURGER NAV -->
+      <div
+        class="flex flex-row items-center justify-between w-full mt-6 small:px-4 tablet:px-4 bg-offWhite laptop:hidden"
+      >
+        <img
+          class="small:w-48"
+          src="./img/logos/logo__agro--22.svg"
+          alt="logo agromega"
+        />
+        <div
+          class="p-2 mb-4 rounded-lg ring-4 ring-azulAgro laptop:hidden bg-neutral-300 active:bg-neutral-400"
+        >
+          <button title="menu nav" onclick="burgerNav()" class="w-[24px]">
+            <i class="text-azulAgro fa-xl fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- MAIN BANNER -->
+      <div
+        class="laptop:flex laptop:flex-col laptop:w-4/5 small:w-screen bg-offWhite"
+      >
+        <div class="relative laptop:flex">
+          <img
+            class="laptop:p-16 small:p-4 small:rounded-[30px] laptop:rounded-[90px] laptop:h-[650px] small:h-[200px] object-cover w-full laptop:bg-cover laptop:brightness-[.90]"
+            src="./img/tinified/sistemas-riego-prods-banner.jpg"
+            alt="campo al amanecer"
+          />
+
+          <!-- SLOGAN -->
+          <div
+            class="laptop:absolute laptop:self-center laptop:ml-28 small:m-0 small:px-4"
+          >
+            <h1
+              class="font-semibold fhd:mt-10 laptop:mt-0 small:m-0 ipad:mr-0 hd:mr-20 ipad:w-5/6 hd:w-2/6 small:w-full small:text-2xl small:leading-tight laptop:leading-tight laptop:text-offWhite small:text-offWhite small:bg-azulAgro laptop:bg-transparent small:p-4 laptop:p-0 small:rounded-2xl fhd:text-7xl hd:text-5xl ipad:text-4xl laptop:text-5xl small:text-center laptop:text-left"
+            >
+              SISTEMAS DE RIEGO
+            </h1>
+          </div>
+        </div>
+
+        <!-- FIRST SECTION / BOLSA DE TRABAJO -->
+        <section
+          class="w-auto small:mx-4 rounded-[20px] laptop:mx-0 laptop:px-16 flex laptop:flex-col small:flex-col"
+        >
+          <div class="flex laptop:gap-6 laptop:flex-col small:flex-col">
+            <div
+              class="text-base leading-relaxed align-middle small:hidden laptop:block laptop:p-6 text-neutral-700 bg-sky-200 rounded-[20px] laptop:basis-1/4"
+            >
+              Los sistemas de riego por goteo te permiten conducir el agua
+              mediante una red de tuberías y aplicarla a los cultivos a través
+              de emisores que entregan pequeños volúmenes de agua de forma
+              periódica, el agua se aplica en forma de gota por medio de los
+              goteros.
+            </div>
+
+            <div
+              class="small:block laptop:hidden p-4 my-3 text-neutral-700 bg-sky-300 rounded-[20px]"
+            >
+              Los sistemas de riego por goteo te permiten conducir el agua
+              mediante una red de tuberías de forma periódica por medio de los
+              goteros.
+            </div>
+
+            <div
+              class="text-base leading-loose small:p-4 laptop:p-6 text-neutral-700 bg-transparent border-[1px] border-neutral-500 rounded-[20px] laptop:basis-3/4 tablet:basis-full"
+            >
+              <span class="text-3xl font-semibold">BENEFICIOS:</span>
+              <ul>
+                <li class="text-lg leading-loose text-neutral-700">
+                  • Ahorro de agua.
+                </li>
+                <li class="text-lg leading-loose text-neutral-700">
+                  • Uniformidad de aplicación.
+                </li>
+                <li class="text-lg leading-loose text-neutral-700">
+                  • Aumento de la densidad o superficie.
+                </li>
+                <li class="text-lg leading-loose text-neutral-700">
+                  • Menor presencia de malezas.
+                </li>
+                <li class="text-lg leading-loose text-neutral-700">
+                  • Ahorro en mano de obra.
+                </li>
+                <li class="text-lg leading-loose text-neutral-700">
+                  • Aprovechamiento de terrenos marginales.
+                </li>
+                <li class="text-lg leading-loose text-neutral-700">
+                  • Mejoras en la producción y calidad del cultivo.
+                </li>
+                <li class="text-lg leading-loose text-neutral-700">
+                  • Automatización.
+                </li>
+                <li class="text-lg leading-loose text-neutral-700">
+                  • Fertirrigación.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="grid justify-center w-auto gap-4 p-6 rounded-[20px] align-middle small:grid-flow-row small:mx-0 small:my-4 laptop:mt-4 laptop:mb-8 laptop:mx-0 laptop:grid-cols-4 bg-neutral-200"
+          >
+            <img
+              class="col-span-1 duration-300 laptop:hover:scale-110"
+              src="img/logos//adritec.png"
+              alt="logo"
+            />
+            <img
+              class="col-span-1 duration-300 hover:scale-110"
+              src="img/logos/barnes.png"
+              alt="logo"
+            />
+            <img
+              class="col-span-1 duration-300 hover:scale-110"
+              src="img/logos/emmsa.png"
+              alt="logo"
+            />
+            <img
+              class="col-span-1 duration-300 hover:scale-110"
+              src="img/logos/serrot.png"
+              alt="logo"
+            />
+          </div>
+
+          <a
+            class="w-auto mb-16 focus:outline-none laptop:col-span-3"
+            href="contacto.html"
+            tabindex="-1"
+          >
+            <button
+              title="contactar a Agromega"
+              class="w-full duration-200 !outline-none laptop:text-4xl small:text-2xl small:font-medium laptop:font-normal laptop:rounded-full small:rounded-full laptop:p-4 small:p-3 laptop:col-span-3 text-offWhite bg-azulAgro hover:bg-azulAgroClaro focus:ring-4 ring-offset-4 active:bg-blue-900 focus:ring-blue-900 focus:bg-azulAgroClaro"
+            >
+              pongámonos en contacto
+            </button>
+          </a>
+        </section>
+
+        <hr class="h-[2px] rounded bg-neutral-300 small:mx-4 laptop:mx-16" />
+
+        <!-- NEWSLETTER -->
+        <section
+          class="laptop:mx-auto small:px-10 laptop:px-16 small:pt-12 small:pb-5 laptop:grid small:flex small:flex-col laptop:grid-cols-2 laptop:gap-28 fhd:my-16 laptop:my-0 tablet:mt-0 tablet:py-10 tablet:pb-12 laptop:items-center"
+        >
+          <div
+            class="text-left laptop:justify-center laptop:col-span-1 laptop:align-middle"
+          >
+            <h3
+              class="font-semibold tracking-wide laptop:text-4xl laptop:mt-0 small:text-2xl"
+            >
+              Recibe información de nuestros productos.
+            </h3>
+
+            <p
+              class="mt-3 font-normal tracking-wide laptop:text-xl small:text-base font-plex"
+            >
+              Regístrate con tu dirección de correo electrónico para recibir
+              noticias y actualizaciones.
+            </p>
+          </div>
+
+          <div class="w-full col-span-1 small:mt-5 fhd:mt-0 laptop:mt-0">
+            <input
+              class="w-full col-span-1 px-6 py-4 border-none rounded-full laptop:text-2xl small:text-xl font-plex bg-neutral-300 focus:ring-4 focus:ring-azulAgroClaro"
+              placeholder="Escribe aquí tu correo"
+              id="news-submit"
+              type="email"
+            />
+
+            <button
+              title="enviar correo"
+              class="w-full px-8 py-3 mt-4 text-3xl duration-200 rounded-full active:bg-blue-900 bg-azulAgro hover:bg-azulAgroClaro text-offWhite outline-offset-4 focus:bg-azulAgroClaro outline-4 ring-4 ring-azulAgroClaro outline-blue-900"
+            >
+              enviar
+            </button>
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+        <!-- ADDRESS INFO -->
+        <footer class="w-full h-full mx-0 mt-5 laptop:hidden bg-slate-300">
+          <div class="px-6 py-6">
+            <div class="leading-relaxed">
+              <a
+                class="pl-2 pr-2 focus:outline-azulAgro"
+                target="_blank"
+                href="https://goo.gl/maps/fJS3bVtCKDLNCb3w5"
+              >
+                <p class="py-2 text-base font-bold text-neutral-800">
+                  <i class="pr-1 text-azulAgro fa-solid fa-location-dot"></i>Av.
+                  Pedro Parra Centeno 110
+                </p>
+                <span
+                  class="py-0 pl-0 text-base font-normal fhd:text-lg text-slate-600"
+                  >Tlajomulco de Zúñiga, Jalisco</span
+                >
+              </a>
+            </div>
+
+            <div class="mt-6 leading-snug">
+              <p class="py-0 mt-2 text-base font-bold text-slate-600">
+                <i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33)
+                3798-1526
+              </p>
+              <p class="py-0 mt-2 text-base font-bold text-slate-600">
+                <i class="pr-1 text-azulAgro fa-solid fa-phone"></i> (33)
+                3798-0637
+              </p>
+            </div>
+
+            <!-- SOCIAL -->
+            <section class="my-8">
+              <div
+                class="text-xl font-bold duration-300 text-azulAgro hover:text-azulAgroClaro"
+              >
+                <a
+                  title="facebook Agromega"
+                  class="py-2 pl-0 pr-2 focus:outline-azulAgro"
+                  target="_blank"
+                  href="https://www.facebook.com/profile.php?id=100063775232938"
+                >
+                  <i class="fa-2xl fa-brands fa-square-facebook"></i>
+                </a>
+              </div>
+            </section>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
