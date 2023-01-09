@@ -1,0 +1,11 @@
+agro colors / contrast
+
+#F2F2F2 (offWhite / K10%) - #262626 (neutral-800 / tailwind) (ok)
+
+#334155 (slate-700 / tailwind) *banner cat* 
+
+#CBD5E1 (slate-300 / tailwind) *bg-sec*
+
+(neutral-800 / tailwind) *texto solo*
+
+(neutral-200) *bg-texto*

@@ -9,7 +9,7 @@ const btnHistoria = document.getElementById("btn-historia");
 if(introHistoria.classList.contains("block")) {
   historia.classList.remove("laptop:col-span-2");
   historia.classList.add("laptop:col-span-4");
-  headingHistoria.classList.remove("bg-neutral-400",);
+  headingHistoria.classList.remove("bg-neutral-500",);
   headingHistoria.classList.add("bg-azulAgroClaro");
   introHistoria.classList.remove("block");
   introHistoria.classList.add("hidden");
@@ -20,7 +20,7 @@ if(introHistoria.classList.contains("block")) {
   historia.classList.remove("laptop:col-span-4");
   historia.classList.add("laptop:col-span-2");
   headingHistoria.classList.remove("bg-azulAgroClaro");
-  headingHistoria.classList.add("bg-neutral-400");
+  headingHistoria.classList.add("bg-neutral-500");
   introHistoria.classList.remove("hidden");
   introHistoria.classList.add("block");
   textoHistoria.classList.remove("block");
@@ -40,7 +40,7 @@ function switchMision() {
   if(introMision.classList.contains("block")) {
     mision.classList.remove("laptop:col-span-2");
     mision.classList.add("laptop:col-span-4");
-    headingMision.classList.remove("bg-neutral-400",);
+    headingMision.classList.remove("bg-neutral-500",);
     headingMision.classList.add("bg-azulAgroClaro");
     introMision.classList.remove("block");
     introMision.classList.add("hidden");
@@ -51,7 +51,7 @@ function switchMision() {
     mision.classList.remove("laptop:col-span-4");
     mision.classList.add("laptop:col-span-2");
     headingMision.classList.remove("bg-azulAgroClaro");
-    headingMision.classList.add("bg-neutral-400");
+    headingMision.classList.add("bg-neutral-500");
     introMision.classList.remove("hidden");
     introMision.classList.add("block");
     textoMision.classList.remove("block");
@@ -71,7 +71,7 @@ function switchMision() {
     if(introVision.classList.contains("block")) {
       vision.classList.remove("laptop:col-span-2");
       vision.classList.add("laptop:col-span-4");
-      headingVision.classList.remove("bg-neutral-400",);
+      headingVision.classList.remove("bg-neutral-500",);
       headingVision.classList.add("bg-azulAgroClaro");
       introVision.classList.remove("block");
       introVision.classList.add("hidden");
@@ -82,7 +82,7 @@ function switchMision() {
       vision.classList.remove("laptop:col-span-4");
       vision.classList.add("laptop:col-span-2");
       headingVision.classList.remove("bg-azulAgroClaro");
-      headingVision.classList.add("bg-neutral-400");
+      headingVision.classList.add("bg-neutral-500");
       introVision.classList.remove("hidden");
       introVision.classList.add("block");
       textoVision.classList.remove("block");
@@ -102,7 +102,7 @@ function switchMision() {
     if(introValores.classList.contains("block")) {
       valores.classList.remove("laptop:col-span-2");
       valores.classList.add("laptop:col-span-4");
-      headingValores.classList.remove("bg-neutral-400",);
+      headingValores.classList.remove("bg-neutral-500",);
       headingValores.classList.add("bg-azulAgroClaro");
       introValores.classList.remove("block");
       introValores.classList.add("hidden");
@@ -113,7 +113,7 @@ function switchMision() {
       valores.classList.remove("laptop:col-span-4");
       valores.classList.add("laptop:col-span-2");
       headingValores.classList.remove("bg-azulAgroClaro");
-      headingValores.classList.add("bg-neutral-400");
+      headingValores.classList.add("bg-neutral-500");
       introValores.classList.remove("hidden");
       introValores.classList.add("block");
       textoValores.classList.remove("block");
