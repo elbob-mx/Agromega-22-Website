@@ -1983,6 +1983,30 @@ select {
     height: 200px;
   }
 
+  .small\:h-64 {
+    height: 16rem;
+  }
+
+  .small\:h-48 {
+    height: 12rem;
+  }
+
+  .small\:h-10 {
+    height: 2.5rem;
+  }
+
+  .small\:h-32 {
+    height: 8rem;
+  }
+
+  .small\:h-\[100px\] {
+    height: 100px;
+  }
+
+  .small\:h-\[150px\] {
+    height: 150px;
+  }
+
   .small\:w-48 {
     width: 12rem;
   }
@@ -2103,6 +2127,10 @@ select {
   .small\:bg-neutral-200 {
     --tw-bg-opacity: 1;
     background-color: rgb(229 229 229 / var(--tw-bg-opacity));
+  }
+
+  .small\:bg-top {
+    background-position: top;
   }
 
   .small\:p-4 {
