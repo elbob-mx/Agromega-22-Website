@@ -1122,12 +1122,20 @@ select {
   border-width: 0px;
 }
 
+.border-\[1px\] {
+  border-width: 1px;
+}
+
 .border-t-0 {
   border-top-width: 0px;
 }
 
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-dashed {
+  border-style: dashed;
 }
 
 .border-none {
