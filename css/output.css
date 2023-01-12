@@ -1967,6 +1967,14 @@ select {
     margin-top: 3rem;
   }
 
+  .small\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .small\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .small\:block {
     display: block;
   }
@@ -2517,6 +2525,14 @@ select {
 
   .laptop\:mb-8 {
     margin-bottom: 2rem;
+  }
+
+  .laptop\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .laptop\:mb-12 {
+    margin-bottom: 3rem;
   }
 
   .laptop\:block {
