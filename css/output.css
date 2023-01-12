@@ -929,6 +929,10 @@ select {
   height: 15rem;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -1014,6 +1018,10 @@ select {
   flex-wrap: wrap;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .content-between {
   align-content: space-between;
 }
@@ -1028,6 +1036,10 @@ select {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .justify-evenly {
@@ -1048,6 +1060,10 @@ select {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.place-self-center {
+  place-self: center;
 }
 
 .self-center {
@@ -1378,6 +1394,21 @@ select {
   background-color: rgb(153 246 228 / var(--tw-bg-opacity));
 }
 
+.bg-amber-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 211 77 / var(--tw-bg-opacity));
+}
+
+.bg-orange-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1415,6 +1446,10 @@ select {
 
 .p-0 {
   padding: 0px;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .py-0 {
@@ -2124,6 +2159,14 @@ select {
     height: 200px;
   }
 
+  .small\:h-32 {
+    height: 8rem;
+  }
+
+  .small\:h-40 {
+    height: 10rem;
+  }
+
   .small\:w-48 {
     width: 12rem;
   }
@@ -2690,6 +2733,10 @@ select {
 
   .laptop\:h-\[400px\] {
     height: 400px;
+  }
+
+  .laptop\:h-52 {
+    height: 13rem;
   }
 
   .laptop\:w-1\/5 {
