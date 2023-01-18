@@ -22,6 +22,7 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="./js/controllers.js" defer></script>
+    <script type="text/javascript" src="./js/showModal.js" defer></script>
   </head>
 
   <body
@@ -232,7 +233,7 @@
           </div>
 
           <div
-            class="bg-slate-300 laptop:p-10 grid laptop:grid-cols-3 mobile:grid-cols-1 mobileHor:grid-cols-3 tablet:grid-cols-3 ipad:grid-cols-2 hd:grid-cols-3 small:grid-cols-1 laptop:gap-6 small:gap-2 rounded-b-[20px] small:mb-4 laptop:mb-4 justify-self-end"
+            class="bg-slate-300 laptop:p-10 grid laptop:grid-cols-3 mobile:grid-cols-1 mobileHor:grid-cols-3 tablet:grid-cols-2 ipad:grid-cols-2 hd:grid-cols-3 small:grid-cols-1 laptop:gap-6 small:gap-2 rounded-b-[20px] small:mb-4 laptop:mb-4 justify-self-end"
           >
             <div class="small:p-4 laptop:p-0" tabindex="-1">
               <a
@@ -267,6 +268,18 @@
 
         <!-- HORIZONTAL HR LINE  -->
         <hr class="h-[2px] rounded bg-neutral-300 small:mx-4 laptop:mx-16" />
+
+            <!-- MODAL -->
+            <div id="modal"
+            class="fixed top-0 left-0 flex items-center justify-center hidden w-screen h-screen z-80 bg-black/70">
+          
+            <!-- CLOSE BUTTON -->
+            <a class="fixed text-6xl font-bold text-white z-90 top-6 right-8" href="javascript:void(0)"
+            onclick="closeModal()">&times;</a>
+          
+            <!-- ZOOMED IMAGE -->
+            <img id="modal-img" class="rounded-2xl max-w-[w-screen] max-h-[h-screen] object-cover" />
+            </div>
 
         <!-- NEWSLETTER -->
         <section
