@@ -1,16 +1,16 @@
-// GET MODAL BY ID
+// OBTENER MODAL POR ID
 var modal = document.getElementById("modal");
 
-// GET MODAL IMG BY ID
-var modalImg = document.getElementById("modal-img");
+// OBTENER IMAGEN MODAL POR ID
+  var modalImg = document.getElmentById("modal-img");
 
-// FUNCTION CALLED WHEN IMAGE CLICKED
+// FUNCION LLAMADA AL HACER CLICK EN IMAGEN
 function showModal(src) {
   modal.classList.remove("hidden");
   modalImg.src = src;
 };
 
-// FUNCTION CALLED WHEN 'CLOSE BUTTON ('X')' CLICKED
+// FUNCION LLAMADA AL HACER CLICK EN 'cerrar'
 function closeModal() {
   modal.classList.add("hidden");
 };
