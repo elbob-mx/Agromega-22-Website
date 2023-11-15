@@ -2377,6 +2377,18 @@ select {
 }
 
 @media (min-width: 359px) {
+  .mobile\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
+  .mobile\:mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .mobile\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
   .mobile\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -2407,6 +2419,14 @@ select {
 @media (min-width: 768px) {
   .tablet\:mt-0 {
     margin-top: 0px;
+  }
+
+  .tablet\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .tablet\:mt-3 {
+    margin-top: 0.75rem;
   }
 
   .tablet\:h-44 {
