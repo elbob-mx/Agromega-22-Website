@@ -113,13 +113,33 @@
     </div>
 
     <!-- LOGO / BURGER NAV -->
-    <div
+    <div id="hamBtn"
       class="flex flex-row items-center justify-between w-full mt-6 small:px-4 tablet:px-4 bg-offWhite laptop:hidden">
       <img class="small:w-48" src="./img/logos/logo__agro--22.svg" alt="logo agromega" />
       <div class="p-2 mb-4 rounded-lg ring-4 ring-azulAgro laptop:hidden bg-neutral-300 active:bg-neutral-400">
-        <button title="menu nav" onclick="burgerNav()" class="w-[24px]">
+        <button title="menu nav" onclick="Open(this)" class="w-[24px]">
           <i class="text-azulAgro fa-xl fa-solid fa-bars"></i>
         </button>
+      </div>
+    </div>
+
+    <div id="ham"
+      class="fixed z-50 flex flex-col items-center justify-center hidden w-screen h-screen overflow-x-hidden overflow-y-hidden text-4xl tracking-wide duration-500 origin-left bg-gradient-to-b from-blue-400 to-blue-800 text-offWhite laptop:hidden">
+
+      <ul class="font-rubik">
+        <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="index.html">Inicio</a></li>
+        <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="nosotros.html">Nosotros</a></li>
+        <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="productos.html">Productos</a>
+        </li>
+        <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="servicios.html">Servicios</a>
+        </li>
+        <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a
+            href="bolsa-de-trabajo.html">Trabajo</a>
+        </li>
+        <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="contacto.html">Contacto</a></li>
+      </ul> <!-- BOTON CERRAR -->
+      <div id="closeBtn" class="absolute text-3xl cursor-pointer top-9 right-5">
+        <i name="cerrar" onclick="Close(this)" class="fa-solid fa-xmark text-offWhite"></i>
       </div>
     </div>
 
