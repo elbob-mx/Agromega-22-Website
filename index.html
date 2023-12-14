@@ -26,8 +26,8 @@
   <script type="text/javascript" src="./js/controllers.js" defer></script>
 </head>
 
-<body class="box-border w-screen overflow-x-hidden antialiased font-rubik bg-offWhite" tabindex="0">
-  <main class="w-screen laptop:flex">
+<body class="box-border w-full overflow-x-hidden antialiased font-rubik bg-offWhite" tabindex="0">
+  <main class="w-full laptop:flex">
     <!-- SIDEBAR RESPONSIVE -->
     <div
       class="sticky top-0 block small:hidden tablet:px-0 laptop:flex laptop:w-1/5 laptop:h-screen laptop:flex-col laptop:bg-offWhite">
@@ -36,6 +36,7 @@
           title="logo agromega" />
       </header>
 
+      <!-- NAVBAR -->
       <nav class="flex small:flex-wrap laptop:flex-nowrap small:flex-row laptop:flex-col bg-offWhite">
         <ul class="flex leading-loose small:flex-row laptop:flex-col small:m-0 laptop:mt-12">
           <li
@@ -125,7 +126,7 @@
     </div>
 
     <div id="ham"
-      class="fixed z-50 flex flex-col items-center justify-center hidden w-screen h-screen overflow-x-hidden overflow-y-hidden text-4xl tracking-wide duration-500 origin-left bg-gradient-to-b from-blue-400 to-blue-800 text-offWhite laptop:hidden">
+      class="fixed z-50 flex flex-col items-center justify-center hidden w-full h-screen overflow-x-hidden overflow-y-hidden text-4xl tracking-wide duration-500 origin-left bg-gradient-to-b from-blue-400 to-blue-800 text-offWhite laptop:hidden">
 
       <ul class="font-rubik">
         <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="index.html">Inicio</a></li>
@@ -145,7 +146,7 @@
     </div>
 
     <!-- MAIN BANNER -->
-    <div class="laptop:flex laptop:flex-col laptop:w-4/5 small:w-screen bg-offWhite">
+    <div class="laptop:flex laptop:flex-col laptop:w-4/5 small:w-full bg-offWhite">
       <div class="relative laptop:flex">
         <img
           class="laptop:p-16 small:p-4 small:rounded-[30px] laptop:rounded-[90px] laptop:w-full laptop:bg-cover laptop:brightness-[.80]"
@@ -412,18 +413,18 @@
       <section
         class="laptop:mx-auto small:px-10 laptop:px-6 small:pt-12 small:pb-5 laptop:grid small:flex small:flex-col laptop:grid-cols-3 laptop:gap-10 tablet:px-28 fhd:px-20 laptop:py-6 laptop:items-center">
         <div class="flex flex-row tablet:mb-6 laptop:mb-0 mobile:mb-6">
-          <ul class="text-slate-600 font-plex text-lg font-medium">
-            <li class="hover:text-azulAgroClaro duration-300" tabindex="0"><a href="index.html">inicio</a></li>
-            <li class="hover:text-azulAgroClaro duration-300" tabindex="0"><a href="nosotros.html">nosotros</a></li>
-            <li class="hover:text-azulAgroClaro duration-300" tabindex="0"><a href="productos.html">productos</a></li>
-            <li class="hover:text-azulAgroClaro duration-300" tabindex="0"><a href="servicios.html">servicios</a></li>
-            <li class="hover:text-azulAgroClaro duration-300" tabindex="0"><a href="bolsa-de-trabajo.html">trabajo</a>
+          <ul class="text-lg font-medium text-slate-600 font-plex">
+            <li class="duration-300 hover:text-azulAgroClaro" tabindex="0"><a href="index.html">inicio</a></li>
+            <li class="duration-300 hover:text-azulAgroClaro" tabindex="0"><a href="nosotros.html">nosotros</a></li>
+            <li class="duration-300 hover:text-azulAgroClaro" tabindex="0"><a href="productos.html">productos</a></li>
+            <li class="duration-300 hover:text-azulAgroClaro" tabindex="0"><a href="servicios.html">servicios</a></li>
+            <li class="duration-300 hover:text-azulAgroClaro" tabindex="0"><a href="bolsa-de-trabajo.html">trabajo</a>
             </li>
-            <li class="hover:text-azulAgroClaro duration-300" tabindex="0"><a href="contacto.html">contacto</a></li>
+            <li class="duration-300 hover:text-azulAgroClaro" tabindex="0"><a href="contacto.html">contacto</a></li>
           </ul>
         </div>
         <div class="text-left laptop:justify-center laptop:col-span-1 laptop:align-middle">
-          <h3 class="font-semibold font-plex tracking-wide laptop:text-2xl laptop:mt-0 small:text-xl">
+          <h3 class="font-semibold tracking-wide font-plex laptop:text-2xl laptop:mt-0 small:text-xl">
             Recibe información de nuestros productos.
           </h3>
 
@@ -443,7 +444,7 @@
             enviar
           </button>
         </div>
-        <p class="text-slate-500 text-xs text-right col-span-3 tablet:mt-3 laptop:mt-0 mobile:mt-3">Copyright
+        <p class="col-span-3 text-xs text-right text-slate-500 tablet:mt-3 laptop:mt-0 mobile:mt-3">Copyright
           Agromega&#174; 2023.
           Todos los
           derechos
